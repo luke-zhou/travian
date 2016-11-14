@@ -6,8 +6,16 @@
       <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
     </layout>
   </appender>
-  <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+  <appender name="INFO-FILE" class="ch.qos.logback.core.FileAppender">
     <file>travian.log</file>
+
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <appender name="DEBUG-FILE" class="ch.qos.logback.core.FileAppender">
+    <file>travian-debug.log</file>
 
     <encoder>
       <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
@@ -15,10 +23,9 @@
   </appender>
   
   <logger name="com.base22" level="TRACE"/>
-  
 
-  <root level="debug">
-    <appender-ref ref="STDOUT" />
-    <appender-ref ref="FILE" />
+
+  <root level="DEBUG">
+    <appender-ref ref="INFO-FILE" />
   </root>
 </configuration>
