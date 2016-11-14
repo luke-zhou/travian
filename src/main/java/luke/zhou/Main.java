@@ -35,7 +35,7 @@ public class Main
 
         LOG.debug(login + "/" + password + "/" + notificationEmail);
 
-        TravianHelper travianHelper = new TravianHelper(login, password, notificationEmail);
+        TravianHelper travianHelper = new TravianHelper(login, password);
         new Thread(travianHelper).start();
         new Thread(new ControlCenter()).start();
 

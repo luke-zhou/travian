@@ -25,7 +25,7 @@ public class Page
 
     public Page(String server)
     {
-        System.setProperty("webdriver.chrome.driver", "browser-driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "browser-driver/chromedriver");
         driver = new ChromeDriver();
         this.server = server;
     }

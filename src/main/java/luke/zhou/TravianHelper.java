@@ -21,19 +21,15 @@ public class TravianHelper implements Runnable
 
     private String username;
     private String password;
-    private String notificationEmail;
 
     private BlockingQueue<Command> travianCommandQueue;
 
     private Page travian;
 
-    private MailIO mailIO;
-
-    public TravianHelper(String username, String password, String notificationEmail)
+    public TravianHelper(String username, String password)
     {
         this.username = username;
         this.password = password;
-        this.notificationEmail = notificationEmail;
         travianCommandQueue = new LinkedBlockingQueue<>();
 
         travian = new Page("http://ts4.travian.com.au/");

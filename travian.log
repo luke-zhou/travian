@@ -1,105 +1,29 @@
-16:13:42.003 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-16:13:44.647 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:13:59.650 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:14:14.651 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:14:29.653 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:14:30.833 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='16 Reinf.', outGoingAttack='12 Attacks', adventure='null'}
-16:14:44.654 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:send alarm
-16:14:50.360 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-16:15:05.362 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:15:20.364 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:15:35.365 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:15:50.367 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:16:05.368 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:16:20.370 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:16:35.371 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:16:50.373 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:17:05.374 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:17:20.376 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:17:35.377 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:17:50.379 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:18:05.380 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:18:20.382 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:18:35.383 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:18:50.385 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:19:05.386 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:19:20.388 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:19:35.389 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:19:38.675 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='15 Reinf.', outGoingAttack='11 Attacks', adventure='null'}
-16:19:50.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:20:05.392 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:20:20.394 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:20:35.395 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:20:50.397 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:21:05.398 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:21:20.400 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:21:35.401 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:21:50.403 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:22:05.404 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:22:20.406 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:22:35.407 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:22:50.409 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:23:05.410 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:23:20.412 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:23:35.413 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:23:50.415 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:24:05.416 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:24:20.418 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:24:35.419 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:24:47.089 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='16 Reinf.', outGoingAttack='10 Attacks', adventure='null'}
-16:24:50.421 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:25:05.422 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:25:20.424 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:25:35.425 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:25:50.427 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:26:05.428 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:26:20.430 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:26:35.431 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:26:50.433 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:27:05.434 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:27:20.436 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:27:35.437 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:27:50.439 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:28:05.440 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:28:20.442 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:28:35.443 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:28:50.445 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:29:05.446 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:29:20.448 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:33:17.541 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-16:33:20.459 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:33:35.461 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:33:50.463 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:34:05.464 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:34:20.466 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:34:35.467 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:34:37.739 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='18 Reinf.', outGoingAttack='17 Attacks', adventure='null'}
-16:34:50.469 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:send alarm
-16:34:56.032 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-16:35:11.034 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:35:26.035 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:35:41.037 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:35:56.038 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:36:11.040 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:36:26.041 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:36:41.043 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:36:56.044 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:37:11.046 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:37:26.047 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:37:41.049 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:37:56.050 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:38:11.052 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:38:26.053 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:38:41.055 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:38:56.056 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:39:11.058 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:test
-16:39:26.059 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd:null
-16:55:26.373 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-16:55:46.667 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-16:55:59.853 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='16 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
-16:56:05.703 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-16:56:08.552 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='16 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
-16:56:15.150 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='16 Reinf.', outGoingAttack='12 Attacks', adventure='null'}
-16:56:25.473 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='17 Reinf.', outGoingAttack='12 Attacks', adventure='null'}
-16:56:32.751 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='17 Reinf.', outGoingAttack='12 Attacks', adventure='null'}
-16:56:39.810 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='17 Reinf.', outGoingAttack='12 Attacks', adventure='null'}
+20:42:55.385 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+20:43:39.383 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+20:46:41.070 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/CArnegie71/sharlock@gmail.com
+20:47:33.710 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+20:47:42.713 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
+20:47:50.850 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
+20:47:58.273 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
+20:48:09.413 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
+20:48:17.484 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
+20:48:28.887 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
+21:41:18.637 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+21:41:24.550 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:HELP
+21:41:42.147 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+21:41:57.887 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
+21:42:05.123 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
+21:42:08.923 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
+21:42:16.652 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
+21:42:26.868 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
+21:42:36.811 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
+21:43:17.600 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+21:43:20.874 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:HELP
+21:43:43.732 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+21:45:47.820 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+21:45:56.027 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help	display command list
+21:46:34.773 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - h	/d/s
+21:47:39.297 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/
+21:47:42.043 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help		display command list
+21:51:29.987 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
+21:51:33.069 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help                display command list
