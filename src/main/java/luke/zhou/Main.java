@@ -53,21 +53,22 @@ public class Main
         while (true)
         {
             Command cmd = mainCommandQueue.poll();
-            if (cmd == null) continue;
-
-            LOG.debug("got cmd for main:" + cmd);
-            switch (cmd)
+            if (cmd != null)
             {
-                case SEND_ALARM:
-                    MailIO.sendUnderAttackAlarm(notificationEmail);
-                    break;
-                case RAID:
-                case REPEAT_RAID:
-                case STOP_RAID:
-                case GET_INFO:
-                case EXIT:
-                    travianHelper.getTravianCommandQueue().put(cmd);
-                    break;
+                LOG.debug("got cmd for main:" + cmd);
+                switch (cmd)
+                {
+                    case SEND_ALARM:
+                        MailIO.sendUnderAttackAlarm(notificationEmail);
+                        break;
+                    case RAID:
+                    case REPEAT_RAID:
+                    case STOP_RAID:
+                    case GET_INFO:
+                    case EXIT:
+                        travianHelper.getTravianCommandQueue().put(cmd);
+                        break;
+                }
             }
             Thread.sleep(TimeUtil.seconds(15));
         }

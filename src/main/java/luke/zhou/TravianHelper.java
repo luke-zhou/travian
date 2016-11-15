@@ -34,21 +34,6 @@ public class TravianHelper implements Runnable
         travian = new Page("http://ts4.travian.com.au/");
     }
 
-    public void start() throws InterruptedException
-    {
-        travian.login(username, password);
-
-        for (int i = 0; i < 10; i++)
-        {
-            String result = travian.sendRaid();
-            LOG.info("Start Raid: " + result);
-            travian.home();
-            Thread.sleep(TimeUtil.minutes(20) + RandomUtil.randomIntCentre0(20 * 1000));
-        }
-
-        travian.exit();
-    }
-
     public void run()
     {
         Game game = new Game();
@@ -66,29 +51,29 @@ public class TravianHelper implements Runnable
                 }
 
                 Command cmd = travianCommandQueue.poll();
-                if (cmd == null) continue;
-
-                LOG.debug("got cmd for helper:" + cmd);
-                switch (cmd)
+                if (cmd != null)
                 {
-                    case RAID:
-                        startRaid();
-                        break;
-                    case EXIT:
-                        travian.exit();
-                        System.exit(0);
-                        break;
-                    case REPEAT_RAID:
-                        clocktick=0;
-                        game.setAutoRaid(true);
-                        break;
-                    case STOP_RAID:
-                        game.setAutoRaid(false);
-                        break;
-                    default:
-                        LOG.debug("got cmd for travian helper:" + cmd);
+                    LOG.debug("got cmd for helper:" + cmd);
+                    switch (cmd)
+                    {
+                        case RAID:
+                            startRaid();
+                            break;
+                        case EXIT:
+                            travian.exit();
+                            System.exit(0);
+                            break;
+                        case REPEAT_RAID:
+                            clocktick = 0;
+                            game.setAutoRaid(true);
+                            break;
+                        case STOP_RAID:
+                            game.setAutoRaid(false);
+                            break;
+                        default:
+                            LOG.debug("got cmd for travian helper:" + cmd);
+                    }
                 }
-
                 Thread.sleep(TimeUtil.minutes(5));
             }
             catch (Exception e)
