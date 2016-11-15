@@ -27,3 +27,94 @@
 21:47:42.043 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help		display command list
 21:51:29.987 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
 21:51:33.069 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help                display command list
+08:38:36.666 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+08:38:50.347 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help                display command list
+08:39:23.492 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+08:39:40.730 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='25 Reinf.', outGoingAttack='32 Attacks', adventure='null'}
+08:39:48.763 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
+08:39:50.532 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='25 Reinf.', outGoingAttack='32 Attacks', adventure='null'}
+08:40:03.800 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 7 raids have been made.
+08:40:14.998 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='25 Reinf.', outGoingAttack='39 Attacks', adventure='null'}
+13:44:36.767 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
+13:44:41.277 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
+14:04:44.392 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
+14:04:55.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help                display command list
+14:05:10.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
+14:05:25.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
+14:05:40.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:stop raid           stop repeat raid
+14:05:55.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
+14:06:10.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help                display command list
+14:10:29.178 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+14:11:15.587 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+14:11:37.692 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
+14:11:40.995 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='35 Reinf.', outGoingAttack='8 Attacks', adventure='null'}
+14:11:51.355 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
+14:12:00.906 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='35 Reinf.', outGoingAttack='19 Attacks', adventure='null'}
+14:40:58.893 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+14:41:24.103 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+14:41:37.418 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='26 Reinf.', outGoingAttack='17 Attacks', adventure='null'}
+14:41:45.899 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='26 Reinf.', outGoingAttack='17 Attacks', adventure='null'}
+14:41:47.903 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
+14:42:42.830 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+14:43:17.062 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+14:43:29.753 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
+14:43:31.696 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='27 Reinf.', outGoingAttack='16 Attacks', adventure='null'}
+14:43:40.462 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
+14:43:44.840 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
+15:05:53.406 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
+15:06:19.111 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+15:06:34.032 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='24 Attacks', adventure='null'}
+15:06:39.989 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='24 Attacks', adventure='null'}
+15:06:44.589 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
+15:06:50.110 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='24 Attacks', adventure='null'}
+15:07:01.936 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
+15:07:10.298 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='33 Attacks', adventure='null'}
+15:07:17.640 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
+15:16:02.186 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+15:16:24.626 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+15:16:40.600 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='19 Reinf.', outGoingAttack='32 Attacks', adventure='null'}
+15:16:44.026 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
+15:16:48.914 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='19 Reinf.', outGoingAttack='32 Attacks', adventure='null'}
+15:37:21.736 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+15:37:49.593 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+15:38:02.519 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='17 Reinf.', outGoingAttack='27 Attacks', adventure='null'}
+15:38:05.176 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
+15:38:13.443 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='17 Reinf.', outGoingAttack='27 Attacks', adventure='null'}
+15:38:25.995 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
+15:38:33.437 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='17 Reinf.', outGoingAttack='38 Attacks', adventure='null'}
+15:38:52.658 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
+15:39:08.826 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
+15:43:42.312 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='16 Reinf.', outGoingAttack='37 Attacks', adventure='null'}
+17:12:30.550 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+17:13:17.057 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+17:13:29.291 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='16 Attacks', adventure='null'}
+17:13:35.538 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='16 Attacks', adventure='null'}
+17:13:43.965 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
+17:13:45.550 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='16 Attacks', adventure='null'}
+17:13:45.550 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
+17:18:56.338 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:19:03.866 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:19:12.040 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:19:24.002 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:19:31.510 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:19:41.968 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:19:49.465 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:19:56.536 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:20:03.406 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:20:14.431 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:20:21.189 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:20:27.937 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:20:37.991 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:20:48.688 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:20:59.640 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:21:06.594 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:21:13.876 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:21:23.440 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:21:31.487 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:21:37.366 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
+17:21:47.474 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
+17:21:58.008 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
+17:22:07.744 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
+17:22:16.657 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
+17:22:23.518 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
+17:22:29.630 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}

@@ -11,20 +11,24 @@ import java.util.Map;
  */
 public enum Command
 {
-    SEND_ALARM("send alarm","not available for user"),
-    RAID("raid", "check all in the raid list, raid once"),
-    REPEAT_RAID("repeat raid", "check all in the raid list, raid until stop"),
-    STOP_RAID("stop raid", "stop repeat raid"),
-    GET_INFO("info", "display brief information of account"),
-    HELP("help", "display command list");
+    SEND_ALARM("send alarm", "not available for user", false),
+    RAID("raid", "check all in the raid list, raid once", true),
+    REPEAT_RAID("repeat raid", "check all in the raid list, raid until stop", true),
+    STOP_RAID("stop raid", "stop repeat raid", true),
+    GET_INFO("info", "display brief information of account", true),
+    HELP("help", "display command list", true),
+    READY("ready", "not available for user", false),
+    EXIT("exit", "Exit program", true);
 
     private final String value;
     private final String description;
+    private final boolean visible;
 
-    Command(String value, String description)
+    Command(String value, String description, boolean visible)
     {
         this.value = value;
         this.description = description;
+        this.visible = visible;
     }
 
 
@@ -56,6 +60,6 @@ public enum Command
     @Override
     public String toString()
     {
-        return String.format("%-20s", value) + description ;
+        return String.format("%-20s", value) + description;
     }
 }

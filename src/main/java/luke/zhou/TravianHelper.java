@@ -1,6 +1,5 @@
 package luke.zhou;
 
-import luke.zhou.io.MailIO;
 import luke.zhou.model.Command;
 import luke.zhou.model.Game;
 import luke.zhou.model.TroopMovement;
@@ -54,22 +53,40 @@ public class TravianHelper implements Runnable
     {
         Game game = new Game();
         travian.login(username, password);
-
+        Main.getMainCommandQueue().add(Command.READY);
+        int clocktick = 0;
         while (true)
         {
             try
             {
                 checkUnderAttack(game);
+                if (game.getAutoRaid() && clocktick <= 5*12)
+                {
+                    repeatRaiding(clocktick++);
+                }
 
                 Command cmd = travianCommandQueue.poll();
-                if (cmd==null) continue;
+                if (cmd == null) continue;
+
+                LOG.debug("got cmd for helper:" + cmd);
                 switch (cmd)
                 {
                     case RAID:
                         startRaid();
                         break;
+                    case EXIT:
+                        travian.exit();
+                        System.exit(0);
+                        break;
+                    case REPEAT_RAID:
+                        clocktick=0;
+                        game.setAutoRaid(true);
+                        break;
+                    case STOP_RAID:
+                        game.setAutoRaid(false);
+                        break;
                     default:
-                        LOG.debug("got cmd for travian helper:"+cmd);
+                        LOG.debug("got cmd for travian helper:" + cmd);
                 }
 
                 Thread.sleep(TimeUtil.minutes(5));
@@ -81,11 +98,21 @@ public class TravianHelper implements Runnable
                 travian.exit();
             }
         }
-
         //travian.exit();
     }
 
-    private void startRaid(){
+    private void repeatRaiding(int clocktick)
+    {
+        LOG.debug("clocktick:"+clocktick);
+        //every 20min
+        if (clocktick % 4 == 0)
+        {
+            startRaid();
+        }
+    }
+
+    private void startRaid()
+    {
         String result = travian.sendRaid();
         LOG.info("Start Raid: " + result);
         travian.home();

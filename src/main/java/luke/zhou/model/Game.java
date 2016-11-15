@@ -9,10 +9,12 @@ package luke.zhou.model;
 public class Game
 {
     private Boolean alarmOn;
+    private Boolean autoRaid;
 
     public Game()
     {
         this.alarmOn = true;
+        autoRaid = false;
     }
 
     public void switchAlarmOn()
@@ -28,5 +30,20 @@ public class Game
     public Boolean getAlarmOn()
     {
         return alarmOn;
+    }
+
+    public void setAlarmOn(Boolean alarmOn)
+    {
+        this.alarmOn = alarmOn;
+    }
+
+    public Boolean getAutoRaid()
+    {
+        return autoRaid;
+    }
+
+    public void setAutoRaid(Boolean autoRaid)
+    {
+        this.autoRaid = autoRaid;
     }
 }
