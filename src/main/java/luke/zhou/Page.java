@@ -1,6 +1,8 @@
 package luke.zhou;
 
-import luke.zhou.model.TroopMovement;
+import luke.zhou.model.travian.Game;
+import luke.zhou.model.travian.TroopMovement;
+import luke.zhou.model.travian.Village;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -62,16 +64,19 @@ public class Page
         return driver.findElement(By.id("list123")).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
     }
 
-    public TroopMovement home()
+    public void home(Game game)
     {
         loadURL(server + "dorf1.php");
-        TroopMovement troopMovement = new TroopMovement();
-        troopMovement.setInComingAttack(getText("//*[@id='movements']//span[@class='a1']"));
-        troopMovement.setInComingRein(getText("//*[@id='movements']//span[@class='d1']"));
-        troopMovement.setOutGoingAttack(getText("//*[@id='movements']//span[@class='a2']"));
-        troopMovement.setAdventure(getText("//*[@id='movements']//span[@class='adventure']"));
-        LOG.debug(troopMovement.toString());
-        return troopMovement;
+        WebElement villageWE = driver.findElement(
+                By.xpath("//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul"));
+        villageWE.findElements(By.tagName("li")).forEach(we ->{
+            Village village = new Village(we.findElement(By.className("name")).getText());
+            village.setUnderAttack(we.getAttribute("class").contains("attack"));
+            village.setLink("dorf1.php"+we.findElement(By.tagName("a")).getAttribute("href"));
+            game.addVillage(village);
+        });
+
+        LOG.debug("Village size:"+game.getVillages().size());
     }
 
     public void exit()

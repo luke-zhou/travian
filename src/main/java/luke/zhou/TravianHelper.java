@@ -1,9 +1,8 @@
 package luke.zhou;
 
 import luke.zhou.model.Command;
-import luke.zhou.model.Game;
-import luke.zhou.model.TroopMovement;
-import luke.zhou.util.RandomUtil;
+import luke.zhou.model.travian.Game;
+import luke.zhou.model.travian.TroopMovement;
 import luke.zhou.util.TimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,6 +24,8 @@ public class TravianHelper implements Runnable
 
     private Page travian;
 
+    private Game game;
+
     public TravianHelper(String username, String password)
     {
         this.username = username;
@@ -36,7 +37,7 @@ public class TravianHelper implements Runnable
 
     public void run()
     {
-        Game game = new Game();
+        game = new Game();
         travian.login(username, password);
         Main.getMainCommandQueue().add(Command.READY);
         int clocktick = 0;
@@ -44,12 +45,6 @@ public class TravianHelper implements Runnable
         {
             try
             {
-                checkUnderAttack(game);
-                if (game.getAutoRaid() && clocktick <= 5*12)
-                {
-                    repeatRaiding(clocktick++);
-                }
-
                 Command cmd = travianCommandQueue.poll();
                 if (cmd != null)
                 {
@@ -74,6 +69,14 @@ public class TravianHelper implements Runnable
                             LOG.debug("got cmd for travian helper:" + cmd);
                     }
                 }
+
+                checkUnderAttack();
+                if (game.getAutoRaid() && clocktick <= 4*12)
+                {
+                    repeatRaiding(clocktick++);
+                }
+
+
                 Thread.sleep(TimeUtil.minutes(5));
             }
             catch (Exception e)
@@ -100,13 +103,13 @@ public class TravianHelper implements Runnable
     {
         String result = travian.sendRaid();
         LOG.info("Start Raid: " + result);
-        travian.home();
+        travian.home(game);
     }
 
-    private void checkUnderAttack(Game game) throws InterruptedException
+    private void checkUnderAttack() throws InterruptedException
     {
-        TroopMovement troopMovement = travian.home();
-        if (troopMovement.underAttack())
+        travian.home(game);
+        if (game.getVillages().stream().anyMatch(v -> v.isUnderAttack()))
         {
             if (game.getAlarmOn())
             {

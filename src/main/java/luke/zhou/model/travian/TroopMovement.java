@@ -1,4 +1,4 @@
-package luke.zhou.model;
+package luke.zhou.model.travian;
 
 /**
  * Created with IntelliJ IDEA.

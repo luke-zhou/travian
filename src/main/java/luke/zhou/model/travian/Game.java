@@ -1,4 +1,7 @@
-package luke.zhou.model;
+package luke.zhou.model.travian;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,10 +14,23 @@ public class Game
     private Boolean alarmOn;
     private Boolean autoRaid;
 
+    private List<Village> villages;
+
     public Game()
     {
         this.alarmOn = true;
         autoRaid = false;
+        this.villages = new ArrayList<>();
+    }
+
+    public void addVillage(Village village)
+    {
+        villages.add(village);
+    }
+
+    public List<Village> getVillages()
+    {
+        return villages;
     }
 
     public void switchAlarmOn()
