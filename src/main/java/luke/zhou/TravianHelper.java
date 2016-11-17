@@ -3,7 +3,6 @@ package luke.zhou;
 import luke.zhou.io.MailIO;
 import luke.zhou.model.Command;
 import luke.zhou.model.travian.Game;
-import luke.zhou.model.travian.TroopMovement;
 import luke.zhou.util.TimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +36,7 @@ public class TravianHelper implements Runnable
     {
         travian.login(game.getUsername(), game.getPassword());
         Main.getMainCommandQueue().add(Command.READY);
+
         int clocktick = 0;
         while (true)
         {
@@ -56,30 +56,38 @@ public class TravianHelper implements Runnable
                             System.exit(0);
                             break;
                         case REPEAT_RAID:
-                            clocktick = 0;
                             game.setAutoRaid(true);
+                            Main.getMainCommandQueue().add(Command.READY);
                             break;
                         case STOP_RAID:
                             game.setAutoRaid(false);
+                            Main.getMainCommandQueue().add(Command.READY);
                             break;
                         case GET_INFO:
                             reloadInfo();
+                            Main.getMainCommandQueue().add(Command.READY);
                             break;
                         default:
                             LOG.debug("got cmd for travian helper:" + cmd);
                     }
                 }
 
-                checkUnderAttack();
-                if (game.getAutoRaid() && clocktick <= 4*12)
+                //every 5 mins
+                if (clocktick % (12 * 5) == 0)
                 {
-                    repeatRaiding(clocktick++);
+                    checkUnderAttack();
                 }
 
+                //every 20 mins
+                if (game.getAutoRaid() && (clocktick % (12 * 20) == 0))
+                {
+                    clocktick = 0;
+                    repeatRaiding();
+                }
 
-                Thread.sleep(TimeUtil.minutes(5));
-            }
-            catch (Exception e)
+                clocktick++;
+                Thread.sleep(TimeUtil.seconds(5));
+            } catch (Exception e)
             {
                 LOG.error(e.getMessage());
                 e.printStackTrace();
@@ -89,14 +97,9 @@ public class TravianHelper implements Runnable
         //travian.exit();
     }
 
-    private void repeatRaiding(int clocktick)
+    private void repeatRaiding()
     {
-        LOG.debug("clocktick:"+clocktick);
-        //every 20min
-        if (clocktick % 4 == 0)
-        {
-            startRaid();
-        }
+        startRaid();
     }
 
     private void startRaid()
@@ -106,7 +109,8 @@ public class TravianHelper implements Runnable
         travian.home(game);
     }
 
-    private void reloadInfo(){
+    private void reloadInfo()
+    {
         travian.getInfo(game);
         LOG.info("Game: " + game);
     }
