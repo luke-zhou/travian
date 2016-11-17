@@ -9,10 +9,29 @@ public class Village
     String name;
     String link;
 
+    int lumber;
+    int clay;
+    int iron;
+    int crop;
+
+
     public Village(String name)
     {
         this.isUnderAttack = false;
         this.name = name;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Village{" +
+                "isUnderAttack=" + isUnderAttack +
+                ", name='" + name + '\'' +
+                ", lumber=" + lumber +
+                ", clay=" + clay +
+                ", iron=" + iron +
+                ", crop=" + crop +
+                '}';
     }
 
     public boolean isUnderAttack()
@@ -43,5 +62,45 @@ public class Village
     public void setLink(String link)
     {
         this.link = link;
+    }
+
+    public int getLumber()
+    {
+        return lumber;
+    }
+
+    public void setLumber(int lumber)
+    {
+        this.lumber = lumber;
+    }
+
+    public int getClay()
+    {
+        return clay;
+    }
+
+    public void setClay(int clay)
+    {
+        this.clay = clay;
+    }
+
+    public int getIron()
+    {
+        return iron;
+    }
+
+    public void setIron(int iron)
+    {
+        this.iron = iron;
+    }
+
+    public int getCrop()
+    {
+        return crop;
+    }
+
+    public void setCrop(int crop)
+    {
+        this.crop = crop;
     }
 }

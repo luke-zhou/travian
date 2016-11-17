@@ -4,7 +4,6 @@ import luke.zhou.model.Command;
 
 import java.io.Console;
 import java.util.Arrays;
-import java.util.concurrent.SynchronousQueue;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,32 +16,49 @@ public class ControlCenter implements Runnable
     @Override
     public void run()
     {
-        Console c = System.console();
-        if (c == null)
-        {
-            System.err.println("No console.");
-            System.exit(1);
-        }
 
-        while (true)
-        {
-            String cmd = c.readLine("Enter your command: ");
+        if(Main.isDebug){
             try
             {
-                Command inputCmd = Command.get(cmd);
-                if (inputCmd == null) {
-                    System.out.println("Can not recognize the command: "+ cmd);
-                    continue;
-                }
-                if(Command.HELP.equals(inputCmd)){
-                    displayHelpInfo();
-                    continue;
-                }
-                Main.getMainCommandQueue().put(inputCmd);
-            }
-            catch (InterruptedException e)
+                Main.getMainCommandQueue().put(Command.GET_INFO);
+            } catch (InterruptedException e)
             {
                 e.printStackTrace();
+            }
+        }
+        else
+        {
+            Console c = System.console();
+
+            if (c == null)
+            {
+                System.err.println("No console.");
+                System.exit(1);
+            }
+            else
+            {
+                while (true)
+                {
+                    String cmd = c.readLine("Enter your command: ");
+                    try
+                    {
+                        Command inputCmd = Command.get(cmd);
+                        if (inputCmd == null)
+                        {
+                            System.out.println("Can not recognize the command: " + cmd);
+                            continue;
+                        }
+                        if (Command.HELP.equals(inputCmd))
+                        {
+                            displayHelpInfo();
+                            continue;
+                        }
+                        Main.getMainCommandQueue().put(inputCmd);
+                    } catch (InterruptedException e)
+                    {
+                        e.printStackTrace();
+                    }
+                }
             }
         }
     }

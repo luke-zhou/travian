@@ -1,5 +1,6 @@
 package luke.zhou;
 
+import luke.zhou.io.MailIO;
 import luke.zhou.model.Command;
 import luke.zhou.model.travian.Game;
 import luke.zhou.model.travian.TroopMovement;
@@ -17,28 +18,24 @@ public class TravianHelper implements Runnable
 {
     private static final Logger LOG = LoggerFactory.getLogger(TravianHelper.class);
 
-    private String username;
-    private String password;
-
     private BlockingQueue<Command> travianCommandQueue;
 
     private Page travian;
 
     private Game game;
 
-    public TravianHelper(String username, String password)
+    public TravianHelper(Game game)
     {
-        this.username = username;
-        this.password = password;
         travianCommandQueue = new LinkedBlockingQueue<>();
 
-        travian = new Page("http://ts4.travian.com.au/");
+        travian = new Page("http://ts4.travian.com.au");
+
+        this.game = game;
     }
 
     public void run()
     {
-        game = new Game();
-        travian.login(username, password);
+        travian.login(game.getUsername(), game.getPassword());
         Main.getMainCommandQueue().add(Command.READY);
         int clocktick = 0;
         while (true)
@@ -64,6 +61,9 @@ public class TravianHelper implements Runnable
                             break;
                         case STOP_RAID:
                             game.setAutoRaid(false);
+                            break;
+                        case GET_INFO:
+                            reloadInfo();
                             break;
                         default:
                             LOG.debug("got cmd for travian helper:" + cmd);
@@ -106,6 +106,12 @@ public class TravianHelper implements Runnable
         travian.home(game);
     }
 
+    private void reloadInfo(){
+        travian.getInfo(game);
+        LOG.info("Game: " + game);
+    }
+
+
     private void checkUnderAttack() throws InterruptedException
     {
         travian.home(game);
@@ -114,7 +120,7 @@ public class TravianHelper implements Runnable
             if (game.getAlarmOn())
             {
                 game.switchAlarmOff();
-                Main.getMainCommandQueue().put(Command.SEND_ALARM);
+                new Thread(new MailIO(game.getNotificationEmail())).start();
             }
         }
         else

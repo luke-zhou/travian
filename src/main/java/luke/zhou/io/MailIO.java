@@ -14,13 +14,20 @@ import java.util.Properties;
  * Date: 14/11/2016
  * Time: 2:17 PM
  */
-public class MailIO
+public class MailIO implements Runnable
 {
     private static final Logger LOG = LoggerFactory.getLogger(MailIO.class);
     private final static String username = "generalpurpose2017@gmail.com";
-    private final static String password = "8G1l3,T0d8y";
+    private final static String password = "********";
 
-    public static void sendUnderAttackAlarm(String notificationEmail)
+    private String notificationEmail;
+
+    public MailIO(String notificationEmail)
+    {
+        this.notificationEmail = notificationEmail;
+    }
+
+    public void sendUnderAttackAlarm()
     {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
@@ -54,5 +61,11 @@ public class MailIO
         {
             throw new RuntimeException(e);
         }
+    }
+
+    @Override
+    public void run()
+    {
+       sendUnderAttackAlarm();
     }
 }

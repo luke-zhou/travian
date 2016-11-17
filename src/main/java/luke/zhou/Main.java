@@ -5,6 +5,7 @@ package luke.zhou;
 
 import luke.zhou.io.MailIO;
 import luke.zhou.model.Command;
+import luke.zhou.model.travian.Game;
 import luke.zhou.util.TimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,31 +20,54 @@ public class Main
 
     private static BlockingQueue<Command> mainCommandQueue = new LinkedBlockingQueue<>();
 
+    public static boolean isDebug = false;
+
 
     public static void main(String[] args) throws InterruptedException
     {
-        Console c = System.console();
-        if (c == null)
+
+        String login;
+        String password;
+        String notificationEmail;
+
+        if (isDebug)
         {
-            System.err.println("No console.");
-            System.exit(1);
+            System.out.println("Debug Mode....................");
+            login = "tdxh20";
+            password = "********";
+            notificationEmail = "Sharlock@gmail.com";
         }
-        System.out.println("Welcome to Travian Helper");
-        String login = c.readLine("Enter your login: ");
-        String password = c.readLine("Enter your password: ");
-        String notificationEmail = c.readLine("Enter your notification email: ");
+        else
+        {
+            Console c = System.console();
+            if (c == null)
+            {
+                System.err.println("No console.");
+                System.exit(1);
+            }
+
+            System.out.println("Welcome to Travian Helper");
+            login = c.readLine("Enter your login: ");
+            password = c.readLine("Enter your password: ");
+            notificationEmail = c.readLine("Enter your notification email: ");
+
+        }
 
         LOG.debug(login + "/" + password + "/" + notificationEmail);
 
-        TravianHelper travianHelper = new TravianHelper(login, password);
-        new Thread(travianHelper).start();
+        Game game = new Game();
+        game.setUsername(login);
+        game.setPassword(password);
+        game.setNotificationEmail(notificationEmail);
 
+        TravianHelper travianHelper = new TravianHelper(game);
+        new Thread(travianHelper).start();
 
         System.out.print("Loading");
         while (true)
         {
             Command cmd = mainCommandQueue.poll();
-            if (cmd != null&& Command.READY.equals(cmd)) break;
+            if (cmd != null && Command.READY.equals(cmd)) break;
             System.out.print(".");
             Thread.sleep(TimeUtil.seconds(2));
         }
@@ -58,9 +82,6 @@ public class Main
                 LOG.debug("got cmd for main:" + cmd);
                 switch (cmd)
                 {
-                    case SEND_ALARM:
-                        MailIO.sendUnderAttackAlarm(notificationEmail);
-                        break;
                     case RAID:
                     case REPEAT_RAID:
                     case STOP_RAID:
