@@ -96,6 +96,26 @@ public class Page
         submit(passwordWE);
     }
 
+    public String transferResource(Village from, Village to){
+        loadURL(from.getLink());
+        loadURL("build.php?t=5&id=35");
+        driver.findElement(By.xpath("//input[@id='r1']")).sendKeys("300");
+        driver.findElement(By.xpath("//input[@id='r2']")).sendKeys("400");
+        driver.findElement(By.xpath("//input[@id='r3']")).sendKeys("300");
+        driver.findElement(By.xpath("//input[@id='enterVillageName']")).sendKeys(to.getName());
+
+        submit(driver.findElement(By.xpath("//button[@id='enabledButton']")));
+        click(driver.findElement(By.xpath("//button[@id='enabledButton']")));
+        return driver.findElement(By.xpath("//p[@id='note']")).getText();
+
+    }
+
+    private void click(WebElement element)
+    {
+        element.click();
+        afterActionWait();
+    }
+
     public String sendRaid()
     {
         loadURL("build.php?tt=99&id=39");

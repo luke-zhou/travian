@@ -11,13 +11,14 @@ import java.util.Map;
  */
 public enum Command
 {
-    SEND_ALARM("send alarm", "not available for user", false),
+    SEND_ALARM("send alarm", "", false),
     RAID("raid", "check all in the raid list, raid once", true),
     REPEAT_RAID("repeat raid", "check all in the raid list, raid until stop", true),
     STOP_RAID("stop raid", "stop repeat raid", true),
     GET_INFO("info", "display brief information of account", true),
     HELP("help", "display command list", true),
-    READY("ready", "not available for user", false),
+    READY("ready", "", false),
+    TRANSFER("transfer", "transfer resouse to new village", true),
     EXIT("exit", "Exit program", true);
 
     private final String value;
@@ -45,6 +46,11 @@ public enum Command
         {
             lookup.put(cmd.getValue(), cmd);
         }
+    }
+
+    public boolean isVisible()
+    {
+        return visible;
     }
 
     public static Command get(String value)

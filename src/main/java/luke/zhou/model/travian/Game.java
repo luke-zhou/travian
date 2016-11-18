@@ -1,6 +1,7 @@
 package luke.zhou.model.travian;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -16,15 +17,22 @@ public class Game
     private String username;
     private String password;
     private String notificationEmail;
+    private Date date;
 
 
     private List<Village> villages;
+    private List<Building> buildings;
 
     public Game()
     {
         this.alarmOn = true;
         autoRaid = false;
         this.villages = new ArrayList<>();
+    }
+
+    public Village getVillage(String name)
+    {
+       return villages.stream().filter(v-> v.getName().toLowerCase().equals(name.toLowerCase())).findFirst().get();
     }
 
     @Override
@@ -35,6 +43,16 @@ public class Game
                 ", autoRaid=" + autoRaid +
                 ", villages=" + villages +
                 '}';
+    }
+
+    public Date getDate()
+    {
+        return date;
+    }
+
+    public void setDate(Date date)
+    {
+        this.date = date;
     }
 
     public String getUsername()

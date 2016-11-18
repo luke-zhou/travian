@@ -1,1201 +1,345 @@
-20:42:55.385 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-20:43:39.383 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-20:46:41.070 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/CArnegie71/sharlock@gmail.com
-20:47:33.710 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-20:47:42.713 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:47:50.850 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:47:58.273 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:48:09.413 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:48:17.484 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:48:28.887 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
-21:41:18.637 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-21:41:24.550 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:HELP
-21:41:42.147 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-21:41:57.887 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
-21:42:05.123 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-21:42:08.923 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
-21:42:16.652 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
-21:42:26.868 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
-21:42:36.811 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='1 Attack', inComingRein='21 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
-21:43:17.600 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-21:43:20.874 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:HELP
-21:43:43.732 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-21:45:47.820 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-21:45:56.027 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help	display command list
-21:46:34.773 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - h	/d/s
-21:47:39.297 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/
-21:47:42.043 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help		display command list
-21:51:29.987 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
-21:51:33.069 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help                display command list
-08:38:36.666 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-08:38:50.347 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help                display command list
-08:39:23.492 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-08:39:40.730 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='25 Reinf.', outGoingAttack='32 Attacks', adventure='null'}
-08:39:48.763 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-08:39:50.532 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='25 Reinf.', outGoingAttack='32 Attacks', adventure='null'}
-08:40:03.800 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 7 raids have been made.
-08:40:14.998 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='25 Reinf.', outGoingAttack='39 Attacks', adventure='null'}
-13:44:36.767 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
-13:44:41.277 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-14:04:44.392 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
-14:04:55.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help                display command list
-14:05:10.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-14:05:25.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-14:05:40.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:stop raid           stop repeat raid
-14:05:55.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-14:06:10.391 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:help                display command list
-14:10:29.178 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-14:11:15.587 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-14:11:37.692 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-14:11:40.995 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='35 Reinf.', outGoingAttack='8 Attacks', adventure='null'}
-14:11:51.355 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
-14:12:00.906 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='35 Reinf.', outGoingAttack='19 Attacks', adventure='null'}
-14:40:58.893 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-14:41:24.103 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-14:41:37.418 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='26 Reinf.', outGoingAttack='17 Attacks', adventure='null'}
-14:41:45.899 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='26 Reinf.', outGoingAttack='17 Attacks', adventure='null'}
-14:41:47.903 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-14:42:42.830 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-14:43:17.062 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-14:43:29.753 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-14:43:31.696 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='27 Reinf.', outGoingAttack='16 Attacks', adventure='null'}
-14:43:40.462 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
-14:43:44.840 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
-15:05:53.406 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-15:06:19.111 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-15:06:34.032 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='24 Attacks', adventure='null'}
-15:06:39.989 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='24 Attacks', adventure='null'}
-15:06:44.589 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-15:06:50.110 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='24 Attacks', adventure='null'}
-15:07:01.936 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-15:07:10.298 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='33 Attacks', adventure='null'}
-15:07:17.640 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
-15:16:02.186 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-15:16:24.626 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-15:16:40.600 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='19 Reinf.', outGoingAttack='32 Attacks', adventure='null'}
-15:16:44.026 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
-15:16:48.914 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='19 Reinf.', outGoingAttack='32 Attacks', adventure='null'}
-15:37:21.736 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-15:37:49.593 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-15:38:02.519 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='17 Reinf.', outGoingAttack='27 Attacks', adventure='null'}
-15:38:05.176 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-15:38:13.443 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='17 Reinf.', outGoingAttack='27 Attacks', adventure='null'}
-15:38:25.995 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
-15:38:33.437 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='17 Reinf.', outGoingAttack='38 Attacks', adventure='null'}
-15:38:52.658 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
-15:39:08.826 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
-15:43:42.312 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='16 Reinf.', outGoingAttack='37 Attacks', adventure='null'}
-17:12:30.550 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-17:13:17.057 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-17:13:29.291 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='16 Attacks', adventure='null'}
-17:13:35.538 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='16 Attacks', adventure='null'}
-17:13:43.965 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-17:13:45.550 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='16 Attacks', adventure='null'}
-17:13:45.550 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-17:18:56.338 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:19:03.866 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:19:12.040 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:19:24.002 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:19:31.510 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:19:41.968 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:19:49.465 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:19:56.536 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:20:03.406 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:20:14.431 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:20:21.189 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:20:27.937 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:20:37.991 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:20:48.688 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:20:59.640 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:21:06.594 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:21:13.876 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:21:23.440 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:21:31.487 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:21:37.366 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-17:21:47.474 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
-17:21:58.008 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
-17:22:07.744 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
-17:22:16.657 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
-17:22:23.518 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
-17:22:29.630 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='13 Attacks', adventure='null'}
-20:19:47.067 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-20:20:22.941 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-20:20:38.318 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='39 Reinf.', outGoingAttack='21 Attacks', adventure='null'}
-20:21:01.267 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-20:25:48.896 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='38 Reinf.', outGoingAttack='21 Attacks', adventure='null'}
-20:25:48.896 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-20:30:56.722 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='39 Reinf.', outGoingAttack='19 Attacks', adventure='null'}
-20:30:56.722 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-20:31:10.869 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-20:31:18.650 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='39 Reinf.', outGoingAttack='29 Attacks', adventure='null'}
-20:36:26.100 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='38 Reinf.', outGoingAttack='29 Attacks', adventure='null'}
-20:36:26.100 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:1
-20:41:33.961 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='37 Reinf.', outGoingAttack='29 Attacks', adventure='null'}
-20:41:33.961 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:2
-20:46:40.880 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='34 Reinf.', outGoingAttack='28 Attacks', adventure='null'}
-20:46:40.880 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:3
-20:51:49.411 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='27 Attacks', adventure='null'}
-20:51:49.411 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:4
-20:52:00.306 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-20:52:07.249 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='37 Attacks', adventure='null'}
-20:57:18.141 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='30 Reinf.', outGoingAttack='36 Attacks', adventure='null'}
-20:57:18.141 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:5
-21:02:28.738 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='26 Reinf.', outGoingAttack='35 Attacks', adventure='null'}
-21:02:28.738 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:6
-21:07:35.662 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='28 Reinf.', outGoingAttack='33 Attacks', adventure='null'}
-21:07:35.662 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:7
-21:12:44.670 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='28 Reinf.', outGoingAttack='32 Attacks', adventure='null'}
-21:12:44.671 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:8
-21:12:58.787 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
-21:13:10.270 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='28 Reinf.', outGoingAttack='43 Attacks', adventure='null'}
-21:18:21.535 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='28 Reinf.', outGoingAttack='43 Attacks', adventure='null'}
-21:18:21.535 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:9
-21:23:28.399 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='26 Reinf.', outGoingAttack='40 Attacks', adventure='null'}
-21:23:28.399 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:10
-21:28:37.860 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='26 Reinf.', outGoingAttack='39 Attacks', adventure='null'}
-21:28:37.860 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:11
-21:33:47.298 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='40 Attacks', adventure='1 Adventure'}
-21:33:47.298 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:12
-21:33:54.939 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
-21:34:02.503 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='51 Attacks', adventure='1 Adventure'}
-21:39:09.790 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='22 Reinf.', outGoingAttack='48 Attacks', adventure='1 Adventure'}
-21:39:09.790 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:13
-21:44:19.149 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='21 Reinf.', outGoingAttack='45 Attacks', adventure='1 Adventure'}
-21:44:19.149 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:14
-21:49:26.250 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='21 Reinf.', outGoingAttack='43 Attacks', adventure='1 Adventure'}
-21:49:26.250 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:15
-21:54:36.976 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='18 Reinf.', outGoingAttack='40 Attacks', adventure='1 Adventure'}
-21:54:36.976 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:16
-21:54:46.264 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-21:54:55.332 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='18 Reinf.', outGoingAttack='50 Attacks', adventure='1 Adventure'}
-22:00:01.947 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='20 Reinf.', outGoingAttack='48 Attacks', adventure='1 Adventure'}
-22:00:01.948 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:17
-22:05:14.296 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='44 Attacks', adventure='1 Adventure'}
-22:05:14.296 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:18
-22:10:22.915 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='26 Reinf.', outGoingAttack='41 Attacks', adventure='1 Adventure'}
-22:10:22.915 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:19
-22:15:34.018 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='27 Reinf.', outGoingAttack='39 Attacks', adventure='null'}
-22:15:34.018 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:20
-22:15:45.898 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-22:15:56.809 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='27 Reinf.', outGoingAttack='49 Attacks', adventure='null'}
-22:21:03.093 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='28 Reinf.', outGoingAttack='47 Attacks', adventure='null'}
-22:21:03.093 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:21
-22:26:12.912 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='30 Reinf.', outGoingAttack='44 Attacks', adventure='null'}
-22:26:12.912 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:22
-22:31:21.829 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='43 Attacks', adventure='null'}
-22:31:21.829 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:23
-22:36:28.005 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='34 Reinf.', outGoingAttack='39 Attacks', adventure='null'}
-22:36:28.005 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:24
-22:36:37.720 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-22:36:45.859 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='34 Reinf.', outGoingAttack='49 Attacks', adventure='null'}
-22:41:56.159 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='34 Reinf.', outGoingAttack='47 Attacks', adventure='null'}
-22:41:56.159 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:25
-22:47:03.554 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='35 Reinf.', outGoingAttack='44 Attacks', adventure='null'}
-22:47:03.554 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:26
-22:52:13.801 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='34 Reinf.', outGoingAttack='43 Attacks', adventure='null'}
-22:52:13.801 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:27
-22:57:23.616 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='37 Reinf.', outGoingAttack='39 Attacks', adventure='null'}
-22:57:23.616 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:28
-22:57:33.111 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
-22:57:41.445 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='37 Reinf.', outGoingAttack='50 Attacks', adventure='null'}
-23:02:51.001 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='37 Reinf.', outGoingAttack='48 Attacks', adventure='null'}
-23:02:51.001 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:29
-23:08:01.362 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='39 Reinf.', outGoingAttack='45 Attacks', adventure='null'}
-23:08:01.362 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:30
-23:13:13.187 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='37 Reinf.', outGoingAttack='44 Attacks', adventure='null'}
-23:13:13.187 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:31
-23:18:19.980 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='39 Reinf.', outGoingAttack='40 Attacks', adventure='null'}
-23:18:19.981 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:32
-23:18:30.151 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
-23:18:41.211 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='39 Reinf.', outGoingAttack='51 Attacks', adventure='null'}
-23:23:50.716 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='40 Reinf.', outGoingAttack='49 Attacks', adventure='null'}
-23:23:50.716 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:33
-23:28:57.156 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='42 Reinf.', outGoingAttack='46 Attacks', adventure='null'}
-23:28:57.156 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:34
-23:34:06.158 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='40 Reinf.', outGoingAttack='45 Attacks', adventure='null'}
-23:34:06.158 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:35
-23:39:15.138 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='43 Reinf.', outGoingAttack='41 Attacks', adventure='null'}
-23:39:15.138 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:36
-23:39:26.868 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-23:39:38.180 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='43 Reinf.', outGoingAttack='51 Attacks', adventure='null'}
-23:44:48.042 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='48 Attacks', adventure='null'}
-23:44:48.042 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:37
-23:49:55.256 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='45 Attacks', adventure='null'}
-23:49:55.257 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:38
-23:55:04.686 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='43 Reinf.', outGoingAttack='44 Attacks', adventure='null'}
-23:55:04.686 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:39
-00:00:16.310 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='40 Attacks', adventure='null'}
-00:00:16.311 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:40
-00:00:24.633 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-00:00:33.734 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='49 Attacks', adventure='null'}
-00:05:41.324 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='46 Attacks', adventure='null'}
-00:05:41.324 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:41
-00:10:50.758 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='43 Attacks', adventure='null'}
-00:10:50.758 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:42
-00:16:00.877 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='42 Attacks', adventure='null'}
-00:16:00.878 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:43
-00:21:08.816 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='38 Attacks', adventure='null'}
-00:21:08.817 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:44
-00:21:18.525 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-00:21:29.839 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='48 Attacks', adventure='null'}
-00:26:36.980 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='46 Attacks', adventure='null'}
-00:26:36.980 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:45
-00:31:46.932 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='47 Reinf.', outGoingAttack='43 Attacks', adventure='null'}
-00:31:46.932 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:46
-00:36:53.885 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='42 Attacks', adventure='null'}
-00:36:53.885 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:47
-00:42:03.954 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='38 Attacks', adventure='null'}
-00:42:03.954 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:48
-00:42:13.644 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
-00:42:24.585 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='49 Attacks', adventure='null'}
-00:47:34.805 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='47 Attacks', adventure='null'}
-00:47:34.805 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:49
-00:52:44.011 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='44 Attacks', adventure='null'}
-00:52:44.011 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:50
-00:57:54.691 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='44 Reinf.', outGoingAttack='43 Attacks', adventure='null'}
-00:57:54.691 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:51
-01:03:02.147 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='44 Reinf.', outGoingAttack='39 Attacks', adventure='null'}
-01:03:02.147 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:52
-01:03:12.418 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 11 raids have been made.
-01:03:20.487 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='44 Reinf.', outGoingAttack='50 Attacks', adventure='null'}
-01:08:29.166 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='48 Attacks', adventure='null'}
-01:08:29.166 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:53
-01:13:36.432 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='45 Attacks', adventure='null'}
-01:13:36.432 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:54
-01:18:46.017 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='44 Reinf.', outGoingAttack='44 Attacks', adventure='null'}
-01:18:46.017 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:55
-01:23:52.616 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='44 Reinf.', outGoingAttack='40 Attacks', adventure='null'}
-01:23:52.616 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:56
-01:24:07.357 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-01:24:14.917 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='44 Reinf.', outGoingAttack='50 Attacks', adventure='null'}
-01:29:24.833 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='47 Attacks', adventure='null'}
-01:29:24.833 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:57
-01:34:35.190 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='47 Reinf.', outGoingAttack='44 Attacks', adventure='null'}
-01:34:35.191 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:58
-01:39:44.141 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='43 Attacks', adventure='null'}
-01:39:44.141 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:59
-01:44:54.301 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='39 Attacks', adventure='null'}
-01:44:54.301 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:60
-01:45:04.378 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-01:45:12.702 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='45 Reinf.', outGoingAttack='49 Attacks', adventure='null'}
-01:50:21.127 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='47 Reinf.', outGoingAttack='46 Attacks', adventure='null'}
-01:55:27.861 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='48 Reinf.', outGoingAttack='43 Attacks', adventure='null'}
-02:00:34.500 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='42 Attacks', adventure='null'}
-02:05:43.944 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='50 Reinf.', outGoingAttack='34 Attacks', adventure='null'}
-02:10:54.244 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='51 Reinf.', outGoingAttack='33 Attacks', adventure='null'}
-02:16:05.307 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='50 Reinf.', outGoingAttack='30 Attacks', adventure='null'}
-02:21:14.423 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='30 Attacks', adventure='null'}
-02:26:24.964 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='26 Attacks', adventure='null'}
-02:31:33.211 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='48 Reinf.', outGoingAttack='24 Attacks', adventure='null'}
-02:36:44.078 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='46 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
-02:41:55.156 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='43 Reinf.', outGoingAttack='22 Attacks', adventure='null'}
-02:47:04.482 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='41 Reinf.', outGoingAttack='19 Attacks', adventure='null'}
-02:52:11.409 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='44 Reinf.', outGoingAttack='16 Attacks', adventure='null'}
-02:57:18.303 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='42 Reinf.', outGoingAttack='15 Attacks', adventure='null'}
-03:02:28.483 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='40 Reinf.', outGoingAttack='14 Attacks', adventure='null'}
-03:07:36.580 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='39 Reinf.', outGoingAttack='11 Attacks', adventure='null'}
-03:12:45.343 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='41 Reinf.', outGoingAttack='9 Attacks', adventure='null'}
-03:17:52.495 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='38 Reinf.', outGoingAttack='9 Attacks', adventure='null'}
-03:22:59.784 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='36 Reinf.', outGoingAttack='8 Attacks', adventure='null'}
-03:28:06.048 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='35 Reinf.', outGoingAttack='8 Attacks', adventure='null'}
-03:33:14.229 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='36 Reinf.', outGoingAttack='5 Attacks', adventure='null'}
-03:38:23.084 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='33 Reinf.', outGoingAttack='5 Attacks', adventure='null'}
-03:43:29.436 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='32 Reinf.', outGoingAttack='4 Attacks', adventure='null'}
-03:48:37.420 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='31 Reinf.', outGoingAttack='3 Attacks', adventure='null'}
-03:53:45.860 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='30 Reinf.', outGoingAttack='2 Attacks', adventure='null'}
-03:58:56.865 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='29 Reinf.', outGoingAttack='1 Attack', adventure='null'}
-04:04:03.233 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='27 Reinf.', outGoingAttack='1 Attack', adventure='null'}
-04:09:12.950 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='25 Reinf.', outGoingAttack='1 Attack', adventure='null'}
-04:14:20.705 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='1 Attack', adventure='null'}
-04:19:28.690 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='23 Reinf.', outGoingAttack='1 Attack', adventure='null'}
-04:24:36.980 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='22 Reinf.', outGoingAttack='1 Attack', adventure='null'}
-04:29:48.096 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='20 Reinf.', outGoingAttack='1 Attack', adventure='null'}
-04:34:56.350 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='19 Reinf.', outGoingAttack='null', adventure='null'}
-04:40:06.156 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='18 Reinf.', outGoingAttack='null', adventure='null'}
-04:45:14.740 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='17 Reinf.', outGoingAttack='null', adventure='null'}
-04:50:22.322 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='17 Reinf.', outGoingAttack='null', adventure='null'}
-04:55:30.524 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='14 Reinf.', outGoingAttack='null', adventure='null'}
-05:00:36.898 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='13 Reinf.', outGoingAttack='null', adventure='null'}
-05:05:48.813 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='12 Reinf.', outGoingAttack='null', adventure='null'}
-05:10:59.810 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='12 Reinf.', outGoingAttack='null', adventure='null'}
-05:16:06.573 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='9 Reinf.', outGoingAttack='null', adventure='null'}
-05:21:17.600 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='8 Reinf.', outGoingAttack='null', adventure='null'}
-05:26:26.896 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='8 Reinf.', outGoingAttack='null', adventure='null'}
-05:31:34.423 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='7 Reinf.', outGoingAttack='null', adventure='null'}
-05:36:43.432 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='5 Reinf.', outGoingAttack='null', adventure='null'}
-05:41:54.444 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='3 Reinf.', outGoingAttack='null', adventure='null'}
-05:47:04.866 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='3 Reinf.', outGoingAttack='null', adventure='null'}
-05:52:13.996 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='2 Reinf.', outGoingAttack='null', adventure='null'}
-05:57:22.559 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='1 Reinf.', outGoingAttack='null', adventure='null'}
-06:02:32.112 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='1 Reinf.', outGoingAttack='null', adventure='null'}
-06:07:43.365 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='10 Attacks', adventure='null'}
-06:12:54.359 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='29 Attacks', adventure='null'}
-06:18:04.989 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='29 Attacks', adventure='null'}
-06:23:12.995 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='29 Attacks', adventure='null'}
-06:28:24.725 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='29 Attacks', adventure='null'}
-06:33:34.964 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='29 Attacks', adventure='null'}
-19:49:13.469 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
-19:51:16.946 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
-19:51:16.946 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
-20:10:42.620 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/CArnegie71/sharlock@gmail.com
-20:11:00.222 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-20:11:09.256 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:12:48.628 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-20:13:19.054 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-20:13:33.098 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:13:42.848 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:send alarm          not available for user
-20:13:50.396 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-20:14:05.400 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-20:18:33.095 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
-20:18:45.561 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-20:18:52.512 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:19:02.581 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:24:11.014 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:29:18.386 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:34:20.676 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-20:34:29.020 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:35:35.686 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:raid                check all in the raid list, raid once
-20:37:50.709 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-20:39:29.017 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
-20:39:43.224 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 8 raids have been made.
-20:39:53.164 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:39:59.734 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-20:44:59.729 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
-20:45:14.046 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-20:45:26.760 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='30 Reinf.', outGoingAttack='40 Attacks', adventure='null'}
-20:45:35.792 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='30 Reinf.', outGoingAttack='40 Attacks', adventure='null'}
-20:50:35.788 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-20:50:42.511 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='30 Reinf.', outGoingAttack='39 Attacks', adventure='null'}
-20:50:42.511 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-20:50:53.717 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 8 raids have been made.
-20:51:02.460 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='30 Reinf.', outGoingAttack='47 Attacks', adventure='null'}
-20:56:13.046 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='27 Reinf.', outGoingAttack='46 Attacks', adventure='null'}
-20:56:13.046 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:1
-21:01:20.582 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='28 Reinf.', outGoingAttack='45 Attacks', adventure='null'}
-21:01:20.582 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:2
-21:06:29.901 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='28 Reinf.', outGoingAttack='42 Attacks', adventure='null'}
-21:06:29.902 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:3
-21:11:38.650 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='28 Reinf.', outGoingAttack='42 Attacks', adventure='null'}
-21:11:38.650 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:4
-21:11:49.901 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-21:11:59.194 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='29 Reinf.', outGoingAttack='50 Attacks', adventure='null'}
-21:17:07.239 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-21:17:07.239 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:5
-21:17:21.077 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:send alarm          not available for user
-21:17:27.154 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-21:22:16.510 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='null', inComingRein='28 Reinf.', outGoingAttack='46 Attacks', adventure='null'}
-21:22:16.510 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:6
-21:27:26.765 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-21:27:26.765 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:7
-21:27:27.228 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:send alarm          not available for user
-21:27:33.478 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-21:32:33.534 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
-21:32:34.638 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-21:32:34.638 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:8
-21:32:44.780 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-21:32:53.381 [Thread-1] DEBUG luke.zhou.Page - TroopMovement{inComingAttack='14 Attacks', inComingRein='null', outGoingAttack='null', adventure='null'}
-21:33:59.867 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-21:34:28.372 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-21:34:44.133 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-21:34:52.101 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:send alarm          not available for user
-21:34:59.227 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-21:37:47.618 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-21:38:08.569 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-21:38:28.284 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-21:38:33.804 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:send alarm          not available for user
-21:38:40.006 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-21:38:55.011 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-21:43:28.287 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-21:43:39.183 [Thread-1] DEBUG luke.zhou.Page - Village size:4
-21:43:39.183 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-21:43:51.108 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 8 raids have been made.
-21:43:59.099 [Thread-1] DEBUG luke.zhou.Page - Village size:6
-21:49:10.122 [Thread-1] DEBUG luke.zhou.Page - Village size:8
-21:49:10.122 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:1
-21:54:21.234 [Thread-1] DEBUG luke.zhou.Page - Village size:10
-21:54:21.235 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:2
-21:59:28.926 [Thread-1] DEBUG luke.zhou.Page - Village size:12
-21:59:28.926 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:3
-22:04:36.485 [Thread-1] DEBUG luke.zhou.Page - Village size:14
-22:04:36.485 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:4
-22:04:46.496 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-22:04:56.764 [Thread-1] DEBUG luke.zhou.Page - Village size:16
-22:10:04.940 [Thread-1] DEBUG luke.zhou.Page - Village size:18
-22:10:04.940 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:5
-22:15:12.657 [Thread-1] DEBUG luke.zhou.Page - Village size:20
-22:15:12.657 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:6
-22:20:22.464 [Thread-1] DEBUG luke.zhou.Page - Village size:22
-22:20:22.465 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:7
-22:25:29.707 [Thread-1] DEBUG luke.zhou.Page - Village size:24
-22:25:29.707 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:8
-22:25:39.570 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-22:25:47.207 [Thread-1] DEBUG luke.zhou.Page - Village size:26
-22:30:55.253 [Thread-1] DEBUG luke.zhou.Page - Village size:28
-22:30:55.253 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:9
-22:36:05.246 [Thread-1] DEBUG luke.zhou.Page - Village size:30
-22:36:05.246 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:10
-22:41:17.243 [Thread-1] DEBUG luke.zhou.Page - Village size:32
-22:41:17.243 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:11
-22:46:27.327 [Thread-1] DEBUG luke.zhou.Page - Village size:34
-22:46:27.327 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:12
-22:46:38.598 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-22:46:49.523 [Thread-1] DEBUG luke.zhou.Page - Village size:36
-22:51:58.819 [Thread-1] DEBUG luke.zhou.Page - Village size:38
-22:51:58.819 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:13
-22:57:06.152 [Thread-1] DEBUG luke.zhou.Page - Village size:40
-22:57:06.152 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:14
-23:02:13.801 [Thread-1] DEBUG luke.zhou.Page - Village size:42
-23:02:13.801 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:15
-23:07:21.388 [Thread-1] DEBUG luke.zhou.Page - Village size:44
-23:07:21.388 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:16
-23:07:30.768 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-23:07:42.039 [Thread-1] DEBUG luke.zhou.Page - Village size:46
-23:12:48.918 [Thread-1] DEBUG luke.zhou.Page - Village size:48
-23:12:48.918 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:17
-23:17:59.488 [Thread-1] DEBUG luke.zhou.Page - Village size:50
-23:17:59.488 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:18
-23:23:09.873 [Thread-1] DEBUG luke.zhou.Page - Village size:52
-23:23:09.873 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:19
-23:28:18.135 [Thread-1] DEBUG luke.zhou.Page - Village size:54
-23:28:18.136 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:20
-23:28:27.352 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-23:28:37.305 [Thread-1] DEBUG luke.zhou.Page - Village size:56
-23:33:44.377 [Thread-1] DEBUG luke.zhou.Page - Village size:58
-23:33:44.377 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:21
-23:38:53.430 [Thread-1] DEBUG luke.zhou.Page - Village size:60
-23:38:53.431 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:22
-23:44:04.012 [Thread-1] DEBUG luke.zhou.Page - Village size:62
-23:44:04.012 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:23
-23:49:11.293 [Thread-1] DEBUG luke.zhou.Page - Village size:64
-23:49:11.293 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:24
-23:49:20.328 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-23:49:31.252 [Thread-1] DEBUG luke.zhou.Page - Village size:66
-23:54:39.841 [Thread-1] DEBUG luke.zhou.Page - Village size:68
-23:54:39.841 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:25
-23:59:47.420 [Thread-1] DEBUG luke.zhou.Page - Village size:70
-23:59:47.421 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:26
-00:04:55.433 [Thread-1] DEBUG luke.zhou.Page - Village size:72
-00:04:55.434 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:27
-00:10:06.125 [Thread-1] DEBUG luke.zhou.Page - Village size:74
-00:10:06.126 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:28
-00:10:19.664 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-00:10:28.184 [Thread-1] DEBUG luke.zhou.Page - Village size:76
-00:15:38.220 [Thread-1] DEBUG luke.zhou.Page - Village size:78
-00:15:38.220 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:29
-00:20:45.617 [Thread-1] DEBUG luke.zhou.Page - Village size:80
-00:20:45.617 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:30
-00:25:55.267 [Thread-1] DEBUG luke.zhou.Page - Village size:82
-00:25:55.267 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:31
-00:31:02.452 [Thread-1] DEBUG luke.zhou.Page - Village size:84
-00:31:02.452 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:32
-00:31:14.247 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-00:31:23.437 [Thread-1] DEBUG luke.zhou.Page - Village size:86
-00:36:32.784 [Thread-1] DEBUG luke.zhou.Page - Village size:88
-00:36:32.784 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:33
-00:41:39.702 [Thread-1] DEBUG luke.zhou.Page - Village size:90
-00:41:39.702 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:34
-00:46:48.550 [Thread-1] DEBUG luke.zhou.Page - Village size:92
-00:46:48.551 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:35
-00:51:58.308 [Thread-1] DEBUG luke.zhou.Page - Village size:94
-00:51:58.308 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:36
-00:52:10.973 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-00:52:17.909 [Thread-1] DEBUG luke.zhou.Page - Village size:96
-00:57:29.276 [Thread-1] DEBUG luke.zhou.Page - Village size:98
-00:57:29.276 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:37
-01:02:38.052 [Thread-1] DEBUG luke.zhou.Page - Village size:100
-01:02:38.053 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:38
-01:07:47.542 [Thread-1] DEBUG luke.zhou.Page - Village size:102
-01:07:47.542 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:39
-01:12:55.262 [Thread-1] DEBUG luke.zhou.Page - Village size:104
-01:12:55.262 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:40
-01:13:06.861 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-01:13:17.796 [Thread-1] DEBUG luke.zhou.Page - Village size:106
-01:18:28.116 [Thread-1] DEBUG luke.zhou.Page - Village size:108
-01:18:28.116 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:41
-01:23:36.143 [Thread-1] DEBUG luke.zhou.Page - Village size:110
-01:23:36.143 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:42
-01:28:42.422 [Thread-1] DEBUG luke.zhou.Page - Village size:112
-01:28:42.423 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:43
-01:33:48.992 [Thread-1] DEBUG luke.zhou.Page - Village size:114
-01:33:48.992 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:44
-01:34:00.470 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 10 raids have been made.
-01:34:09.354 [Thread-1] DEBUG luke.zhou.Page - Village size:116
-01:39:19.498 [Thread-1] DEBUG luke.zhou.Page - Village size:118
-01:39:19.498 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:45
-01:44:26.398 [Thread-1] DEBUG luke.zhou.Page - Village size:120
-01:44:26.398 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:46
-01:49:34.154 [Thread-1] DEBUG luke.zhou.Page - Village size:122
-01:49:34.154 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:47
-01:54:42.530 [Thread-1] DEBUG luke.zhou.Page - Village size:124
-01:54:42.530 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:48
-01:54:50.888 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-01:54:59.368 [Thread-1] DEBUG luke.zhou.Page - Village size:126
-02:00:08.245 [Thread-1] DEBUG luke.zhou.Page - Village size:128
-02:05:16.871 [Thread-1] DEBUG luke.zhou.Page - Village size:130
-02:10:27.621 [Thread-1] DEBUG luke.zhou.Page - Village size:132
-02:15:38.810 [Thread-1] DEBUG luke.zhou.Page - Village size:134
-02:20:45.229 [Thread-1] DEBUG luke.zhou.Page - Village size:136
-02:25:52.614 [Thread-1] DEBUG luke.zhou.Page - Village size:138
-02:31:03.155 [Thread-1] DEBUG luke.zhou.Page - Village size:140
-02:36:16.330 [Thread-1] DEBUG luke.zhou.Page - Village size:142
-02:41:22.807 [Thread-1] DEBUG luke.zhou.Page - Village size:144
-02:46:30.070 [Thread-1] DEBUG luke.zhou.Page - Village size:146
-02:51:38.091 [Thread-1] DEBUG luke.zhou.Page - Village size:148
-02:56:44.879 [Thread-1] DEBUG luke.zhou.Page - Village size:150
-03:01:52.959 [Thread-1] DEBUG luke.zhou.Page - Village size:152
-03:07:02.357 [Thread-1] DEBUG luke.zhou.Page - Village size:154
-03:12:09.676 [Thread-1] DEBUG luke.zhou.Page - Village size:156
-03:17:19.577 [Thread-1] DEBUG luke.zhou.Page - Village size:158
-03:22:26.126 [Thread-1] DEBUG luke.zhou.Page - Village size:160
-03:27:35.764 [Thread-1] DEBUG luke.zhou.Page - Village size:162
-03:32:43.386 [Thread-1] DEBUG luke.zhou.Page - Village size:164
-03:37:49.825 [Thread-1] DEBUG luke.zhou.Page - Village size:166
-03:42:59.545 [Thread-1] DEBUG luke.zhou.Page - Village size:168
-03:48:07.583 [Thread-1] DEBUG luke.zhou.Page - Village size:170
-03:53:15.280 [Thread-1] DEBUG luke.zhou.Page - Village size:172
-03:58:24.641 [Thread-1] DEBUG luke.zhou.Page - Village size:174
-04:03:32.265 [Thread-1] DEBUG luke.zhou.Page - Village size:176
-04:08:43.203 [Thread-1] DEBUG luke.zhou.Page - Village size:178
-04:13:50.571 [Thread-1] DEBUG luke.zhou.Page - Village size:180
-04:18:58.051 [Thread-1] DEBUG luke.zhou.Page - Village size:182
-04:24:05.020 [Thread-1] DEBUG luke.zhou.Page - Village size:184
-04:29:16.887 [Thread-1] DEBUG luke.zhou.Page - Village size:186
-04:34:25.758 [Thread-1] DEBUG luke.zhou.Page - Village size:188
-04:39:33.434 [Thread-1] DEBUG luke.zhou.Page - Village size:190
-04:44:43.308 [Thread-1] DEBUG luke.zhou.Page - Village size:192
-04:49:54.800 [Thread-1] DEBUG luke.zhou.Page - Village size:194
-04:55:03.191 [Thread-1] DEBUG luke.zhou.Page - Village size:196
-05:00:10.765 [Thread-1] DEBUG luke.zhou.Page - Village size:198
-05:05:21.233 [Thread-1] DEBUG luke.zhou.Page - Village size:200
-05:10:31.924 [Thread-1] DEBUG luke.zhou.Page - Village size:202
-05:15:39.011 [Thread-1] DEBUG luke.zhou.Page - Village size:204
-05:20:47.017 [Thread-1] DEBUG luke.zhou.Page - Village size:206
-05:25:56.810 [Thread-1] DEBUG luke.zhou.Page - Village size:208
-05:31:06.883 [Thread-1] DEBUG luke.zhou.Page - Village size:210
-05:36:20.555 [Thread-1] DEBUG luke.zhou.Page - Village size:212
-05:41:33.319 [Thread-1] DEBUG luke.zhou.Page - Village size:214
-05:46:41.796 [Thread-1] DEBUG luke.zhou.Page - Village size:216
-05:51:49.077 [Thread-1] DEBUG luke.zhou.Page - Village size:218
-05:56:58.019 [Thread-1] DEBUG luke.zhou.Page - Village size:220
-06:02:09.289 [Thread-1] DEBUG luke.zhou.Page - Village size:222
-06:07:21.064 [Thread-1] DEBUG luke.zhou.Page - Village size:224
-06:12:29.434 [Thread-1] DEBUG luke.zhou.Page - Village size:226
-06:17:36.294 [Thread-1] DEBUG luke.zhou.Page - Village size:228
-06:22:45.206 [Thread-1] DEBUG luke.zhou.Page - Village size:230
-06:27:21.454 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
-08:14:48.364 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-08:15:03.891 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-08:15:21.464 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-08:15:27.367 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:send alarm          not available for user
-08:15:33.347 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-08:20:31.807 [Thread-1] DEBUG luke.zhou.Page - Village size:4
-08:23:48.413 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-08:25:31.800 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-08:25:43.866 [Thread-1] DEBUG luke.zhou.Page - Village size:6
-08:25:43.866 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-08:25:53.600 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 7 raids have been made.
-08:26:01.463 [Thread-1] DEBUG luke.zhou.Page - Village size:8
-08:31:09.965 [Thread-1] DEBUG luke.zhou.Page - Village size:10
-08:31:09.965 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:1
-08:35:03.505 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:exit                Exit program
-08:36:09.958 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
-08:40:01.657 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-08:40:17.765 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-08:40:32.529 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-08:40:37.832 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:send alarm          not available for user
-08:40:43.135 [luke.zhou.Main.main()] DEBUG luke.zhou.io.MailIO - alarm email send out
-08:41:43.147 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-08:45:32.530 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-08:45:39.390 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-08:45:39.390 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-08:45:46.721 [Thread-1] ERROR luke.zhou.TravianHelper - no such element: Unable to locate element: {"method":"id","selector":"raidListMarkAll123"}
-  (Session info: chrome=54.0.2840.98)
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 37 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MBP.lan', ip: '10.1.1.80', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.Gq6P1P}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 7eb588b881913007f0e6f959753afe79
-*** Element info: {Using=id, value=raidListMarkAll123}
-08:45:46.840 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 7 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MBP.lan', ip: '10.1.1.80', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.Gq6P1P}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 7eb588b881913007f0e6f959753afe79
-08:53:02.256 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-08:53:16.306 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-08:53:30.286 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-08:54:53.413 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-08:58:30.284 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-08:58:40.591 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-08:58:40.591 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-08:58:49.976 [Thread-1] ERROR luke.zhou.TravianHelper - no such element: Unable to locate element: {"method":"id","selector":"raidListMarkAll123"}
-  (Session info: chrome=54.0.2840.98)
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 24 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MBP.lan', ip: '10.1.1.80', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.TQm0L8}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 589c1b7fbda3b37f16590c94daa8b058
-*** Element info: {Using=id, value=raidListMarkAll123}
-08:58:50.106 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 8 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MBP.lan', ip: '10.1.1.80', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.TQm0L8}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 589c1b7fbda3b37f16590c94daa8b058
-09:00:48.949 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-09:01:02.266 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-09:01:18.358 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:01:25.134 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-09:06:18.360 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-09:06:25.603 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:06:25.603 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-09:06:38.374 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 8 raids have been made.
-09:06:46.769 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:11:54.148 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:11:54.148 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:1
-09:17:02.620 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:17:02.620 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:2
-09:26:10.094 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:26:10.094 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:3
-09:31:20.872 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:31:20.872 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:4
-09:31:29.664 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
-09:31:36.529 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:36:42.720 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:36:42.727 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:5
-09:41:50.964 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:41:50.964 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:6
-09:46:59.494 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:46:59.495 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:7
-09:52:06.827 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-09:52:06.827 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:8
-09:52:14.402 [Thread-1] ERROR luke.zhou.TravianHelper - no such element: Unable to locate element: {"method":"id","selector":"raidListMarkAll123"}
-  (Session info: chrome=54.0.2840.98)
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 31 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.SG08J1}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3609b22509e52b6b14f8b90e196ed32d
-*** Element info: {Using=id, value=raidListMarkAll123}
-09:52:14.535 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.SG08J1}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 3609b22509e52b6b14f8b90e196ed32d
-10:12:08.961 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-10:19:46.647 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-10:20:03.826 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-10:20:14.401 [Thread-1] ERROR luke.zhou.TravianHelper - Unable to locate element: //div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=95190, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: b655a5e9-9c0b-df40-8286-a41f0db1a36d
-*** Element info: {Using=xpath, value=//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul}
-10:22:16.662 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-10:22:37.234 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-10:22:46.995 [Thread-1] ERROR luke.zhou.TravianHelper - Unable to locate element: //div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=95594, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: d8ff70ac-48a4-ef47-9c5c-2f66332f647b
-*** Element info: {Using=xpath, value=//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul}
-10:24:47.832 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-10:25:22.299 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-10:25:30.699 [Thread-1] ERROR luke.zhou.TravianHelper - Unable to locate element: //div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=95873, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: d950f2a9-bc7c-f048-9548-ce62ca9d860e
-*** Element info: {Using=xpath, value=//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul}
-10:26:39.371 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-10:26:58.349 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-10:27:07.482 [Thread-1] ERROR luke.zhou.TravianHelper - Unable to locate element: //div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=96168, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: 9dc01f12-43ec-ce4f-ad85-50ed578660f9
-*** Element info: {Using=xpath, value=//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul}
-10:28:02.544 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-10:28:17.915 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-10:28:25.051 [Thread-1] ERROR luke.zhou.TravianHelper - Unable to locate element: //div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=96441, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: 59b57fbb-0666-194d-82f1-80a773e78aca
-*** Element info: {Using=xpath, value=//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul}
-10:34:14.639 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-10:35:35.923 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-10:35:56.830 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-10:53:31.683 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-10:53:53.361 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-10:54:32.360 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-11:09:46.372 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-11:10:19.433 [Thread-2] DEBUG luke.zhou.Page - Page title is: Travian au4
-11:10:53.392 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-11:11:35.536 [Thread-2] DEBUG luke.zhou.Page - Page title is: Travian au4
-11:11:51.668 [Thread-2] DEBUG luke.zhou.Page - Village size:2
-11:15:56.786 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/s
-11:16:51.674 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
-11:18:04.286 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
-11:18:27.771 [Thread-2] DEBUG luke.zhou.Page - Page title is: Travian au4
-11:18:46.751 [Thread-2] ERROR luke.zhou.TravianHelper - Unable to locate element: //div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAEJacUkAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/jNhC991cUPrVAQySbbLdoT2k2BQosmmKNYI8ERY4kxhTJ8sOK/32HohQ7tkwle7Ikz5Azb968mejBUeug/mlVOdPjG/GshuFZ6oZ0TPXMAQHNKgVi9cuPNVMefv7jh7j3FCygjTUuJJcWmAptfidotJV8wV9D6I3bkDYES2wrfbu7SH9b5v2FAt2EFh0/fPz42m0K2AET+CMgAA8g/pLOh1uMhStAt+Dicbimw7yeKW+d6YB67qQN1EVNg+ySy/Xl/EWBVZ4gHPpB3ynjYT6byVqYXivDBN6lWZOAbU3/rQW9RrQSUvPuFoOywafLaGcEUwvYwzYYozwB54zjRnujDuE+Td/LRhuNqHXQVeDWw6sv5+LBe4lWwSAXHPiIuNUYKOWO+bbsq6TeEGNBU3gO4DRTqZjvZlCdyvo16vnLeqiEk1t8Z5wDljNqzNwjHSgHF/wsEi+Vkt4qtgNxf3W5/scgc1Jpb+aN8ZN40N+kxvr6q0si8SLz+PULeqxYZWL4vVJMb1annMsJUaYUffIIRopTZuhPY3u2EuFGW9K3MoCSPuAB/0XpzjEh0WAjAxm7aWIdJpe4UARAMSwMNkCZaj7xNlrSYtdYPJv2oHjqoOhSSVdHKadq64E1JFosMBCN0Na7RzR5t45Em1rpvhge8Ohk2CFTFOAT8cFJHqhxspGaWqMk35WpqqHHtiNjPoVqvgo0n0zSx3WsOjm0yr/Dx9uBjG/Tzdljihm/dOdYmFQUtDyjXvs+xDT7gb+njfjSR0SZhuTHZHV18+nmt+tfbz69Njd1jcfCBbPWEySr6Wm1owJqFlWYV5+pStzbkW7zyZ3Sp0jOif3YKihswe1IFtLB/sOSbfHoCcD7xy+35JqwfU1P03tiW5YHSlGDjys3tVSZdqdxO3gaZl7xkszqdHw5zwPEWQzmcxaONUfOJI26ujwnuflUqlnAVwpb0GFhnhxM0gdk5GI8lTJ8M2jgmyrlgTnejrxZmtIdyc1AROxssWrI8jdx8RVhDCLkpJgX4BPNOhar6/lNKYv7xdR+SKMQFyAfbc8o0bgSLe9CB4PWD2vAftCiYsVBLYrIJWrNB3HQOyZPxmFl+lvf5a3m7DI3jjg6iJtAGHVD07hYIEkLOF15C3zzOQvWn/mf908/woSQKWK2MDhmd+zv3a1RoZv0cVz6iqPioJeGjO9QG7FdK6kS+7Rs2qDODMcD1+nG75E2OjUC6XCNHIi4SqungyOM9ptP2lSR2LhvLqw++75XtY82bwz7peR/UEsHCD88pUe/AwAA5QwAAFBLAQIUABQACAgIAEJacUk/PKVHvwMAAOUMAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAPQDAAAAAA==}, loggingPrefs={driver=OFF}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=3395, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: 6de8c0dd-9f61-d74b-8aa8-258ffd30a7e2
-*** Element info: {Using=xpath, value=//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul}
-11:21:21.487 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
-11:21:54.109 [Thread-2] DEBUG luke.zhou.Page - Page title is: Travian au4
-11:22:15.103 [Thread-2] ERROR luke.zhou.TravianHelper - Unable to locate element: //div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAKpacUkAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51XTW/cNhC991cEe2qBmLBjpynak+s4QIEgLrIwciQoaiTRS5EsP1bef98hJXk/pKXsnCzJM+TMvDdvZoMDS42F6tdVYXWHb8SxCtKzUDVpmeyYBQKKFRLK1ft3FZMOfvvrl7D3LJlHG6Otjy4NMOmb/p2g0VbwBf8OitKKLd4tdZ1cwKLlh6ubTzd/XP9+8+nYXIHvtN2QxntDTCNcs7uI/zbMuQsJqvZN9P748dhtzM8CK/FPCR64h/KLsM7fYuhcArp5G7LRcSlA+Ux0pW6xas+UN1a3QB23wnhqg6JetPGG68v5uDwrHMFiqwd1J7WD+VqN1qXulNSsxLsUqyNsje5+NKDWiEXEYd7dYFDGu3gZbXXJ5AKysPVaS0fAWm25Vk7LQzCn1XKiVlphkVtoC7Dr9OryuThwTqCV18g0Cy5g3SoMlHLLXJP3lUJtiDagKDx7sIrJiM2b+VlFFnwPaoGglHEOCGdQmLlD9lAO1rvZSrwgJZyRbAfl/dXl+ptGokVob+aN8VP5oH4Ihfi6q0si8CL9+P0reqxYoYP/s5BMbVZTzvUJUSYlfXJYjBin6Es/je3ZCCw32pKuER6kcB4P+C8Ie44JkQYb4cnQfCPrMLnIhWwBJENgsAHyVHORt8GQBrvG4Nm0A8ljBwUbIV2dpBzRVok1JBgEGIjC0la7R5e0420qFUxspftseMCDFX6HTJGAT8R5K7in2opaKGq0FHyXp6qCDtuODPlk0DwKtD+ZxI/rULQitcq/6eNtIuPrVHn2mGzGL905ABNBQcsz6rXvQ0yzS/ydNuKxlPaPGSnVVYXHwgUzxhEkq+5osaMlVCxIP68+I0rcmYFu88lN6ZMl58h+bBUUNm93pBfSZP9hyTZ79FjA+8evt+SasD2m0/Se2Jb1AyWrwafIjS2Vp900bgtPaURmL+lZHY9/y5A3YCttUUWSGJ4jwAFKLHj9uRebNUeeRV27ujwn030kVDGPrxS2OLIXZtDB9H1AFi+yppCab5JuvgpdB8zyZuDa0mRvSd9ApAytySKNnfEq/h4Xf7gpU/gjUmr0s6KcF/mJLp4K4vX88tYPkIuxxZGqPixANNieUbth7Vretw6GuUurxn6YoyqGVJdspSMV54M46E/dT9+0lv2j7vrNafbkGPkwRmkS0BLLqGoaR9ICqRrACc4b4JvPvSj+/YLsGycsYWUpYsRsYTjN/kr42V8HSMY6fhwWy+w4Oui9lPEd6i+2dyFkZJ8SdePlmQF84Dre+DPyScdGIC2uqomIq7jeWjip0X67itswEht32oX1aq8TsnLB9FvJ7OJzoqNWx8ab9PL/UEsHCBjupYLpAwAA2A0AAFBLAQIUABQACAgIAKpacUkY7qWC6QMAANgNAAAHAAAAAAAAAAAAAAAAAAAAAAB1c2VyLmpzUEsFBgAAAAABAAEANQAAAB4EAAAAAA==}, loggingPrefs={server=OFF, performance=OFF, driver=OFF, browser=OFF, client=OFF, profiler=OFF}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=3812, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: a10c9035-14d0-ca4b-8d75-676ab36398b1
-*** Element info: {Using=xpath, value=//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul}
-11:27:31.438 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-11:28:02.247 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-11:28:21.620 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-11:28:28.952 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-11:33:21.618 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-11:33:33.274 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-11:33:33.274 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-11:33:48.276 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 8 raids have been made.
-11:33:55.522 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-11:35:44.448 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
-11:36:22.018 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - d/d/d
-11:36:59.840 [Thread-2] DEBUG luke.zhou.Page - Page title is: Travian au4
-11:37:16.342 [Thread-2] ERROR luke.zhou.TravianHelper - Unable to locate element: //div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAItccUkAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQM6zAyIvdF4ixSbjadQhq87UXtRpTwwx+uBN3NjtyE9u4mIjc1WDVn+Ii4+I4xBhJwU04p6JEKH6nMxvfr0an02th/SKMQZyAfbE9Iy7Djzy83e5PTdXN9NTpSg2Gl1FrlErekg9nrH9KOu24F+6Ot+TTm5nQ0zi3ZqJRBGXdGk/zMkqQHHJa+Br7/1gvW1//L6cUaYEDJFzGYmweTS/L/LsjJVlV4OW1xW+/d6qcv4GrUR27WQKrFPy6oO6sS023Mdb/wfaaNjI5AG98KOiIu0Szo4wGi3yqTVE4mNC+TMLrPre1X6aPsVYLdl/ANQSwcIy87bUaYDAAC2DAAAUEsBAhQAFAAICAgAi1xxScvO21GmAwAAtgwAAAcAAAAAAAAAAAAAAAAAAAAAAHVzZXIuanNQSwUGAAAAAAEAAQA1AAAA2wMAAAAA}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=5813, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, javascriptEnabled=false, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: b2948094-6116-954b-8d1b-6d55434ee507
-*** Element info: {Using=xpath, value=//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul}
-11:42:42.651 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-11:43:17.287 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-11:43:32.051 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-11:43:40.216 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-11:48:32.051 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-11:48:40.096 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-11:48:40.096 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-11:48:48.858 [Thread-1] ERROR luke.zhou.TravianHelper - Unable to locate element: #raidListMarkAll123
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=6629, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: 107c6459-fd0b-284c-bc9c-3f41ee2661ae
-*** Element info: {Using=id, value=raidListMarkAll123}
-11:51:12.767 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-11:51:53.608 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-11:52:14.758 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-11:52:48.558 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-11:57:14.755 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-11:57:25.349 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-11:57:25.349 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-11:57:36.144 [Thread-1] ERROR luke.zhou.TravianHelper - Unable to locate element: #raidListMarkAll123
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=7787, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: af611b59-4245-6d4c-8a8c-723d9ac86043
-*** Element info: {Using=id, value=raidListMarkAll123}
-11:58:51.237 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-11:59:31.819 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-11:59:54.280 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:00:13.853 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-12:04:54.276 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-12:05:01.397 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:05:01.397 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-12:05:21.199 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 7 raids have been made.
-12:05:28.505 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:10:36.038 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:10:36.044 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:1
-12:15:46.680 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:15:46.687 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:2
-12:20:57.252 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:20:57.253 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:3
-12:26:05.380 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:26:05.386 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:4
-12:26:26.426 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 7 raids have been made.
-12:26:34.105 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:31:44.623 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:31:44.623 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:5
-12:36:52.702 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:36:52.702 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:6
-12:42:03.139 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:42:03.139 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:7
-12:47:11.565 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-12:47:11.565 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:8
-12:47:19.130 [Thread-1] ERROR luke.zhou.TravianHelper - Unable to locate element: #raidListMarkAll123
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], prefs={}}, appBuildId=20161019084923, version=, platform=MAC, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=8718, browserVersion=49.0.2, platformVersion=16.1.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=darwin, device=desktop}]
-Session ID: 3e84914d-0f3c-a44f-8aa0-59c65a797ede
-*** Element info: {Using=id, value=raidListMarkAll123}
-13:25:15.041 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-13:25:53.104 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-13:26:17.507 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-13:31:25.047 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-13:34:52.073 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-13:36:25.045 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-13:36:32.238 [Thread-1] ERROR luke.zhou.TravianHelper - stale element reference: element is not attached to the page document
-  (Session info: chrome=54.0.2840.98)
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 28 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.YLIQHm}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8bae69064b2462d0a89add56f7e56c50
-*** Element info: {Using=tag name, value=li}
-13:36:32.370 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 8 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.YLIQHm}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8bae69064b2462d0a89add56f7e56c50
-13:40:36.591 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-13:41:01.103 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-13:41:23.045 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-13:41:45.943 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:repeat raid         check all in the raid list, raid until stop
-13:46:23.043 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
-13:46:33.688 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-13:46:33.688 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:0
-13:46:55.987 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 7 raids have been made.
-13:47:05.034 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-13:52:14.004 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-13:52:14.004 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:1
-13:57:23.106 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-13:57:23.107 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:2
-14:02:34.536 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:02:34.536 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:3
-14:07:45.103 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:07:45.103 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:4
-14:08:03.836 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 6 raids have been made.
-14:08:15.081 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:13:21.733 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:13:21.733 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:5
-14:18:29.107 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:18:29.107 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:6
-14:23:37.054 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:23:37.054 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:7
-14:28:46.132 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:28:46.132 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:8
-14:29:04.268 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 6 raids have been made.
-14:29:12.974 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:34:21.427 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:34:21.427 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:9
-14:39:28.465 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:39:28.465 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:10
-14:44:35.533 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:44:35.533 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:11
-14:49:44.386 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:49:44.386 [Thread-1] DEBUG luke.zhou.TravianHelper - clocktick:12
-14:49:51.792 [Thread-1] ERROR luke.zhou.TravianHelper - no such element: Unable to locate element: {"method":"id","selector":"raidListMarkAll123"}
-  (Session info: chrome=54.0.2840.98)
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 29 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.q4HPqb}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 7cca8e62af78b2725639b3ad107e312c
-*** Element info: {Using=id, value=raidListMarkAll123}
-14:49:51.978 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.q4HPqb}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 7cca8e62af78b2725639b3ad107e312c
-14:55:42.852 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-14:56:10.907 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-14:56:34.527 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-14:56:54.144 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-15:01:34.526 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-15:01:41.318 [Thread-1] ERROR luke.zhou.TravianHelper - null
-15:01:41.667 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 14 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.NJnZy1}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 971a16b6c39d410a992782d03d55c405
-15:45:57.132 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-15:45:59.086 [Thread-1] DEBUG luke.zhou.Page - url:
-15:46:12.520 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-15:46:28.475 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-15:46:35.925 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-15:46:44.147 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-15:51:35.930 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-15:51:35.938 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.phphttp://ts4.travian.com.au/dorf1.php?newdid=69736&
-15:51:42.802 [Thread-1] ERROR luke.zhou.TravianHelper - null
-15:51:42.910 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-15:51:43.133 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 19 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.wT3TDI}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: c37395c95a3cc18b22dbaa5e408e521b
-15:55:41.534 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-15:55:57.890 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-15:56:19.532 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-15:56:27.845 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-16:01:19.534 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-16:01:27.254 [Thread-1] ERROR luke.zhou.TravianHelper - null
-16:01:27.578 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 16 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.oMk2WI}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ffff81d9a08b7920201e407554a3bbe5
-16:02:47.098 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-16:02:48.349 [Thread-1] DEBUG luke.zhou.Page - url:
-16:03:08.073 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-16:03:22.990 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:03:30.560 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-16:04:38.210 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-16:04:39.345 [Thread-1] DEBUG luke.zhou.Page - url:
-16:12:00.258 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmailcom
-16:12:01.459 [Thread-1] DEBUG luke.zhou.Page - url:
-16:12:19.064 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-16:12:30.048 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:12:38.176 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-16:12:46.518 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-16:17:38.175 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-16:17:38.177 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-16:17:44.591 [Thread-1] ERROR luke.zhou.TravianHelper - null
-16:17:44.699 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:17:44.914 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 13 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.3kRX0P}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 8597b45d58b3b3030b6d090c1d9b380e
-16:29:32.335 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-16:29:34.004 [Thread-1] DEBUG luke.zhou.Page - url:
-16:30:13.876 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-16:30:28.952 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:30:51.243 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-16:30:56.377 [main] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-16:35:51.250 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-16:35:51.260 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-16:36:52.099 [Thread-1] ERROR luke.zhou.TravianHelper - null
-16:36:52.214 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:37:24.851 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 49 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.3UPqW9}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 4ade98a919c317bde7cf98371504b92c
-16:38:00.261 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-16:38:02.238 [Thread-1] DEBUG luke.zhou.Page - url:
-16:38:25.507 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-16:38:38.679 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:39:01.844 [main] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-16:39:34.312 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-16:41:15.010 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-16:41:16.558 [Thread-1] DEBUG luke.zhou.Page - url:
-16:41:36.745 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-16:41:51.649 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:42:15.437 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-16:42:15.438 [main] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-16:43:15.454 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-16:43:22.967 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-16:43:36.132 [Thread-1] ERROR luke.zhou.TravianHelper - null
-16:43:36.244 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:44:01.150 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 40 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.nCdCTI}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 5df7af5982049254ef780397acd7fbbf
-16:46:39.700 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-16:46:41.268 [Thread-1] DEBUG luke.zhou.Page - url:
-16:47:01.293 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-16:47:15.533 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:47:31.408 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-16:47:35.972 [main] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-16:48:31.424 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-16:48:35.656 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-16:48:47.728 [Thread-1] ERROR luke.zhou.TravianHelper - null
-16:48:47.840 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:49:21.555 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 22 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.DlZegL}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 0ed3fbd5102c6a8092ad93567b400af2
-16:50:42.289 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-16:50:44.217 [Thread-1] DEBUG luke.zhou.Page - url:
-16:51:15.357 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-16:51:28.931 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:51:44.020 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-16:51:48.587 [main] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-16:52:44.030 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-16:52:51.822 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-16:54:39.935 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-16:54:41.526 [Thread-1] DEBUG luke.zhou.Page - url:
-16:55:03.344 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-16:55:18.579 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-16:55:28.660 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-16:55:36.635 [main] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-16:56:28.671 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-16:56:31.359 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-17:00:39.066 [Thread-1] ERROR luke.zhou.TravianHelper - For input string: "1,163"
-17:01:21.863 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-17:01:23.475 [Thread-1] DEBUG luke.zhou.Page - url:
-17:01:44.113 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-17:02:00.671 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-17:02:07.918 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-17:02:16.545 [main] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-17:03:07.925 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-17:03:07.927 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-17:03:19.110 [Thread-1] ERROR luke.zhou.TravianHelper - For input string: "1,164"
-17:03:19.218 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-17:03:19.237 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
-  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 15 milliseconds
-Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
-System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_31'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.knzTd7}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 1328701d4a92f8d58861737440b9ca0a
-17:03:48.174 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-17:03:50.135 [Thread-1] DEBUG luke.zhou.Page - url:
-17:04:33.383 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-17:04:48.495 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-17:08:33.287 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-17:08:34.854 [Thread-1] DEBUG luke.zhou.Page - url:
-17:09:01.206 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-17:09:16.251 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-17:09:27.109 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-17:09:31.923 [main] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-17:10:27.117 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-17:10:27.119 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-17:10:35.509 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
-17:10:46.261 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=1165, clay=987, iron=1244, crop=733}, Village{isUnderAttack=false, name='Big Bang', lumber=511, clay=823, iron=1983, crop=4191}]}
-17:10:46.262 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-17:10:55.340 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-20:08:04.951 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
-20:08:06.968 [Thread-1] DEBUG luke.zhou.Page - url:
-20:08:35.728 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-20:08:52.952 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-20:09:00.783 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-20:09:08.030 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-20:10:00.791 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-20:10:00.793 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-20:10:13.326 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
-20:10:20.594 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=771, clay=525, iron=948, crop=905}, Village{isUnderAttack=false, name='Big Bang', lumber=1018, clay=276, iron=2733, crop=3801}]}
-20:10:20.594 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-20:10:26.880 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-20:40:19.260 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-20:40:20.419 [Thread-1] DEBUG luke.zhou.Page - url:
-20:40:41.270 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-20:40:55.596 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-20:41:03.848 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-20:41:11.476 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd for main:info                display brief information of account
-20:42:03.854 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-20:42:03.856 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-20:42:15.500 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
-20:42:24.375 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=844, clay=538, iron=1044, crop=1012}, Village{isUnderAttack=false, name='Big Bang', lumber=1273, clay=574, iron=2941, crop=3899}]}
-20:42:24.376 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-20:42:32.930 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-20:55:16.737 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-20:55:17.884 [Thread-1] DEBUG luke.zhou.Page - url:
-20:55:55.243 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-20:56:09.239 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-20:56:18.603 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-20:57:00.863 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
-21:01:18.601 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-21:01:18.603 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-21:01:27.959 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
-21:01:38.712 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=1147, clay=842, iron=1345, crop=1152}, Village{isUnderAttack=false, name='Big Bang', lumber=1447, clay=727, iron=3066, crop=3967}]}
-21:01:38.712 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-21:01:45.988 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-21:06:45.981 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-21:06:57.463 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-21:11:57.464 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-21:12:05.576 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-21:13:38.057 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
-21:17:05.572 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
-21:21:11.759 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-21:21:12.873 [Thread-1] DEBUG luke.zhou.Page - url:
-21:21:38.030 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-21:21:50.990 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-21:21:57.033 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
-21:22:00.736 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-21:27:00.734 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-21:27:00.735 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-21:27:12.405 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
-21:27:23.224 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=980, clay=638, iron=1201, crop=1166}, Village{isUnderAttack=false, name='Big Bang', lumber=1781, clay=1018, iron=3329, crop=4103}]}
-21:27:23.225 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-21:27:31.848 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-21:31:11.729 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
-21:32:31.844 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
-21:39:08.352 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
-21:39:09.490 [Thread-1] DEBUG luke.zhou.Page - url:
-21:39:43.727 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
-21:39:59.242 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
-21:40:04.969 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
-21:40:06.928 [Thread-1] DEBUG luke.zhou.Page - Village size:2
-21:40:11.936 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
-21:40:11.938 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
-21:40:23.794 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
-21:40:34.396 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=981, clay=641, iron=1202, crop=1193}, Village{isUnderAttack=false, name='Big Bang', lumber=1860, clay=1103, iron=3396, crop=4120}]}
-21:40:39.722 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
-21:40:44.401 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+08:31:23.776 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+08:31:25.282 [Thread-1] DEBUG luke.zhou.Page - url:
+08:32:02.135 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+08:32:24.559 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:32:37.821 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+08:32:38.465 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:32:43.476 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+08:32:43.478 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+08:32:51.596 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+08:32:59.355 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=58, clay=141, iron=70, crop=127}, Village{isUnderAttack=false, name='Big Bang', lumber=1089, clay=874, iron=1282, crop=2666}]}
+08:33:39.955 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+08:33:44.381 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+08:34:10.817 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+08:34:11.961 [Thread-1] DEBUG luke.zhou.Page - url:
+08:34:25.745 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+08:34:37.087 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:34:43.474 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+08:34:45.044 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:34:50.052 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+08:34:50.054 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+08:34:58.578 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+08:35:05.077 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=58, clay=142, iron=70, crop=131}, Village{isUnderAttack=false, name='Big Bang', lumber=1102, clay=887, iron=1292, crop=2667}]}
+08:40:00.233 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:40:09.259 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:41:12.693 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:repeat raid         check all in the raid list, raid until stop
+08:41:14.290 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
+08:45:09.409 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:45:20.349 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:50:20.545 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:50:31.518 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:54:13.393 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+08:54:16.644 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+08:54:16.644 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+08:54:23.588 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+08:54:31.602 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=true, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=975, clay=656, iron=1133, crop=2707}, Village{isUnderAttack=false, name='Big Bang', lumber=975, clay=656, iron=1133, crop=2707}]}
+08:55:46.652 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:55:55.166 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:00:55.340 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:01:05.161 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:06:05.330 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:06:12.437 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:06:12.438 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+09:06:28.030 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 10 raids have been made.
+09:06:28.031 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:06:39.225 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:07:14.504 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+09:07:19.246 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+09:07:19.247 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+09:07:25.532 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+09:07:36.062 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=true, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=62, clay=149, iron=72, crop=194}, Village{isUnderAttack=false, name='Big Bang', lumber=1095, clay=776, iron=1235, crop=2740}]}
+09:11:56.201 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:12:07.042 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:17:07.217 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:17:21.032 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:19:32.085 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+09:19:36.077 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+09:19:36.077 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+09:19:44.700 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+09:19:55.718 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=true, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=63, clay=151, iron=73, crop=218}, Village{isUnderAttack=false, name='Big Bang', lumber=1254, clay=918, iron=1369, crop=2783}]}
+09:22:40.825 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:22:49.750 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:27:49.949 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:27:56.635 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:32:56.842 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:33:03.964 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:38:04.182 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:38:13.631 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:38:13.631 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+09:38:32.081 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 8 raids have been made.
+09:38:32.081 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:38:40.879 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:42:03.213 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+09:42:06.023 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+09:42:06.023 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+09:42:14.572 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+09:42:20.935 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=true, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=66, clay=156, iron=74, crop=261}, Village{isUnderAttack=false, name='Big Bang', lumber=1129, clay=689, iron=1205, crop=2825}]}
+09:43:56.037 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:44:06.434 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:49:06.811 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:49:15.641 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:54:16.035 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:54:26.409 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:59:26.661 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:59:33.267 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:04:33.420 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:04:44.482 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:09:44.605 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:09:55.575 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:09:55.575 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+10:10:11.076 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+10:10:11.076 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:10:18.886 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:15:19.058 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:15:28.940 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:20:29.068 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:20:38.488 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:25:38.626 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:25:47.680 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:30:47.835 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:30:55.366 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:35:55.523 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:36:02.527 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:41:02.648 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:41:10.528 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:41:10.528 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+10:41:25.878 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 10 raids have been made.
+10:41:25.878 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:41:35.477 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:46:35.595 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:46:46.818 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:51:46.976 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:51:53.891 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:56:54.029 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:57:04.839 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:02:04.974 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:02:14.720 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:07:14.878 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:07:25.136 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:12:25.261 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:12:33.009 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:12:33.009 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+11:12:48.903 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 10 raids have been made.
+11:12:48.903 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:12:58.434 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:17:58.612 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:18:05.908 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:23:06.089 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:23:17.020 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:24:29.459 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+11:24:32.068 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+11:25:30.660 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+11:25:31.799 [Thread-1] DEBUG luke.zhou.Page - url:
+11:25:48.720 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+11:26:01.669 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:26:04.943 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:help                display command list
+11:26:11.844 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:29:21.536 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+11:29:22.693 [Thread-1] DEBUG luke.zhou.Page - url:
+11:29:53.237 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+11:30:04.329 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:30:14.401 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:help                display command list
+11:30:16.090 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:30:18.777 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+11:30:21.093 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+11:30:21.094 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+11:30:30.385 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+11:30:37.076 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=45, clay=1065, iron=1020, crop=233}, Village{isUnderAttack=false, name='Big Bang', lumber=1412, clay=1377, iron=1277, crop=3273}]}
+11:30:45.193 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+11:30:47.081 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+11:30:47.091 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+11:30:53.466 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+11:31:43.750 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+11:31:45.931 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+11:31:45.931 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+11:31:56.425 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+11:32:03.695 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=45, clay=1065, iron=1020, crop=237}, Village{isUnderAttack=false, name='Big Bang', lumber=1421, clay=1386, iron=1284, crop=3274}]}
+11:32:47.079 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+11:32:48.729 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+11:32:48.730 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+11:32:58.447 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+11:33:51.973 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+11:33:53.568 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+11:33:53.568 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+11:34:00.677 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+11:35:44.219 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+11:35:45.555 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+11:37:59.851 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+11:38:01.014 [Thread-1] DEBUG luke.zhou.Page - url:
+11:38:19.245 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+11:38:29.836 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:38:39.686 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:40:14.427 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+11:40:14.761 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+11:40:14.762 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+11:40:22.658 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+11:40:29.653 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=47, clay=1067, iron=1020, crop=258}, Village{isUnderAttack=false, name='Big Bang', lumber=1519, clay=1493, iron=1366, crop=3277}]}
+11:40:33.684 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:help                display command list
+11:40:36.603 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+11:40:39.663 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+11:40:39.666 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+11:40:50.038 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+11:43:33.272 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+11:43:37.530 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+11:45:08.016 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+11:45:09.183 [Thread-1] DEBUG luke.zhou.Page - url:
+11:45:30.698 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+11:45:43.950 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:45:51.688 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+11:45:53.448 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:45:58.454 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+11:45:58.459 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+11:46:06.047 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+11:46:33.486 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: Resources have been dispatched
+11:46:44.152 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+11:46:48.499 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+11:46:48.500 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+11:46:56.673 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+11:47:05.922 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=48, clay=1068, iron=1021, crop=275}, Village{isUnderAttack=false, name='Big Bang', lumber=1017, clay=795, iron=831, crop=3305}]}
+11:48:22.040 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:repeat raid         check all in the raid list, raid until stop
+11:48:25.984 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
+11:51:46.124 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:51:53.435 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:56:53.647 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:57:04.217 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:02:04.381 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:02:15.119 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:07:15.214 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:07:26.107 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:12:26.206 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:12:32.763 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:17:32.925 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:17:42.635 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:17:42.635 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+12:18:03.858 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 10 raids have been made.
+12:18:03.858 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:18:14.467 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:23:14.638 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:23:21.331 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:28:21.468 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:28:32.138 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:31:04.940 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+12:31:07.205 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+12:31:07.205 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+12:31:17.943 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+12:31:41.744 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: Resources have been dispatched
+12:34:06.824 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:34:17.415 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:39:17.562 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:39:25.247 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:44:25.414 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:44:32.114 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:49:32.270 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:49:40.039 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:49:40.039 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+12:49:58.873 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+12:49:58.873 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:50:07.571 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:55:07.742 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:55:15.259 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:00:15.427 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:00:21.866 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:05:22.024 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:05:31.364 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:10:31.535 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:10:40.140 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:15:40.323 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:15:49.968 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:20:50.152 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:21:00.877 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:21:00.877 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+13:21:20.891 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+13:21:20.891 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:21:30.272 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:26:30.544 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:26:37.833 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:31:38.238 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:31:44.233 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:36:44.586 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:36:53.729 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:41:54.140 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:42:01.296 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:47:01.446 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:47:12.222 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:52:12.390 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:52:21.794 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+13:52:22.882 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:52:22.882 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+13:52:39.717 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+13:52:39.718 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:52:50.386 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:52:55.387 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+13:52:55.388 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+13:53:03.335 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+13:53:33.090 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: Resources have been dispatched
+13:58:28.264 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:58:38.978 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:03:39.117 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:03:47.995 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:08:48.172 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:08:55.067 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:13:55.212 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:14:03.079 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:19:03.233 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:19:12.442 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:24:12.606 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:24:23.354 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:24:23.354 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+14:24:39.011 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+14:24:39.011 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:24:47.470 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:29:47.612 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:29:57.877 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:34:58.069 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:35:07.410 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:40:07.572 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:40:15.114 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:41:40.625 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+14:41:45.170 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+14:41:45.170 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+14:41:56.416 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+14:42:06.986 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=true, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=427, clay=856, iron=1530, crop=320}, Village{isUnderAttack=false, name='Big Bang', lumber=307, clay=756, iron=594, crop=3508}]}
+14:45:37.102 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:45:48.171 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:50:48.316 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:50:57.560 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:55:57.720 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:56:06.567 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:56:06.567 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+14:56:24.360 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+14:56:24.360 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:56:33.066 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:01:33.240 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:01:43.010 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:06:43.173 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:06:49.814 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:08:06.096 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+15:08:09.862 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+15:08:09.863 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+15:08:16.904 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+15:08:41.145 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: Resources have been dispatched
+15:12:21.257 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:12:30.858 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:16:00.901 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+15:16:00.961 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+15:16:00.962 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+15:16:10.341 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+15:16:32.552 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: Resources have been dispatched
+15:18:02.592 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:18:09.073 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:23:09.216 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:23:17.036 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:28:17.204 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:28:26.398 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:28:26.398 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+15:28:46.218 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+15:28:46.218 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:28:54.280 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:33:54.411 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:34:05.550 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:39:05.680 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:39:13.822 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:44:13.953 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:44:24.164 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:49:24.328 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:49:34.274 [Thread-1] DEBUG luke.zhou.Page - Village size:2

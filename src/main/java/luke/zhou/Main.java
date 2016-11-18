@@ -76,7 +76,7 @@ public class Main
         if (isDebug)
         {
             //simulate the action which needs to test
-            Main.getMainCommandQueue().put(Command.GET_INFO);
+            travianHelper.getTravianCommandQueue().put(Command.GET_INFO);
         }
         else
         {
@@ -110,6 +110,7 @@ public class Main
         else if (Command.HELP.equals(inputCmd))
         {
             displayHelpInfo();
+            mainCommandQueue.add(Command.READY);
         }
         else
         {
@@ -119,7 +120,7 @@ public class Main
 
     private static void displayHelpInfo()
     {
-        Arrays.stream(Command.values()).forEach(System.out::println);
+        Arrays.stream(Command.values()).filter(c-> c.isVisible()).forEach(System.out::println);
     }
 
     public static synchronized BlockingQueue<Command> getMainCommandQueue()

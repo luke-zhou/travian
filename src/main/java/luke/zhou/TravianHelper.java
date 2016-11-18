@@ -37,9 +37,11 @@ public class TravianHelper implements Runnable
         travian.login(game.getUsername(), game.getPassword());
         Main.getMainCommandQueue().add(Command.READY);
 
-        int clocktick = 0;
+        int tick = 0;
         while (true)
         {
+            if (tick == 12*60*24) tick = 0;
+
             try
             {
                 Command cmd = travianCommandQueue.poll();
@@ -57,35 +59,44 @@ public class TravianHelper implements Runnable
                             break;
                         case REPEAT_RAID:
                             game.setAutoRaid(true);
+                            System.out.println("Repeat raid started");
                             Main.getMainCommandQueue().add(Command.READY);
                             break;
                         case STOP_RAID:
                             game.setAutoRaid(false);
+                            System.out.println("Repeat raid stopped");
                             Main.getMainCommandQueue().add(Command.READY);
                             break;
                         case GET_INFO:
                             reloadInfo();
                             Main.getMainCommandQueue().add(Command.READY);
                             break;
+                        case TRANSFER:
+                            transferResource();
+                            Main.getMainCommandQueue().add(Command.READY);
+                            break;
+
                         default:
                             LOG.debug("got cmd for travian helper:" + cmd);
                     }
                 }
 
                 //every 5 mins
-                if (clocktick % (12 * 5) == 0)
+                if (tick % (12 * 5) == 0)
                 {
                     checkUnderAttack();
                 }
 
-                //every 20 mins
-                if (game.getAutoRaid() && (clocktick % (12 * 20) == 0))
+                //every 30 mins
+                if (game.getAutoRaid() && (tick % (12 * 30) == 0))
                 {
-                    clocktick = 0;
                     repeatRaiding();
                 }
 
-                clocktick++;
+                //every 10 mins
+
+
+                tick++;
                 Thread.sleep(TimeUtil.seconds(5));
             } catch (Exception e)
             {
@@ -97,15 +108,25 @@ public class TravianHelper implements Runnable
         //travian.exit();
     }
 
+    private void transferResource()
+    {
+        String result = travian.transferResource(game.getVillage("Big Bang"), game.getVillage("A New Hope"));
+        LOG.info("Send Resource: "+result);
+        System.out.println(result);
+    }
+
     private void repeatRaiding()
     {
-        startRaid();
+        String result = travian.sendRaid();
+        LOG.info("Repeat Raid: " + result);
+        travian.home(game);
     }
 
     private void startRaid()
     {
         String result = travian.sendRaid();
         LOG.info("Start Raid: " + result);
+        System.out.println(result);
         travian.home(game);
     }
 
@@ -113,6 +134,7 @@ public class TravianHelper implements Runnable
     {
         travian.getInfo(game);
         LOG.info("Game: " + game);
+        game.getVillages().stream().forEach(System.out::println);
     }
 
 
