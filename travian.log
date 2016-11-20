@@ -343,3 +343,1457 @@
 15:44:24.164 [Thread-1] DEBUG luke.zhou.Page - Village size:2
 15:49:24.328 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
 15:49:34.274 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:50:49.781 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+15:50:54.304 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+15:50:54.304 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+15:51:00.590 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+15:51:07.603 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=true, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=271, clay=671, iron=1366, crop=360}, Village{isUnderAttack=false, name='Big Bang', lumber=1338, clay=1580, iron=1942, crop=4498}]}
+15:54:47.703 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:54:54.084 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:59:54.239 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:00:00.779 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:00:00.779 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+16:00:19.000 [Thread-1] ERROR luke.zhou.TravianHelper - no such element: Unable to locate element: {"method":"tag name","selector":"p"}
+  (Session info: chrome=54.0.2840.98)
+  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.111p92}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9c28082a06460b726f27652723dc8272
+*** Element info: {Using=tag name, value=p}
+16:00:19.059 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:00:19.063 [Thread-1] ERROR luke.zhou.TravianHelper - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=54.0.2840.98)
+  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 3 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.111p92}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9c28082a06460b726f27652723dc8272
+16:05:26.731 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+16:05:27.920 [Thread-1] DEBUG luke.zhou.Page - url:
+16:05:45.139 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+16:05:59.182 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:06:08.356 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:06:50.246 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:repeat raid         check all in the raid list, raid until stop
+16:06:53.381 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
+16:06:56.779 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:raid                check all in the raid list, raid once
+16:06:58.385 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
+16:06:58.385 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+16:07:17.530 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
+16:07:17.530 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:07:24.851 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:09:39.166 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+16:09:40.314 [Thread-1] DEBUG luke.zhou.Page - url:
+16:10:01.937 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+16:10:17.398 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:10:27.534 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:10:34.063 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:raid                check all in the raid list, raid once
+16:10:37.548 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
+16:10:37.549 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+16:10:55.979 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 8 raids have been made.
+16:10:55.979 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:11:06.846 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:11:19.113 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:repeat raid         check all in the raid list, raid until stop
+16:11:21.853 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
+16:11:32.085 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+16:11:36.860 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+16:11:36.863 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+16:11:47.894 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+16:12:18.561 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: 
+16:16:38.718 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:16:47.058 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:21:47.271 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:21:54.073 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:26:54.503 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:27:01.707 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:32:02.070 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:32:10.500 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:36:56.393 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+16:37:00.892 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+16:37:00.893 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+16:37:10.396 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+16:37:16.641 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=true, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=392, clay=830, iron=1482, crop=502}, Village{isUnderAttack=false, name='Big Bang', lumber=2489, clay=2744, iron=3544, crop=5111}]}
+16:37:26.644 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:37:35.854 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:38:01.515 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+16:38:05.869 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+16:38:05.869 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+16:38:17.616 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+16:38:35.180 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: 
+16:42:03.289 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:null
+18:48:19.165 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+18:48:21.258 [Thread-1] DEBUG luke.zhou.Page - url:
+18:48:46.761 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+18:48:59.758 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:49:09.420 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:49:26.943 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+18:49:29.436 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+18:49:29.444 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+18:49:38.674 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+18:49:49.378 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=49, clay=390, iron=2263, crop=914}, Village{isUnderAttack=false, name='Big Bang', lumber=4155, clay=4095, iron=5048, crop=6524}]}
+18:49:54.526 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+18:49:59.383 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+18:49:59.388 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+18:50:05.940 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+18:50:27.722 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: Resources have been dispatched
+18:50:29.282 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:raid                check all in the raid list, raid once
+18:50:32.726 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
+18:50:32.726 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+18:50:51.598 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
+18:50:51.598 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:51:01.762 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:51:05.815 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:repeat raid         check all in the raid list, raid until stop
+18:51:06.766 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
+18:55:26.518 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:55:33.489 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:00:33.678 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:00:40.552 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:05:41.008 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:05:52.269 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:10:52.723 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:11:01.126 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:16:01.544 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:16:13.109 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:21:13.553 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:21:22.186 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:21:22.186 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+19:21:40.973 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+19:21:40.973 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:21:50.948 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:26:51.363 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:27:00.714 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:27:25.349 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+19:27:25.734 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+19:27:25.734 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+19:27:32.069 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+19:27:58.120 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: Resources have been dispatched
+19:32:33.247 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:32:41.623 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:37:41.753 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:37:53.236 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:42:53.385 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:43:02.066 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:48:02.193 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:48:09.702 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:53:09.856 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:53:17.032 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:53:17.032 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+19:53:35.295 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+19:53:35.295 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:53:45.186 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:58:45.344 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:58:54.269 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:03:54.444 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:04:03.547 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:09:03.725 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:09:13.528 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:14:13.738 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:14:20.518 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:19:20.678 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:19:28.286 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:24:28.458 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:24:35.673 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:24:35.673 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+20:24:56.024 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+20:24:56.024 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:25:03.474 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:30:03.628 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:30:15.916 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:35:16.089 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:35:25.911 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:40:26.189 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:40:38.233 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:45:38.549 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:45:48.336 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:50:48.786 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:50:57.385 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:55:57.721 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:56:05.052 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:56:05.053 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+20:56:26.544 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+20:56:26.544 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:56:33.495 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:01:33.699 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:01:44.567 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:06:44.865 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:06:55.303 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:11:55.772 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:12:03.070 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:17:03.400 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:17:11.739 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:22:12.159 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:22:18.934 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:27:19.331 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:27:30.773 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:27:30.773 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+21:27:49.860 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+21:27:49.860 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:27:59.738 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:32:59.929 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:33:11.012 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:38:11.214 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:38:18.296 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:39:49.341 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+21:39:53.349 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+21:39:53.349 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+21:40:04.323 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+21:40:23.672 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: Resources have been dispatched
+21:40:34.476 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+21:40:38.674 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+21:40:38.674 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+21:40:47.897 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+21:40:56.933 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=true, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=163, clay=696, iron=2353, crop=1321}, Village{isUnderAttack=false, name='Big Bang', lumber=117, clay=289, iron=2023, crop=5040}]}
+21:44:07.022 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:44:15.231 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:49:15.423 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:49:25.334 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:54:25.507 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:54:36.139 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:59:36.307 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:59:47.227 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:59:47.227 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+22:00:10.984 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+22:00:10.985 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:00:55.444 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:05:55.612 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:06:03.333 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:11:03.505 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:11:11.995 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:16:12.168 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:16:21.393 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:17:29.563 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+22:17:31.440 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+22:17:31.440 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+22:17:37.824 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+22:18:03.582 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: Resources have been dispatched
+22:21:53.681 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:22:04.604 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:27:04.747 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:27:13.254 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:32:13.395 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:32:22.295 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:32:22.296 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+22:32:40.078 [Thread-1] ERROR luke.zhou.TravianHelper - no such element: Unable to locate element: {"method":"tag name","selector":"p"}
+  (Session info: chrome=54.0.2840.98)
+  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 36 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.1.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.1UUk00}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c7afe45422492b480f4a825351f7a29b
+*** Element info: {Using=tag name, value=p}
+22:32:40.194 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:32:40.203 [Thread-1] ERROR luke.zhou.TravianHelper - no such session
+  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 8 milliseconds
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.1.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.1UUk00}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c7afe45422492b480f4a825351f7a29b
+22:37:42.667 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+22:37:43.882 [Thread-1] DEBUG luke.zhou.Page - url:
+22:38:13.437 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+22:38:33.015 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:38:38.479 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:null
+22:39:23.485 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+22:39:24.592 [Thread-1] DEBUG luke.zhou.Page - url:
+22:39:55.697 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+22:40:10.946 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:40:21.777 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:40:26.265 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:raid                check all in the raid list, raid once
+22:40:26.787 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
+22:40:26.787 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+22:40:41.427 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
+22:40:41.428 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:40:51.633 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:41:03.235 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:repeat raid         check all in the raid list, raid until stop
+22:41:06.638 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
+22:45:46.737 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:45:57.111 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:50:57.246 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:51:06.438 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:56:06.548 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:56:18.563 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:01:18.735 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:01:28.351 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:06:28.498 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:06:38.803 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:11:38.942 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:11:48.772 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:11:48.772 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+23:12:03.013 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+23:12:03.013 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:12:11.986 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:17:12.119 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:17:19.694 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:22:19.829 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:22:31.268 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:27:31.399 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:27:39.599 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:32:39.809 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:32:46.711 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:37:46.978 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:37:55.483 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:42:55.610 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:43:07.657 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:43:07.657 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+23:43:25.721 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+23:43:25.721 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:43:33.582 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:45:32.764 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:transfer            transfer resouse to new village
+23:45:33.633 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:transfer            transfer resouse to new village
+23:45:33.637 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+23:45:42.210 [Thread-1] DEBUG luke.zhou.Page - url:build.php?t=5&id=35
+23:46:04.587 [Thread-1] INFO  luke.zhou.TravianHelper - Send Resource: 
+23:49:04.660 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:49:15.102 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:54:15.288 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:54:25.015 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:59:25.237 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:59:33.187 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:04:33.564 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:04:44.778 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:09:45.206 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:09:53.063 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:14:53.448 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:15:03.961 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:15:03.961 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+00:15:22.623 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+00:15:22.623 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:15:32.273 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:20:32.728 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:20:41.313 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:25:41.725 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:25:50.685 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:30:51.134 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:30:59.600 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:35:59.980 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:36:10.078 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:41:10.513 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:41:20.737 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:46:21.139 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:46:32.593 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:46:32.593 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+00:46:49.280 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+00:46:49.281 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:46:59.534 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:51:59.952 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:52:10.107 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+00:57:10.547 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+00:57:21.586 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:02:22.054 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:02:30.855 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:07:31.289 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:07:42.400 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:12:42.824 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:12:51.292 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:17:51.685 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:18:02.813 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:18:02.813 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+01:18:17.009 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+01:18:17.009 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:18:27.593 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:23:28.059 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:23:36.260 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:28:36.679 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:28:45.891 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:33:46.290 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:33:53.477 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:38:53.867 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:39:02.524 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:44:02.965 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:44:10.356 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:49:10.784 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:49:17.464 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:49:17.464 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+01:49:32.603 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+01:49:32.603 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:49:39.642 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:54:40.054 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:54:46.607 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+01:59:47.034 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+01:59:54.114 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:04:54.550 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:05:05.023 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:10:05.480 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:10:12.262 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:15:12.729 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:15:21.166 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:20:21.497 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:20:30.662 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:20:30.663 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+02:20:48.833 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+02:20:48.833 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:20:56.139 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:25:56.529 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:26:07.148 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:31:07.607 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:31:18.761 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:36:19.167 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:36:28.465 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:41:28.906 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:41:37.247 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:46:37.680 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:46:47.924 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:51:48.374 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:51:55.392 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:51:55.392 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+02:52:11.918 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+02:52:11.918 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:52:21.909 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+02:57:22.284 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+02:57:33.245 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:02:33.653 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:02:42.572 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:07:43.041 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:07:50.080 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:12:50.471 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:12:58.034 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:17:58.429 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:18:07.193 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:23:07.644 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:23:17.380 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:23:17.380 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+03:23:33.823 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 5 raids have been made.
+03:23:33.823 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:23:43.014 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:28:43.448 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:28:50.893 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:33:51.297 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:33:59.500 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:38:59.909 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:39:08.825 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:44:09.192 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:44:16.304 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:49:16.769 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:49:24.000 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:54:24.416 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:54:32.362 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:54:32.363 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+03:54:48.354 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+03:54:48.354 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+03:54:57.770 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+03:59:58.215 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:00:07.597 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:05:08.002 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:05:18.506 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:10:18.971 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:10:27.366 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:15:27.814 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:15:38.866 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:20:39.317 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:20:47.771 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:25:48.171 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:25:56.673 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:25:56.673 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+04:26:17.474 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+04:26:17.474 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:26:25.621 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:31:26.052 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:31:35.418 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:36:35.822 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:36:43.822 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:41:44.265 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:41:54.775 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:46:55.213 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:47:04.194 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:52:04.609 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:52:17.078 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:57:17.490 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:57:28.771 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+04:57:28.771 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+04:57:44.748 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+04:57:44.748 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+04:57:51.125 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:02:51.557 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:02:58.890 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:07:59.325 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:08:05.860 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:13:06.273 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:13:17.686 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:18:18.093 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:18:27.390 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:23:27.825 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:23:34.655 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:28:35.088 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:28:45.136 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:28:45.136 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+05:29:02.389 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+05:29:02.389 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:29:14.352 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:34:14.770 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:34:24.779 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:39:25.221 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:39:32.830 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:44:33.235 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:44:43.346 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:49:43.767 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:49:54.980 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+05:54:55.387 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+05:55:04.800 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:00:05.240 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:00:17.634 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:00:17.635 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+06:00:37.726 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+06:00:37.727 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:00:44.685 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:05:45.135 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:05:52.406 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:10:52.831 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:11:02.211 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:16:02.603 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:16:12.490 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:21:12.935 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:21:23.305 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:26:23.709 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:26:34.330 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:31:34.755 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:31:42.186 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:31:42.187 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+06:31:56.997 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+06:31:56.997 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:32:07.840 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:37:08.248 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:37:17.547 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:42:17.945 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:42:25.730 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:47:26.197 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:47:35.725 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:52:36.119 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:52:46.617 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+06:57:47.032 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+06:57:55.712 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:02:56.146 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:03:04.474 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:03:04.474 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+07:03:19.288 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+07:03:19.288 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:03:27.291 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:08:27.683 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:08:36.330 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:13:36.835 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:13:45.426 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:18:45.760 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:18:57.505 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:23:57.905 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:24:04.830 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:29:05.197 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:29:13.054 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:34:13.479 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:34:20.114 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:34:20.114 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+07:34:41.877 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+07:34:41.877 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:34:50.459 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:39:50.842 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:40:02.474 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:45:02.773 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:45:13.890 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:50:14.308 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:50:22.310 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+07:55:22.705 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+07:55:29.806 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:00:30.226 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:00:41.466 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:05:41.789 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:05:51.531 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:05:51.531 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+08:06:10.544 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+08:06:10.544 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:06:23.117 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:11:23.551 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:11:30.827 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:16:31.288 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:16:39.625 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:21:40.062 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:21:48.113 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:26:48.574 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:26:57.695 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:31:58.082 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:32:07.874 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:37:08.330 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:37:18.390 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:37:18.391 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+08:37:39.772 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+08:37:39.772 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:37:48.178 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:42:48.657 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:42:58.124 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:47:58.607 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:48:12.108 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:53:12.541 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:53:23.536 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+08:58:23.879 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+08:58:34.045 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:03:34.472 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:03:43.294 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:08:43.728 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:08:53.478 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:08:53.478 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+09:09:13.096 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+09:09:13.096 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:09:22.119 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:14:22.574 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:14:32.386 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:19:32.887 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:19:42.101 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:24:42.581 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:24:53.630 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:29:53.918 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:30:03.142 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:35:03.515 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:35:12.490 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:40:12.652 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:40:20.545 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:40:20.546 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+09:40:37.491 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+09:40:37.491 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:40:43.921 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:45:44.279 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:45:53.030 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:50:53.469 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:51:03.905 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+09:56:04.367 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+09:56:12.259 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:01:12.724 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:01:22.587 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:06:23.000 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:06:31.432 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:11:31.847 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:11:43.232 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:11:43.233 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+10:12:02.066 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+10:12:02.066 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:12:13.597 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:17:14.025 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:17:20.462 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:22:20.981 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:22:28.755 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:27:29.092 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:27:36.870 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:32:37.317 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:32:46.576 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:37:46.975 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:37:56.750 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:42:57.233 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:43:05.610 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:43:05.610 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+10:43:21.052 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+10:43:21.052 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:43:30.914 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:48:31.371 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:48:41.272 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:53:41.696 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:53:52.255 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:58:52.757 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:59:03.691 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:04:04.055 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:04:14.448 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:09:14.862 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:09:21.984 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:14:22.431 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:14:33.206 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:14:33.206 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+11:14:50.692 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+11:14:50.692 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:14:59.359 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:19:59.793 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:20:10.998 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:25:11.467 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:25:18.932 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:30:19.323 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:30:28.465 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:35:28.920 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:35:38.438 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:40:38.862 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:40:46.065 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:45:46.471 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:45:56.555 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:45:56.555 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+11:46:15.578 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+11:46:15.579 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:46:25.535 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:51:25.983 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:51:35.268 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:56:35.748 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:56:46.615 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:01:47.083 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:01:54.376 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:06:54.766 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:07:03.764 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:12:04.282 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:12:12.750 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:17:13.197 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:17:21.276 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:17:21.276 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+12:17:38.188 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+12:17:38.188 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:17:47.777 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:22:48.228 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:22:59.348 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:27:59.792 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:28:11.428 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:33:11.867 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:33:23.155 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:38:23.599 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:38:32.033 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:43:32.352 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:43:41.083 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:48:41.509 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:48:50.227 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:48:50.227 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+12:49:07.731 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+12:49:07.731 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:49:16.224 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:54:16.645 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:54:22.880 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:59:23.365 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:59:32.431 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:04:32.870 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:04:42.618 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:09:43.053 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:09:49.525 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:14:49.949 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:14:59.478 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:19:59.903 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:20:07.040 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:20:07.040 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+13:20:22.888 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+13:20:22.888 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:20:29.460 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:25:29.901 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:25:37.026 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:30:37.457 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:30:47.876 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:35:48.329 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:35:55.554 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:40:55.954 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:41:05.632 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:46:06.087 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:46:19.929 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:51:20.348 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:51:30.092 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:51:30.092 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+13:51:50.244 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+13:51:50.244 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:51:59.940 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:57:00.336 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:57:10.566 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:02:11.041 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:02:20.680 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:07:21.116 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:07:29.861 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:12:30.302 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:12:39.358 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:17:39.725 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:17:48.626 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:22:49.048 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:22:55.818 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:22:55.818 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+14:23:15.233 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+14:23:15.233 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:23:25.167 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:28:25.571 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:28:31.738 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:33:32.166 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:33:40.899 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:38:41.377 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:38:49.498 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:43:49.894 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:43:58.319 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:48:58.777 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:49:08.121 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:54:08.571 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:54:15.566 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:54:15.566 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+14:54:32.496 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+14:54:32.496 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:54:43.025 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:59:43.530 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:59:52.112 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:04:52.562 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:05:04.889 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:10:05.310 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:10:17.557 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:15:17.981 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:15:26.607 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:20:27.017 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:20:35.291 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:25:35.718 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:25:43.924 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:25:43.924 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+15:25:57.642 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+15:25:57.642 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:26:06.095 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:31:06.552 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:31:17.839 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:36:18.273 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:36:26.363 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:41:26.761 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:41:36.541 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:46:36.981 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:46:43.839 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:51:44.242 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:51:51.024 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:56:51.535 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:57:02.629 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:57:02.629 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+15:57:19.229 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+15:57:19.229 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:57:26.287 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:02:26.691 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:02:37.412 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:07:37.817 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:07:44.717 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:12:45.200 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:12:55.643 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:17:56.059 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:18:03.821 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:23:04.299 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:23:14.527 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:28:14.866 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:28:21.923 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:28:21.924 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+16:28:35.524 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+16:28:35.524 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:28:45.346 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:33:45.789 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:33:54.143 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:38:54.529 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:39:04.683 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:44:05.017 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:44:15.006 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:49:15.382 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:49:22.012 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:54:22.445 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:54:31.326 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:59:31.750 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:59:40.263 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:59:40.263 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+16:59:56.041 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+16:59:56.041 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:00:04.866 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:05:05.275 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:05:15.315 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:10:15.764 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:10:22.392 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:15:22.881 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:15:32.893 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:20:33.351 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:20:43.687 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:25:44.125 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:25:51.042 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:30:51.514 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:31:01.208 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:31:01.208 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+17:31:23.079 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+17:31:23.079 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:31:31.086 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:36:31.482 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:36:42.412 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:41:42.804 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:41:52.322 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:46:52.756 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:47:00.402 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:52:00.815 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:52:12.071 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:57:12.467 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:57:19.646 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:02:20.085 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:02:26.368 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:02:26.368 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+18:02:45.491 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+18:02:45.492 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:02:54.379 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:07:54.757 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:08:05.239 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:13:05.636 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:13:13.833 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:18:14.270 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:18:23.676 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:23:24.123 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:23:34.231 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:28:34.615 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:28:45.540 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:33:45.951 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:33:55.109 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:33:55.110 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+18:34:17.555 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+18:34:17.555 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:34:27.665 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:39:28.120 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:39:36.880 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:44:37.265 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:44:48.361 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:49:48.810 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:49:57.281 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:54:57.678 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:55:09.031 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:00:09.545 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:00:18.534 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:05:18.957 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:05:31.730 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:05:31.730 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+19:05:54.689 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+19:05:54.689 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:06:01.053 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:11:01.464 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:11:09.293 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:16:09.767 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:16:20.447 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:21:20.859 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:21:30.345 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:26:30.824 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:26:40.487 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:31:40.921 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:31:49.994 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:36:50.400 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:37:01.560 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:37:01.560 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+19:37:19.201 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+19:37:19.201 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:37:30.446 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:42:30.890 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:42:41.927 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:47:42.315 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:47:49.840 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:52:50.277 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:52:56.825 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:57:57.260 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:58:05.921 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:03:06.340 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:03:15.771 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:08:16.198 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:08:27.156 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:08:27.157 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+20:08:47.792 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+20:08:47.792 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:08:54.526 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:13:54.974 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:14:01.916 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:19:02.047 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:19:10.890 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:24:11.019 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:24:21.306 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:29:21.448 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:29:28.067 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:34:28.221 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:34:38.334 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:39:38.489 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:39:48.075 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:39:48.075 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+20:40:07.734 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 2 raids have been made.
+20:40:07.734 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:40:19.356 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:45:19.655 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:45:31.615 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:50:31.926 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:50:41.122 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:55:41.376 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:55:49.926 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:00:50.260 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:01:00.781 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:06:00.944 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:06:17.375 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:11:17.572 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:11:25.810 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:11:25.810 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+21:11:46.723 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 5 raids have been made.
+21:11:46.723 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:11:53.431 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:16:53.564 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:17:01.010 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:22:01.099 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:22:08.742 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:27:08.913 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:27:19.794 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:32:19.973 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:32:29.252 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:37:29.434 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:37:36.663 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:42:36.823 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:42:46.976 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:42:46.976 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+21:43:07.904 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 5 raids have been made.
+21:43:07.904 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:43:19.157 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:48:19.364 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:48:33.051 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:53:33.234 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:53:39.917 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+21:58:40.076 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+21:58:50.249 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:03:50.393 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:03:57.771 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:08:57.950 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:09:06.731 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:14:06.867 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:14:17.698 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:14:17.698 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+22:14:34.877 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+22:14:34.877 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:14:45.476 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:19:45.525 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:19:55.517 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:24:55.587 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:25:02.081 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:30:02.230 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:30:13.079 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:35:13.225 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:35:23.462 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:40:23.612 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:40:34.483 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:45:34.646 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:45:44.690 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:45:44.690 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+22:46:05.685 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 10 raids have been made.
+22:46:05.685 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:46:18.123 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:51:18.294 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:51:26.011 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+22:56:26.129 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+22:56:35.897 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:01:36.175 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:01:46.544 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:06:46.993 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:06:55.901 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:11:56.311 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:12:04.452 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:17:04.625 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:17:13.722 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+23:17:13.722 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+23:17:27.956 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 8 raids have been made.
+23:17:27.956 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+23:17:36.601 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:39:42.979 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+10:39:44.525 [Thread-1] DEBUG luke.zhou.Page - url:
+10:40:02.091 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+10:40:15.023 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:40:22.851 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:40:52.507 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:raid                check all in the raid list, raid once
+10:40:52.875 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
+10:40:52.880 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+10:41:10.752 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
+10:41:10.753 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:41:20.219 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:43:45.006 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:repeat raid         check all in the raid list, raid until stop
+10:43:45.280 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
+10:45:50.335 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:45:58.311 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:50:54.003 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:51:05.431 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+10:56:05.628 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+10:56:13.968 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:01:14.167 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:01:21.932 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:06:22.200 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:06:31.493 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:11:31.885 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:11:40.978 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:11:40.978 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+11:12:01.459 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+11:12:01.459 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:12:12.139 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:17:12.538 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:17:23.400 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:22:23.812 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:22:33.165 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:27:33.571 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:27:40.882 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:32:41.248 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:32:52.093 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:37:52.555 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:38:01.379 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:43:01.791 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:43:10.952 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:43:10.952 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+11:43:24.553 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 8 raids have been made.
+11:43:24.553 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:43:34.802 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:48:35.231 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:48:45.066 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:53:45.462 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:53:51.973 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+11:58:52.349 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+11:59:01.407 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:04:01.820 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:04:09.040 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:09:09.435 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:09:16.717 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:14:17.019 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:14:27.402 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+12:14:27.402 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+12:14:43.876 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+12:14:43.876 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+12:14:54.358 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:15:27.652 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:15:37.450 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:20:37.585 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:20:48.969 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:25:49.115 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:25:59.619 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:30:59.764 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:31:10.002 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:36:10.153 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:36:19.861 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:41:20.029 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:41:28.463 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:41:28.463 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+13:41:50.119 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+13:41:50.119 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:41:58.760 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:46:58.934 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:47:10.553 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:52:10.720 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:52:18.490 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+13:57:18.646 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+13:57:26.109 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:02:26.271 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:02:34.548 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:07:34.687 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:07:44.109 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:12:44.280 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:12:53.068 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:12:53.068 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+14:13:10.993 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+14:13:10.993 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:13:18.557 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:18:18.685 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:18:26.063 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:23:26.208 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:23:34.272 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:28:34.442 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:28:41.884 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:33:42.057 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:33:49.376 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:38:49.554 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:38:56.910 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:43:57.084 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:44:05.569 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:44:05.570 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+14:44:26.791 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+14:44:26.791 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:44:42.884 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:49:43.056 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:49:49.700 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:54:49.861 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+14:54:58.196 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+14:59:58.379 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:00:05.344 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:05:05.548 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:05:14.147 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:09:00.412 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+15:09:01.675 [Thread-1] DEBUG luke.zhou.Page - url:
+15:09:22.539 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+15:09:34.848 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:09:45.059 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:10:21.503 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:help                display command list
+15:10:22.831 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+15:10:25.088 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+15:10:25.089 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+15:10:33.218 [Thread-1] ERROR luke.zhou.TravianHelper - no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content'//area[@href='build.php?id=1']]"}
+  (Session info: chrome=54.0.2840.98)
+  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.1.104', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.fApAYY}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7c79b7056e130456f343bd484377c0ff
+*** Element info: {Using=xpath, value=//div[@id='content'//area[@href='build.php?id=1']]}
+15:11:52.692 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+15:11:53.826 [Thread-1] DEBUG luke.zhou.Page - url:
+15:12:18.647 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+15:12:35.378 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:12:38.320 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:help                display command list
+15:12:39.880 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:raid                check all in the raid list, raid once
+15:12:44.014 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:12:49.020 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
+15:12:49.020 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+15:13:07.254 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
+15:13:07.255 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:13:18.308 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:15:19.853 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+15:15:23.359 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+15:15:23.361 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+15:15:32.547 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+15:15:44.641 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village{isUnderAttack=false, name='A New Hope', lumber=324, clay=1533, iron=1093, crop=4195, resources=[Resource{type=CROP, level=5}, Resource{type=CROP, level=5}, Resource{type=WOOD, level=3}, Resource{type=IRON, level=3}, Resource{type=CROP, level=5}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}, Resource{type=CLAY, level=3}, Resource{type=CROP, level=4}, Resource{type=CROP, level=4}]}, Village{isUnderAttack=false, name='Big Bang', lumber=1874, clay=1406, iron=3318, crop=3692, resources=[Resource{type=WOOD, level=7}, Resource{type=CROP, level=9}, Resource{type=WOOD, level=7}, Resource{type=IRON, level=6}, Resource{type=CLAY, level=7}, Resource{type=CLAY, level=8}, Resource{type=IRON, level=7}, Resource{type=CROP, level=8}, Resource{type=CROP, level=8}, Resource{type=IRON, level=6}, Resource{type=IRON, level=7}, Resource{type=CROP, level=8}, Resource{type=CROP, level=8}, Resource{type=WOOD, level=7}, Resource{type=CROP, level=8}, Resource{type=CLAY, level=7}, Resource{type=WOOD, level=7}, Resource{type=CLAY, level=7}]}]}
+15:18:34.714 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:18:40.954 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:23:41.116 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:23:50.639 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:28:50.806 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:29:00.503 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:32:27.178 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+15:32:30.616 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+15:32:57.661 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+15:32:58.863 [Thread-1] DEBUG luke.zhou.Page - url:
+15:33:16.554 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+15:33:28.237 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:33:35.061 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:37:40.901 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+15:37:45.185 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+15:37:45.186 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+15:37:55.388 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+15:38:08.242 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village(A New Hope):	isUnderAttack=false
+lumber:1324	clay:465	iron:415	crop:3245
+resources:
+[CROP(5), CROP(5), WOOD(4), IRON(3), CROP(5), CROP(4), CROP(4), CROP(4), CROP(4), CROP(4), CROP(4), CROP(4), CROP(4), CROP(4), CROP(4), CLAY(3), CROP(4), CROP(4)], Village(Big Bang):	isUnderAttack=false
+lumber:938	clay:647	iron:2590	crop:4059
+resources:
+[WOOD(7), CROP(9), WOOD(7), IRON(6), CLAY(7), CLAY(8), IRON(7), CROP(8), CROP(8), IRON(6), IRON(7), CROP(8), CROP(8), WOOD(7), CROP(8), CLAY(7), WOOD(7), CLAY(7)]]}
+15:38:58.264 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:39:06.389 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:39:23.650 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:raid                check all in the raid list, raid once
+15:39:26.397 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
+15:39:26.397 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+15:39:44.254 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
+15:39:44.255 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:39:51.842 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:44:31.953 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:44:43.530 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:49:43.654 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:49:54.710 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:54:54.849 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+15:55:17.778 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+15:55:24.914 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:repeat raid         check all in the raid list, raid until stop
+15:55:27.782 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop
+16:00:17.914 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:00:27.305 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:05:27.416 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:05:33.962 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:05:33.962 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+16:05:53.470 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 9 raids have been made.
+16:05:53.470 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:06:02.550 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:11:02.667 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:11:15.125 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:16:15.256 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:16:24.339 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:21:24.464 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:21:31.749 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:26:31.938 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:26:42.713 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:31:43.064 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:31:53.910 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:36:54.346 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:37:03.397 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:37:03.398 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+16:37:17.715 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 8 raids have been made.
+16:37:17.715 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:37:24.537 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:42:24.983 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:42:32.387 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:47:32.772 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:47:40.563 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:52:40.946 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:52:47.431 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:57:47.840 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:57:56.451 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:02:56.942 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:03:07.464 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:08:07.930 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:08:16.287 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:08:16.287 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+17:08:32.639 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 6 raids have been made.
+17:08:32.640 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:08:40.775 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:13:41.038 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:13:50.542 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:18:50.889 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:19:02.263 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:24:02.379 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:24:12.062 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:29:12.225 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:29:19.108 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:34:19.293 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:34:26.240 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:39:26.379 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:39:33.457 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:39:33.457 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+17:39:50.925 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 7 raids have been made.
+17:39:50.925 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:39:57.333 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:44:57.728 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:45:04.459 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:50:04.908 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:50:14.386 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+17:55:14.827 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+17:55:21.827 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:00:22.253 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:00:29.312 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:05:29.708 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:05:37.465 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:10:37.621 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:10:46.616 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:10:46.616 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+18:11:08.087 [Thread-1] INFO  luke.zhou.TravianHelper - Repeat Raid: 7 raids have been made.
+18:11:08.087 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:11:17.019 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:16:17.189 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:16:27.875 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:21:28.011 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:21:34.707 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:26:34.828 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:26:44.808 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:31:44.982 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:31:56.293 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:36:56.438 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+18:37:03.926 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+18:41:02.523 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:help                display command list
+18:41:06.674 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:stop raid           stop repeat raid
+18:41:09.046 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:stop raid           stop repeat raid
+18:41:30.461 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+18:41:34.056 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+19:51:00.891 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+19:51:02.206 [Thread-1] DEBUG luke.zhou.Page - url:
+19:51:39.215 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+19:51:51.652 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:51:58.386 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:52:12.254 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:help                display command list
+19:52:13.901 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+19:52:18.405 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+19:52:18.413 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+19:52:28.820 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+19:52:40.326 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village(A New Hope):	isUnderAttack=false
+lumber:226	clay:800	iron:127	crop:2764
+resources:
+[CROP(5)[RIN], CROP(5)[RIN], WOOD(4)[RIN], IRON(4)[RIN], CROP(5)[RIN], CROP(5)[RIN], CROP(5)[RIN], CROP(4)[RIN], CROP(4)[RIN], CROP(5)[RIN], CROP(5)[RIN], CROP(4)[RIN], CROP(4)[RIN], CROP(4)[RIN], CROP(4)[RIN], CLAY(4)[RIN], CROP(4)[RIN], CROP(4)[RIN]], Village(Big Bang):	isUnderAttack=false
+lumber:1392	clay:1388	iron:1297	crop:1268
+resources:
+[WOOD(8)[RIN], CROP(9)[RIN], WOOD(7)[RIN], IRON(6)[RIN], CLAY(7)[RIN], CLAY(8)[RIN], IRON(7)[RIN], CROP(8)[RIN], CROP(8)[RIN], IRON(6)[RIN], IRON(7)[RIN], CROP(8)[RIN], CROP(8)[RIN], WOOD(7)[RIN], CROP(8)[RIN], CLAY(7)[RIN], WOOD(7)[RIN], CLAY(7)[RIN]]]}
+19:54:43.290 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+19:54:45.382 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+19:55:25.635 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
+19:55:27.606 [Thread-1] DEBUG luke.zhou.Page - url:
+19:57:04.024 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
+19:57:05.767 [Thread-1] DEBUG luke.zhou.Page - url:
+19:57:47.790 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+19:58:02.292 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+19:58:11.239 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+19:58:16.252 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+19:58:16.261 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+20:00:11.548 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+20:00:12.775 [Thread-1] DEBUG luke.zhou.Page - url:
+20:00:49.481 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+20:01:03.201 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:01:11.015 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:01:51.336 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:raid                check all in the raid list, raid once
+20:01:56.056 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
+20:01:56.057 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+20:02:19.837 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
+20:02:19.838 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:02:33.051 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:02:58.739 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+20:03:03.066 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+20:03:03.067 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+20:03:13.508 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+20:03:23.591 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village(A New Hope):	isUnderAttack=false
+lumber:231	clay:805	iron:132	crop:3140
+resources:
+[CROP(5)[N], CROP(5)[N], WOOD(4)[N], IRON(4)[N], CROP(5)[N], CROP(5)[N], CROP(5)[N], CROP(4)[N], CROP(4)[N], CROP(5)[N], CROP(5)[N], CROP(4)[N], CROP(4)[N], CROP(4)[N], CROP(4)[IN], CLAY(4)[N], CROP(4)[N], CROP(4)[N]], Village(Big Bang):	isUnderAttack=false
+lumber:1661	clay:1639	iron:1519	crop:1481
+resources:
+[WOOD(8)[N], CROP(9)[N], WOOD(7)[N], IRON(6)[N], CLAY(7)[N], CLAY(8)[N], IRON(7)[N], CROP(8)[N], CROP(8)[N], IRON(6)[N], IRON(7)[N], CROP(8)[N], CROP(8)[N], WOOD(7)[N], CROP(8)[IN], CLAY(7)[N], WOOD(7)[N], CLAY(7)[N]]]}
+20:07:08.718 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:07:17.972 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:08:12.418 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+20:08:12.995 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+20:08:37.906 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+20:08:39.046 [Thread-1] DEBUG luke.zhou.Page - url:
+20:09:08.116 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+20:09:24.410 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:09:29.128 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+20:09:32.089 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:09:37.097 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+20:09:37.098 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+20:09:48.965 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+20:09:59.026 [Thread-1] ERROR luke.zhou.TravianHelper - 18
+20:11:11.805 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+20:11:12.982 [Thread-1] DEBUG luke.zhou.Page - url:
+20:11:51.763 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+20:12:09.763 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:12:19.921 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:12:27.707 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+20:12:29.931 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+20:12:29.933 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+20:12:43.764 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+20:12:54.500 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village(A New Hope):	isUnderAttack=false
+lumber:538	clay:1211	iron:437	crop:3254
+resources:
+CROP(5)[N]	CROP(5)[N]	WOOD(4)[N]	IRON(4)[N]	CROP(5)[N]	CROP(5)[N]	
+CROP(5)[N]	CROP(4)[N]	CROP(4)[N]	CROP(5)[N]	CROP(5)[N]	CROP(4)[N]	
+CROP(4)[N]	CROP(4)[N]	CROP(4)[IN]	CLAY(4)[N]	CROP(4)[N]	CROP(4)[N]	
+, Village(Big Bang):	isUnderAttack=false
+lumber:1762	clay:1714	iron:1577	crop:1549
+resources:
+WOOD(8)[N]	CROP(9)[N]	WOOD(7)[N]	IRON(6)[N]	CLAY(7)[N]	CLAY(8)[N]	
+IRON(7)[N]	CROP(8)[N]	CROP(8)[N]	IRON(6)[N]	IRON(7)[N]	CROP(8)[N]	
+CROP(8)[N]	WOOD(7)[N]	CROP(8)[IN]	CLAY(7)[N]	WOOD(7)[N]	CLAY(7)[N]	
+]}
+20:13:39.566 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+20:13:44.524 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+20:14:30.582 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+20:14:31.724 [Thread-1] DEBUG luke.zhou.Page - url:
+20:15:04.877 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+20:15:23.242 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:15:30.174 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:15:36.279 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+20:15:40.182 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+20:15:40.190 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+20:15:53.345 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+20:16:06.803 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village(A New Hope):	isUnderAttack=false
+lumber:540	clay:1212	iron:438	crop:3290
+resources:
+CROP(5)[N]	CROP(5)[N]	WOOD(4)[N]	IRON(4)[N]	CROP(5)[N]	
+CROP(5)[N]	CROP(5)[N]	CROP(4)[N]	CROP(4)[N]	CROP(5)[N]	
+CROP(5)[N]	CROP(4)[N]	CROP(4)[N]	CROP(4)[N]	CROP(4)[IN]	
+CLAY(4)[N]	CROP(4)[N]	CROP(4)[N]	, Village(Big Bang):	isUnderAttack=false
+lumber:1791	clay:1738	iron:1596	crop:1569
+resources:
+WOOD(8)[N]	CROP(9)[N]	WOOD(7)[N]	IRON(6)[N]	CLAY(7)[N]	
+CLAY(8)[N]	IRON(7)[N]	CROP(8)[N]	CROP(8)[N]	IRON(6)[N]	
+IRON(7)[N]	CROP(8)[N]	CROP(8)[N]	WOOD(7)[N]	CROP(8)[IN]	
+CLAY(7)[N]	WOOD(7)[N]	CLAY(7)[N]	]}
+20:17:39.974 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+20:17:41.844 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+20:18:07.400 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+20:18:08.603 [Thread-1] DEBUG luke.zhou.Page - url:
+20:19:21.172 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+20:19:45.309 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:19:52.300 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+20:19:57.308 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:20:02.316 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+20:20:02.317 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+20:20:14.029 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+20:20:22.268 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village(A New Hope):	isUnderAttack=false
+lumber:543	clay:1215	iron:441	crop:3342
+resources:
+1:CROP(5)[N]	2:CROP(5)[N]	3:WOOD(4)[N]	4:IRON(4)[N]	5:CROP(5)[N]	
+6:CROP(5)[N]	7:CROP(5)[N]	8:CROP(4)[N]	9:CROP(4)[N]	10:CROP(5)[N]	
+11:CROP(5)[N]	12:CROP(4)[N]	13:CROP(4)[N]	14:CROP(4)[N]	15:CROP(4)[IN]	
+16:CLAY(4)[N]	17:CROP(4)[N]	18:CROP(4)[N]	, Village(Big Bang):	isUnderAttack=false
+lumber:1887	clay:1823	iron:1662	crop:1634
+resources:
+1:WOOD(8)[N]	2:CROP(9)[N]	3:WOOD(7)[N]	4:IRON(6)[N]	5:CLAY(7)[N]	
+6:CLAY(8)[N]	7:IRON(7)[N]	8:CROP(8)[N]	9:CROP(8)[N]	10:IRON(6)[N]	
+11:IRON(7)[N]	12:CROP(8)[N]	13:CROP(8)[N]	14:WOOD(7)[N]	15:CROP(8)[IN]	
+16:CLAY(7)[N]	17:WOOD(7)[N]	18:CLAY(7)[N]	]}
+20:20:36.278 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:raid                check all in the raid list, raid once
+20:20:37.276 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:raid                check all in the raid list, raid once
+20:20:37.276 [Thread-1] DEBUG luke.zhou.Page - url:build.php?tt=99&id=39
+20:20:55.645 [Thread-1] INFO  luke.zhou.TravianHelper - Start Raid: 9 raids have been made.
+20:20:55.645 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:21:05.391 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:21:13.122 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:repeat raid         check all in the raid list, raid until stop
+20:21:15.395 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:repeat raid         check all in the raid list, raid until stop

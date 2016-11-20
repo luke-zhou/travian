@@ -36,7 +36,7 @@ public class Main
         {
             System.out.println("Debug Mode....................");
             login = "tdxh20";
-            password = "********";
+            password = "*******";
             notificationEmail = "Sharlock@gmail.com";
         }
         else

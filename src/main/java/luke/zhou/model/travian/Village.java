@@ -1,5 +1,7 @@
 package luke.zhou.model.travian;
 
+import java.util.Arrays;
+
 /**
  * Created by Luke on 16/11/16.
  */
@@ -14,24 +16,35 @@ public class Village
     int iron;
     int crop;
 
+    Resource[] resources;
+
 
     public Village(String name)
     {
         this.isUnderAttack = false;
         this.name = name;
+        resources = new Resource[18];
     }
-
     @Override
     public String toString()
     {
-        return "Village{" +
-                "isUnderAttack=" + isUnderAttack +
-                ", name='" + name + '\'' +
-                ", lumber=" + lumber +
-                ", clay=" + clay +
-                ", iron=" + iron +
-                ", crop=" + crop +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Village(" + name + "):\t" + "isUnderAttack=" + isUnderAttack + "\n");
+        sb.append("lumber:" + lumber +"\tclay:" + clay +"\tiron:" + iron +"\tcrop:" + crop + "\n");
+        sb.append("resources:\n");
+        for(int i=0; i< resources.length;i++)
+        {
+            sb.append((i+1)+":");
+            sb.append(resources[i].toString());
+            sb.append("\t");
+            if((i+1)%5==0) sb.append("\n")  ;
+        }
+        return sb.toString();
+    }
+
+    public Resource[] getResources()
+    {
+        return resources;
     }
 
     public boolean isUnderAttack()

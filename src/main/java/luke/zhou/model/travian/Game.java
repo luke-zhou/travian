@@ -21,7 +21,6 @@ public class Game
 
 
     private List<Village> villages;
-    private List<Building> buildings;
 
     public Game()
     {

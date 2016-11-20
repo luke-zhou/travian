@@ -5,5 +5,12 @@ package luke.zhou.model.travian;
  */
 public class Building
 {
+    BuildingCatagory catagory;
 
+    private enum BuildingCatagory
+    {
+        INFRASTRUCTURE,
+        MILITARY,
+        RESOURCES
+    }
 }

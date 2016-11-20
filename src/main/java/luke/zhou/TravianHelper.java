@@ -60,25 +60,23 @@ public class TravianHelper implements Runnable
                         case REPEAT_RAID:
                             game.setAutoRaid(true);
                             System.out.println("Repeat raid started");
-                            Main.getMainCommandQueue().add(Command.READY);
                             break;
                         case STOP_RAID:
                             game.setAutoRaid(false);
                             System.out.println("Repeat raid stopped");
-                            Main.getMainCommandQueue().add(Command.READY);
                             break;
                         case GET_INFO:
                             reloadInfo();
-                            Main.getMainCommandQueue().add(Command.READY);
                             break;
                         case TRANSFER:
                             transferResource();
-                            Main.getMainCommandQueue().add(Command.READY);
                             break;
 
                         default:
                             LOG.debug("got cmd for travian helper:" + cmd);
                     }
+
+                    Main.getMainCommandQueue().add(Command.READY);
                 }
 
                 //every 5 mins
