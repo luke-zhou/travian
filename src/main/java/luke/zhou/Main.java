@@ -106,6 +106,7 @@ public class Main
         if (inputCmd == null)
         {
             System.out.println("Can not recognize the command: " + cmd);
+            mainCommandQueue.add(Command.READY);
         }
         else if (Command.HELP.equals(inputCmd))
         {

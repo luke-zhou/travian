@@ -146,11 +146,19 @@ public class Page
     public String sendRaid()
     {
         loadURL("build.php?tt=99&id=39");
-        WebElement selectAll = driver.findElement(By.id("raidListMarkAll123"));
-        selectAll.click();
-        submit(selectAll);
+        WebElement selectAll1 = driver.findElement(By.id("raidListMarkAll123"));
+        selectAll1.click();
+        submit(selectAll1);
+        String result1 = driver.findElement(By.id("list123")).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
 
-        return driver.findElement(By.id("list123")).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
+        loadURL("build.php?tt=99&id=39");
+        WebElement selectAll2 = driver.findElement(By.id("raidListMarkAll173"));
+        selectAll2.click();
+        submit(selectAll2);
+
+        String result2=driver.findElement(By.id("list173")).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
+
+        return result1 + "\n" + result2;
     }
 
     public void home(Game game)
