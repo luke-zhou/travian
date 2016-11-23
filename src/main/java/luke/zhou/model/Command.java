@@ -19,6 +19,7 @@ public enum Command
     HELP("help", "display command list", true),
     READY("ready", "", false),
     TRANSFER("transfer", "transfer resouse to new village", true),
+    CLEAN_MESSAGE("cleanup","clean up the non-loss reports", true),
     EXIT("exit", "Exit program", true);
 
     private final String value;

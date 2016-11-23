@@ -76,7 +76,7 @@ public class Main
         if (isDebug)
         {
             //simulate the action which needs to test
-            travianHelper.getTravianCommandQueue().put(Command.GET_INFO);
+            travianHelper.getTravianCommandQueue().put(Command.CLEAN_MESSAGE);
         }
         else
         {

@@ -76,6 +76,8 @@ public class Page
     {
         game.getVillages().stream().forEach(v -> {
             loadURL(v.getLink());
+            v.setWarehouseCapacity(IntegerUtil.convertInteger(getText("//span[@id='stockBarWarehouse']")));
+            v.setGranaryCapacity(IntegerUtil.convertInteger(getText("//span[@id='stockBarGranary']")));
             v.setLumber(IntegerUtil.convertInteger(getText("//ul[@id='stockBar']/li[@id='stockBarResource1']//span[@id='l1']")));
             v.setClay(IntegerUtil.convertInteger(getText("//ul[@id='stockBar']/li[@id='stockBarResource2']//span[@id='l2']")));
             v.setIron(IntegerUtil.convertInteger(getText("//ul[@id='stockBar']/li[@id='stockBarResource3']//span[@id='l3']")));
@@ -86,6 +88,36 @@ public class Page
             }
         });
     }
+
+    public void cleanupMessage(){
+        loadURL("berichte.php?t=1");
+        List<WebElement> filters = driver.findElements(By.className("iconFilter"));
+        if(!filters.get(0).getAttribute("class").contains("iconFilterActive")){
+           click(filters.get(0));
+        }
+
+        filters = driver.findElements(By.className("iconFilter"));
+        if(filters.get(1).getAttribute("class").contains("iconFilterActive")){
+            click(filters.get(1));
+        }
+
+        filters = driver.findElements(By.className("iconFilter"));
+        if(filters.get(2).getAttribute("class").contains("iconFilterActive")){
+            click(filters.get(2));
+        }
+
+        while(driver.findElements(By.xpath("//table[@id='overview']/tbody/tr/td[@class='noData']")).size()==0){
+            click(driver.findElement(By.id("sAll2")));
+            click(driver.findElement(By.id("del")));
+        }
+    }
+
+    public void openMap()
+    {
+        loadURL("karte.php");
+        loadURL("dorf1.php");
+    }
+
 
     private Resource getResource(int i)
     {
