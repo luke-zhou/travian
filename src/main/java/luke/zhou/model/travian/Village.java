@@ -1,7 +1,5 @@
 package luke.zhou.model.travian;
 
-import java.util.Arrays;
-
 /**
  * Created by Luke on 16/11/16.
  */
@@ -15,6 +13,8 @@ public class Village
     int clay;
     int iron;
     int crop;
+    int warehouseCapacity;
+    int granaryCapacity;
 
     Resource[] resources;
 
@@ -25,19 +25,23 @@ public class Village
         this.name = name;
         resources = new Resource[18];
     }
+
     @Override
     public String toString()
     {
         StringBuilder sb = new StringBuilder();
         sb.append("Village(" + name + "):\t" + "isUnderAttack=" + isUnderAttack + "\n");
-        sb.append("lumber:" + lumber +"\tclay:" + clay +"\tiron:" + iron +"\tcrop:" + crop + "\n");
+        sb.append("lumber:" + lumber + "/" + warehouseCapacity +
+                "\tclay:" + clay + "/" + warehouseCapacity +
+                "\tiron:" + iron + "/" + warehouseCapacity +
+                "\tcrop:" + crop + "/" + granaryCapacity+ "\n");
         sb.append("resources:\n");
-        for(int i=0; i< resources.length;i++)
+        for (int i = 0; i < resources.length; i++)
         {
-            sb.append((i+1)+":");
+            sb.append((i + 1) + ":");
             sb.append(resources[i].toString());
             sb.append("\t");
-            if((i+1)%5==0) sb.append("\n")  ;
+            if ((i + 1) % 5 == 0) sb.append("\n");
         }
         return sb.toString();
     }
@@ -115,5 +119,25 @@ public class Village
     public void setCrop(int crop)
     {
         this.crop = crop;
+    }
+
+    public int getWarehouseCapacity()
+    {
+        return warehouseCapacity;
+    }
+
+    public void setWarehouseCapacity(int warehouseCapacity)
+    {
+        this.warehouseCapacity = warehouseCapacity;
+    }
+
+    public int getGranaryCapacity()
+    {
+        return granaryCapacity;
+    }
+
+    public void setGranaryCapacity(int granaryCapacity)
+    {
+        this.granaryCapacity = granaryCapacity;
     }
 }

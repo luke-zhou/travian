@@ -3451,3 +3451,127 @@ System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.1.104', os.name: 'Mac
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.towrG5}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
 Session ID: 4de66f3c1bf86ea458f6cf441100e0aa
+16:06:50.556 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+16:06:52.126 [Thread-1] DEBUG luke.zhou.Page - url:
+16:07:22.583 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+16:07:39.568 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:07:49.685 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:08:17.471 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:info                display brief information of account
+16:08:19.713 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:info                display brief information of account
+16:08:19.714 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=69736&
+16:08:30.160 [Thread-1] DEBUG luke.zhou.Page - url:http://ts4.travian.com.au/dorf1.php?newdid=3311&
+16:08:38.894 [Thread-1] INFO  luke.zhou.TravianHelper - Game: Game{alarmOn=true, autoRaid=false, villages=[Village(A New Hope):	isUnderAttack=false
+lumber:2024/7800	clay:3560/7800	iron:911/7800	crop:16224/21400
+resources:
+1:CROP(7)[N]	2:CROP(6)[N]	3:WOOD(6)[N]	4:IRON(6)[N]	5:CROP(7)[N]	
+6:CROP(6)[N]	7:CROP(6)[N]	8:CROP(6)[N]	9:CROP(6)[N]	10:CROP(6)[N]	
+11:CROP(6)[N]	12:CROP(6)[N]	13:CROP(6)[N]	14:CROP(6)[N]	15:CROP(6)[N]	
+16:CLAY(5)[N]	17:CROP(6)[N]	18:CROP(6)[N]	, Village(Big Bang):	isUnderAttack=false
+lumber:1498/14400	clay:1494/14400	iron:1492/14400	crop:1513/17600
+resources:
+1:WOOD(8)[N]	2:CROP(9)[N]	3:WOOD(8)[N]	4:IRON(8)[N]	5:CLAY(7)[IN]	
+6:CLAY(8)[N]	7:IRON(7)[N]	8:CROP(8)[N]	9:CROP(9)[N]	10:IRON(7)[N]	
+11:IRON(7)[N]	12:CROP(9)[N]	13:CROP(9)[N]	14:WOOD(7)[N]	15:CROP(9)[N]	
+16:CLAY(8)[N]	17:WOOD(8)[N]	18:CLAY(7)[N]	]}
+16:08:59.456 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+16:09:03.910 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+16:29:30.901 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+16:29:32.052 [Thread-1] DEBUG luke.zhou.Page - url:
+16:29:50.250 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+16:30:02.284 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:30:13.435 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:30:55.438 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:help                display command list
+16:31:03.510 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:cleanup             clean up the non-loss reports
+16:31:08.465 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:cleanup             clean up the non-loss reports
+16:31:08.466 [Thread-1] DEBUG luke.zhou.Page - url:berichte.php?t=1
+16:31:38.742 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:null
+16:31:41.582 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:cleanup             clean up the non-loss reports
+16:31:44.022 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:cleanup             clean up the non-loss reports
+16:31:44.022 [Thread-1] DEBUG luke.zhou.Page - url:berichte.php?t=1
+16:32:02.567 [Thread-1] ERROR luke.zhou.TravianHelper - stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.98)
+  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.yKReIG}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5fa23f2145a9619dd6d52703704ecff0
+16:34:04.833 [main] DEBUG luke.zhou.Main - tdxh20/Carnegie71/Sharlock@gmail.com
+16:34:07.166 [Thread-1] DEBUG luke.zhou.Page - url:
+16:34:33.959 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+16:34:47.927 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:34:55.533 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:35:00.552 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:cleanup             clean up the non-loss reports
+16:35:00.552 [Thread-1] DEBUG luke.zhou.Page - url:berichte.php?t=1
+16:36:39.203 [Thread-1] ERROR luke.zhou.TravianHelper - stale element reference: element is not attached to the page document
+  (Session info: chrome=54.0.2840.98)
+  (Driver info: chromedriver=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1),platform=Mac OS X 10.12.1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'Lukes-MacBook-Pro.local', ip: '192.168.4.83', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.1', java.version: '1.8.0_31'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.25.426935 (820a95b0b81d33e42712f9198c215f703412e1a1), userDataDir=/var/folders/6y/rn3xv4s507l1yv7kwty7w3rr0000gn/T/.org.chromium.Chromium.TjBPTT}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=54.0.2840.98, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 6896b48f22bbf208b50e40a3659420f7
+16:39:55.633 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+16:39:56.756 [Thread-1] DEBUG luke.zhou.Page - url:
+16:40:23.312 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+16:40:40.056 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:40:46.821 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:41:02.707 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:null
+16:41:09.744 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:cleanup             clean up the non-loss reports
+16:41:11.843 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:cleanup             clean up the non-loss reports
+16:41:11.844 [Thread-1] DEBUG luke.zhou.Page - url:berichte.php?t=1
+16:41:44.043 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:cleanup             clean up the non-loss reports
+16:41:48.135 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:cleanup             clean up the non-loss reports
+16:41:48.135 [Thread-1] DEBUG luke.zhou.Page - url:berichte.php?t=1
+16:43:43.151 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+16:43:48.085 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+16:54:02.449 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/sharlock@gmail.com
+16:54:03.603 [Thread-1] DEBUG luke.zhou.Page - url:
+16:54:26.161 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+16:54:41.722 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+16:54:51.478 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+16:55:02.521 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:cleanup             clean up the non-loss reports
+16:55:06.497 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:cleanup             clean up the non-loss reports
+16:55:06.498 [Thread-1] DEBUG luke.zhou.Page - url:berichte.php?t=1
+17:06:34.698 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+17:06:39.671 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program
+20:03:12.986 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - tdxh20/Carnegie71/s
+20:03:14.486 [Thread-1] DEBUG luke.zhou.Page - url:
+20:03:31.192 [Thread-1] DEBUG luke.zhou.Page - Page title is: Travian au4
+20:03:45.185 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:03:52.514 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:03:57.960 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:cleanup             clean up the non-loss reports
+20:04:02.531 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:cleanup             clean up the non-loss reports
+20:04:02.531 [Thread-1] DEBUG luke.zhou.Page - url:berichte.php?t=1
+20:04:29.038 [Thread-1] DEBUG luke.zhou.Page - url:karte.php
+20:04:42.934 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:10:43.222 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:10:54.340 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:14:54.455 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:15:05.393 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:17:05.443 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:17:12.692 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:23:12.876 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:23:21.909 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:26:22.160 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:26:33.039 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:29:33.307 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:29:40.731 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:32:40.941 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:32:50.186 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:35:50.475 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:35:57.999 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:40:58.210 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:41:08.243 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:42:08.286 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:42:19.630 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:46:19.764 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:46:27.283 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:48:27.332 [Thread-1] DEBUG luke.zhou.Page - url:dorf1.php
+20:48:35.932 [Thread-1] DEBUG luke.zhou.Page - Village size:2
+20:50:32.846 [luke.zhou.Main.main()] DEBUG luke.zhou.Main - got cmd from console:exit                Exit program
+20:50:35.995 [Thread-1] DEBUG luke.zhou.TravianHelper - got cmd for helper:exit                Exit program

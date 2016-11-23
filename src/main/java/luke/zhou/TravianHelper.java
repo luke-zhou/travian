@@ -3,6 +3,7 @@ package luke.zhou;
 import luke.zhou.io.MailIO;
 import luke.zhou.model.Command;
 import luke.zhou.model.travian.Game;
+import luke.zhou.util.RandomUtil;
 import luke.zhou.util.TimeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -38,9 +39,12 @@ public class TravianHelper implements Runnable
         Main.getMainCommandQueue().add(Command.READY);
 
         int tick = 0;
+        int roughFiveMin = 12*5;
+        int roughThirtyMin = 12*30;
+        int wholeDay = 12*60*24;
         while (true)
         {
-            if (tick == 12*60*24) tick = 0;
+            if (tick == wholeDay) tick = 0;
 
             try
             {
@@ -71,6 +75,11 @@ public class TravianHelper implements Runnable
                         case TRANSFER:
                             transferResource();
                             break;
+                        case CLEAN_MESSAGE:
+                            travian.cleanupMessage();
+                            travian.openMap();
+                            System.out.println("All non-loss report cleaned up");
+                            break;
 
                         default:
                             LOG.debug("got cmd for travian helper:" + cmd);
@@ -80,15 +89,29 @@ public class TravianHelper implements Runnable
                 }
 
                 //every 5 mins
-                if (tick % (12 * 5) == 0)
+                if (tick % (roughFiveMin) == 0)
                 {
                     checkUnderAttack();
+                    roughFiveMin = 12*RandomUtil.randomRange(3, 7);
                 }
 
                 //every 30 mins
-                if (game.getAutoRaid() && (tick % (12 * 30) == 0))
+                if (game.getAutoRaid() && (tick % (roughThirtyMin) == 0))
                 {
                     repeatRaiding();
+                    roughThirtyMin = 12 * RandomUtil.randomRange(20, 40);
+                    //50% random to clean report
+                    if(RandomUtil.randomIntCentre0(10)<0){
+                        LOG.debug("clean up message");
+                        travian.cleanupMessage();
+                    }
+
+                    //33% random to open map
+                    if(RandomUtil.randomIntFrom0(10)%3==0){
+                        LOG.debug("open map");
+                        travian.openMap();
+                    }
+
                 }
 
                 //every 10 mins
