@@ -5,6 +5,7 @@ import luke.zhou.model.Command;
 import luke.zhou.model.travian.Game;
 import luke.zhou.util.RandomUtil;
 import luke.zhou.util.TimeUtil;
+import org.openqa.selenium.NoSuchElementException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -46,14 +47,11 @@ public class TravianHelper implements Runnable
         {
             if (tick == wholeDay) tick = 0;
 
-            try
-            {
+            try {
                 Command cmd = travianCommandQueue.poll();
-                if (cmd != null)
-                {
+                if (cmd != null) {
                     LOG.debug("got cmd for helper:" + cmd);
-                    switch (cmd)
-                    {
+                    switch (cmd) {
                         case RAID:
                             startRaid();
                             break;
@@ -89,25 +87,23 @@ public class TravianHelper implements Runnable
                 }
 
                 //every 5 mins
-                if (tick % (roughFiveMin) == 0)
-                {
+                if (tick % (roughFiveMin) == 0) {
                     checkUnderAttack();
-                    roughFiveMin = 12*RandomUtil.randomRange(3, 7);
+                    roughFiveMin = 12 * RandomUtil.randomRange(3, 7);
                 }
 
                 //every 30 mins
-                if (game.getAutoRaid() && (tick % (roughThirtyMin) == 0))
-                {
+                if (game.getAutoRaid() && (tick % (roughThirtyMin) == 0)) {
                     repeatRaiding();
                     roughThirtyMin = 12 * RandomUtil.randomRange(20, 40);
                     //50% random to clean report
-                    if(RandomUtil.randomIntCentre0(10)<0){
+                    if (RandomUtil.randomIntCentre0(10) < 0) {
                         LOG.debug("clean up message");
                         travian.cleanupMessage();
                     }
 
                     //33% random to open map
-                    if(RandomUtil.randomIntFrom0(10)%3==0){
+                    if (RandomUtil.randomIntFrom0(10) % 3 == 0) {
                         LOG.debug("open map");
                         travian.openMap();
                     }
@@ -119,8 +115,10 @@ public class TravianHelper implements Runnable
 
                 tick++;
                 Thread.sleep(TimeUtil.seconds(5));
-            } catch (Exception e)
-            {
+            } catch (NoSuchElementException nse) {
+                LOG.error(nse.getMessage());
+                nse.printStackTrace();
+            } catch (Exception e) {
                 LOG.error(e.getMessage());
                 e.printStackTrace();
                 travian.exit();
