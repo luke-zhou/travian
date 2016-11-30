@@ -20,6 +20,7 @@ public enum Command
     READY("ready", "", false),
     TRANSFER("transfer", "transfer resouse to new village", true),
     CLEAN_MESSAGE("cleanup","clean up the non-loss reports", true),
+    TEST("test", "", false),
     EXIT("exit", "Exit program", true);
 
     private final String value;

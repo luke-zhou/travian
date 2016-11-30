@@ -89,24 +89,29 @@ public class Page
         });
     }
 
-    public void cleanupMessage(){
+    public void cleanupMessage()
+    {
         loadURL("berichte.php?t=1");
         List<WebElement> filters = driver.findElements(By.className("iconFilter"));
-        if(!filters.get(0).getAttribute("class").contains("iconFilterActive")){
-           click(filters.get(0));
+        if (!filters.get(0).getAttribute("class").contains("iconFilterActive"))
+        {
+            click(filters.get(0));
         }
 
         filters = driver.findElements(By.className("iconFilter"));
-        if(filters.get(1).getAttribute("class").contains("iconFilterActive")){
+        if (filters.get(1).getAttribute("class").contains("iconFilterActive"))
+        {
             click(filters.get(1));
         }
 
         filters = driver.findElements(By.className("iconFilter"));
-        if(filters.get(2).getAttribute("class").contains("iconFilterActive")){
+        if (filters.get(2).getAttribute("class").contains("iconFilterActive"))
+        {
             click(filters.get(2));
         }
 
-        while(driver.findElements(By.xpath("//table[@id='overview']/tbody/tr/td[@class='noData']")).size()==0){
+        while (driver.findElements(By.xpath("//table[@id='overview']/tbody/tr/td[@class='noData']")).size() == 0)
+        {
             click(driver.findElement(By.id("sAll2")));
             click(driver.findElement(By.id("del")));
         }
@@ -130,7 +135,7 @@ public class Page
         List<WebElement> resourceWEs = driver.findElements(By.xpath("//div[@id='village_map']/div"));
         for (BuildingStatus status : BuildingStatus.values())
         {
-            if(resourceWEs.get(i).getAttribute("class").contains(status.getValue()))
+            if (resourceWEs.get(i).getAttribute("class").contains(status.getValue()))
             {
                 resource.addStatus(status);
             }
@@ -188,7 +193,7 @@ public class Page
         selectAll2.click();
         submit(selectAll2);
 
-        String result2=driver.findElement(By.id("list173")).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
+        String result2 = driver.findElement(By.id("list173")).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
 
         return result1 + "\n" + result2;
     }
@@ -250,5 +255,39 @@ public class Page
             LOG.error(e.getMessage());
             e.printStackTrace();
         }
+    }
+
+    public void evadeTroops()
+    {
+        loadURL("build.php?tt=2&id=39");
+        List<WebElement> tds = driver.findElements(By.xpath("//table[@id='troops']//td"));
+        tds.stream().forEach(td -> {
+            if (td.findElements(By.tagName("a")).size() > 0)
+            {
+                click(td.findElement(By.tagName("a")));
+            }
+        });
+
+        driver.findElement(By.id("xCoordInput")).sendKeys("-3");
+        driver.findElement(By.id("yCoordInput")).sendKeys("43");
+
+        driver.findElement(By.xpath("//input[@class='radio'][@name='c'][@value='2']")).click();
+        click(driver.findElement(By.id("btn_ok")));
+        click(driver.findElement(By.id("btn_ok")));
+        loadURL("dorf1.php");
+
+    }
+
+    public void withdrawTroops(){
+        loadURL("build.php?tt=1&id=39");
+        if(driver.findElements(By.xpath("//a[text()='withdraw']")).size()>0){
+            driver.findElements(By.xpath("//a[text()='withdraw']")).stream().forEach(e->{
+                 click(e);
+                click(driver.findElement(By.id("btn_ok")));
+            });
+        }
+
+        loadURL("dorf1.php");
+
     }
 }

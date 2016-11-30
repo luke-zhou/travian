@@ -40,18 +40,21 @@ public class TravianHelper implements Runnable
         Main.getMainCommandQueue().add(Command.READY);
 
         int tick = 0;
-        int roughFiveMin = 12*5;
-        int roughThirtyMin = 12*30;
-        int wholeDay = 12*60*24;
+        int roughFiveMin = 12 * 5;
+        int roughThirtyMin = 12 * 30;
+        int wholeDay = 12 * 60 * 24;
         while (true)
         {
             if (tick == wholeDay) tick = 0;
 
-            try {
+            try
+            {
                 Command cmd = travianCommandQueue.poll();
-                if (cmd != null) {
+                if (cmd != null)
+                {
                     LOG.debug("got cmd for helper:" + cmd);
-                    switch (cmd) {
+                    switch (cmd)
+                    {
                         case RAID:
                             startRaid();
                             break;
@@ -78,6 +81,10 @@ public class TravianHelper implements Runnable
                             travian.openMap();
                             System.out.println("All non-loss report cleaned up");
                             break;
+                        case TEST:
+                            travian.withdrawTroops();
+                            System.out.println("test function");
+                            break;
 
                         default:
                             LOG.debug("got cmd for travian helper:" + cmd);
@@ -87,23 +94,27 @@ public class TravianHelper implements Runnable
                 }
 
                 //every 5 mins
-                if (tick % (roughFiveMin) == 0) {
+                if (tick % (roughFiveMin) == 0)
+                {
                     checkUnderAttack();
                     roughFiveMin = 12 * RandomUtil.randomRange(3, 7);
                 }
 
                 //every 30 mins
-                if (game.getAutoRaid() && (tick % (roughThirtyMin) == 0)) {
+                if (game.getAutoRaid() && (tick % (roughThirtyMin) == 0))
+                {
                     repeatRaiding();
                     roughThirtyMin = 12 * RandomUtil.randomRange(20, 40);
                     //50% random to clean report
-                    if (RandomUtil.randomIntCentre0(10) < 0) {
+                    if (RandomUtil.randomIntCentre0(10) < 0)
+                    {
                         LOG.debug("clean up message");
                         travian.cleanupMessage();
                     }
 
                     //33% random to open map
-                    if (RandomUtil.randomIntFrom0(10) % 3 == 0) {
+                    if (RandomUtil.randomIntFrom0(10) % 3 == 0)
+                    {
                         LOG.debug("open map");
                         travian.openMap();
                     }
@@ -115,13 +126,14 @@ public class TravianHelper implements Runnable
 
                 tick++;
                 Thread.sleep(TimeUtil.seconds(5));
-            } catch (NoSuchElementException nse) {
-                LOG.error(nse.getMessage());
-                nse.printStackTrace();
-            } catch (Exception e) {
+
+            } catch (Exception e)
+            {
                 LOG.error(e.getMessage());
                 e.printStackTrace();
                 travian.exit();
+                travian = new Page("http://ts4.travian.com.au");
+                travian.login(game.getUsername(), game.getPassword());
             }
         }
         //travian.exit();
@@ -130,7 +142,7 @@ public class TravianHelper implements Runnable
     private void transferResource()
     {
         String result = travian.transferResource(game.getVillage("Big Bang"), game.getVillage("A New Hope"));
-        LOG.info("Send Resource: "+result);
+        LOG.info("Send Resource: " + result);
         System.out.println(result);
     }
 
@@ -162,15 +174,20 @@ public class TravianHelper implements Runnable
         travian.home(game);
         if (game.getVillages().stream().anyMatch(v -> v.isUnderAttack()))
         {
+            if (game.getVillages().get(1).isUnderAttack())
+            {
+                travian.evadeTroops();
+            }
             if (game.getAlarmOn())
             {
                 game.switchAlarmOff();
                 new Thread(new MailIO(game.getNotificationEmail())).start();
             }
         }
-        else
+        else if(!game.getAlarmOn())
         {
             game.switchAlarmOn();
+            travian.withdrawTroops();
         }
     }
 
