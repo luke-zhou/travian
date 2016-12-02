@@ -64,6 +64,7 @@ public class TravianHelper implements Runnable
                             break;
                         case REPEAT_RAID:
                             game.setAutoRaid(true);
+                            game.resetAutoRepeatCount();
                             System.out.println("Repeat raid started");
                             break;
                         case STOP_RAID:
@@ -82,7 +83,7 @@ public class TravianHelper implements Runnable
                             System.out.println("All non-loss report cleaned up");
                             break;
                         case TEST:
-                            travian.withdrawTroops();
+                            travian.sendRaidOneInList(0);
                             System.out.println("test function");
                             break;
 
@@ -103,7 +104,8 @@ public class TravianHelper implements Runnable
                 //every 30 mins
                 if (game.getAutoRaid() && (tick % (roughThirtyMin) == 0))
                 {
-                    repeatRaiding();
+                    repeatRaidingAllInList();
+                    repeatRaidingOneInList(game.getAutoRepeatCount()%6);
                     roughThirtyMin = 12 * RandomUtil.randomRange(20, 40);
                     //50% random to clean report
                     if (RandomUtil.randomIntCentre0(10) < 0)
@@ -146,16 +148,26 @@ public class TravianHelper implements Runnable
         System.out.println(result);
     }
 
-    private void repeatRaiding()
+    private void repeatRaidingAllInList()
     {
-        String result = travian.sendRaid();
+        String result = travian.sendRaidAllInList();
         LOG.info("Repeat Raid: " + result);
+        travian.home(game);
+    }
+
+    private void repeatRaidingOneInList(int index)
+    {
+        String result = travian.sendRaidOneInList(index);
+        LOG.info(result);
+        if (!result.contains("Not enough troops")){
+            game.increasingAutoRepeatCount();
+        }
         travian.home(game);
     }
 
     private void startRaid()
     {
-        String result = travian.sendRaid();
+        String result = travian.sendRaidAllInList();
         LOG.info("Start Raid: " + result);
         System.out.println(result);
         travian.home(game);

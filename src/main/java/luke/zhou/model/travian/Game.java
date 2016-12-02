@@ -14,6 +14,7 @@ public class Game
 {
     private Boolean alarmOn;
     private Boolean autoRaid;
+    private int autoRepeatCount;
     private String username;
     private String password;
     private String notificationEmail;
@@ -40,6 +41,7 @@ public class Game
         return "Game{" +
                 "alarmOn=" + alarmOn +
                 ", autoRaid=" + autoRaid +
+                ", autoRepeatCount=" + autoRepeatCount +
                 ", villages=" + villages +
                 '}';
     }
@@ -122,5 +124,18 @@ public class Game
     public void setAutoRaid(Boolean autoRaid)
     {
         this.autoRaid = autoRaid;
+    }
+
+    public int getAutoRepeatCount()
+    {
+        return autoRepeatCount;
+    }
+
+    public void increasingAutoRepeatCount(){
+        autoRepeatCount++;
+    }
+
+    public void resetAutoRepeatCount(){
+        autoRepeatCount=0;
     }
 }
