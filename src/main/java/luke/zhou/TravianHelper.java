@@ -3,12 +3,15 @@ package luke.zhou;
 import luke.zhou.io.MailIO;
 import luke.zhou.model.Command;
 import luke.zhou.model.travian.Game;
+import luke.zhou.util.DateUtil;
 import luke.zhou.util.RandomUtil;
 import luke.zhou.util.TimeUtil;
 import org.openqa.selenium.NoSuchElementException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Calendar;
+import java.util.Date;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -43,6 +46,7 @@ public class TravianHelper implements Runnable
         int roughFiveMin = 12 * 5;
         int roughThirtyMin = 12 * 30;
         int wholeDay = 12 * 60 * 24;
+        boolean attacked =false;
         while (true)
         {
             if (tick == wholeDay) tick = 0;
@@ -83,7 +87,7 @@ public class TravianHelper implements Runnable
                             System.out.println("All non-loss report cleaned up");
                             break;
                         case TEST:
-                            travian.sendRaidOneInList(0);
+                            travian.attack(-4, 46);
                             System.out.println("test function");
                             break;
 
@@ -105,7 +109,7 @@ public class TravianHelper implements Runnable
                 if (game.getAutoRaid() && (tick % (roughThirtyMin) == 0))
                 {
                     repeatRaidingAllInList();
-                    repeatRaidingOneInList(game.getAutoRepeatCount()%6);
+                    repeatRaidingOneInList(game.getAutoRepeatCount()%9);
                     roughThirtyMin = 12 * RandomUtil.randomRange(20, 40);
                     //50% random to clean report
                     if (RandomUtil.randomIntCentre0(10) < 0)
@@ -120,6 +124,16 @@ public class TravianHelper implements Runnable
                         LOG.debug("open map");
                         travian.openMap();
                     }
+
+                    Calendar now = Calendar.getInstance();
+                    LOG.debug(now.getTime().toString());
+//                    if(now.after(DateUtil.getSpecificHour(2))
+//                            && now.before(DateUtil.getSpecificHour(6))
+//                            && !attacked){
+//                        LOG.info("Launch attack");
+//                        travian.attack(-9, 45);
+//                        attacked=true;
+//                    }
 
                 }
 
@@ -150,7 +164,7 @@ public class TravianHelper implements Runnable
 
     private void repeatRaidingAllInList()
     {
-        String result = travian.sendRaidAllInList();
+        String result = travian.sendRaidAllInList(game);
         LOG.info("Repeat Raid: " + result);
         travian.home(game);
     }
@@ -167,7 +181,7 @@ public class TravianHelper implements Runnable
 
     private void startRaid()
     {
-        String result = travian.sendRaidAllInList();
+        String result = travian.sendRaidAllInList(game);
         LOG.info("Start Raid: " + result);
         System.out.println(result);
         travian.home(game);

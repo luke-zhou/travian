@@ -13,17 +13,22 @@ public class Resource
     private ResourceType type;
     private String link;
     private int level;
+    private int id;
 
     private List<BuildingStatus> statusList;
 
-
-
-    public Resource(ResourceType type, String link, int level)
+    public Resource(ResourceType type, String link, int level, int id)
     {
         this.type = type;
         this.link = link;
         this.level = level;
         statusList = new ArrayList<>();
+        this.id = id;
+    }
+
+    public int getId()
+    {
+        return id;
     }
 
     public void addStatus(BuildingStatus status)
@@ -35,6 +40,8 @@ public class Resource
     public String toString()
     {
         StringBuilder sb = new StringBuilder();
+        sb.append(id);
+        sb.append(":");
         sb.append(type);
         sb.append("(");
         sb.append(level);

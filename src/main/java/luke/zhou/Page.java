@@ -131,7 +131,7 @@ public class Page
         String alt = resourceMapWE.getAttribute("alt");
         String[] results = alt.split("Level");
         Resource resource = new Resource(Resource.ResourceType.get(results[0].trim()),
-                href, Integer.valueOf(results[1].trim()));
+                href, Integer.valueOf(results[1].trim()), i+1);
         List<WebElement> resourceWEs = driver.findElements(By.xpath("//div[@id='village_map']/div"));
         for (BuildingStatus status : BuildingStatus.values())
         {
@@ -180,9 +180,10 @@ public class Page
         afterActionWait();
     }
 
-    public String sendRaidAllInList()
+    public String sendRaidAllInList(Game game)
     {
-        String raidAllResult = raidAllInList("123")+"\n"+raidAllInList("173");
+        loadURL(game.getVillages().get(0).getLink());
+        String raidAllResult = raidAllInList("123") + "\n" + raidAllInList("173");
 
         return raidAllResult;
     }
@@ -196,27 +197,30 @@ public class Page
     private String raidOneInList(String listId, int index)
     {
         loadURL("build.php?tt=99&id=39");
-        List<WebElement> items = driver.findElements(By.xpath("//div[@id='list"+listId+"']//tr[@class='slotRow']"));
+        List<WebElement> items = driver.findElements(By.xpath("//div[@id='list" + listId + "']//tr[@class='slotRow']"));
         String villageName = items.get(index).findElement(By.className("village")).findElement(By.tagName("a")).getText();
         WebElement checkboxWE = items.get(index).findElement(By.tagName("input"));
         checkboxWE.click();
         submit(checkboxWE);
 
-        String result = driver.findElement(By.id("list"+listId)).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
-        if (result.equals("0 raids have been made.")){
+        String result = driver.findElement(By.id("list" + listId)).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
+        if (result.equals("0 raids have been made."))
+        {
             return "Not enough troops for " + villageName;
         }
-        else{
+        else
+        {
             return "Send raid to " + villageName;
         }
     }
 
-    private String raidAllInList(String listId){
+    private String raidAllInList(String listId)
+    {
         loadURL("build.php?tt=99&id=39");
-        WebElement selectAll1 = driver.findElement(By.id("raidListMarkAll"+listId));
+        WebElement selectAll1 = driver.findElement(By.id("raidListMarkAll" + listId));
         selectAll1.click();
         submit(selectAll1);
-        return driver.findElement(By.id("list"+listId)).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
+        return driver.findElement(By.id("list" + listId)).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
 
     }
 
@@ -300,16 +304,49 @@ public class Page
 
     }
 
-    public void withdrawTroops(){
+    public void withdrawTroops()
+    {
         loadURL("build.php?tt=1&id=39");
-        if(driver.findElements(By.xpath("//a[text()='withdraw']")).size()>0){
-            driver.findElements(By.xpath("//a[text()='withdraw']")).stream().forEach(e->{
-                 click(e);
+        if (driver.findElements(By.xpath("//a[text()='withdraw']")).size() > 0)
+        {
+            driver.findElements(By.xpath("//a[text()='withdraw']")).stream().forEach(e -> {
+                click(e);
                 click(driver.findElement(By.id("btn_ok")));
             });
         }
 
         loadURL("dorf1.php");
+
+    }
+
+    public void attack(int x, int y)
+    {
+        loadURL("build.php?tt=2&id=39");
+        List<WebElement> tds = driver.findElements(By.xpath("//table[@id='troops']//td"));
+        tds.stream().forEach(td -> {
+            if (td.findElements(By.tagName("img")).size() > 0)
+            {
+                String troopType = td.findElement(By.tagName("img")).getAttribute("alt");
+                if (troopType.equals("Clubswinger") || troopType.equals("Hero"))
+                {
+                    click(td.findElement(By.tagName("a")));
+                }
+            }
+        });
+
+        driver.findElement(By.id("xCoordInput")).sendKeys(String.valueOf(x));
+        driver.findElement(By.id("yCoordInput")).sendKeys(String.valueOf(y));
+
+        driver.findElement(By.xpath("//input[@class='radio'][@name='c'][@value='3']")).click();
+        click(driver.findElement(By.id("btn_ok")));
+        click(driver.findElement(By.id("btn_ok")));
+        loadURL("dorf1.php");
+    }
+
+    public void build(Village village, Resource resource)
+    {
+        loadURL(village.getLink());
+        loadURL("build.php?id="+resource.getId());
 
     }
 }
