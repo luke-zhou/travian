@@ -3,6 +3,8 @@ package luke.zhou;
 import luke.zhou.io.MailIO;
 import luke.zhou.model.Command;
 import luke.zhou.model.travian.Game;
+import luke.zhou.model.travian.Resource;
+import luke.zhou.model.travian.Village;
 import luke.zhou.util.DateUtil;
 import luke.zhou.util.RandomUtil;
 import luke.zhou.util.TimeUtil;
@@ -10,6 +12,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.BlockingQueue;
@@ -87,7 +90,7 @@ public class TravianHelper implements Runnable
                             System.out.println("All non-loss report cleaned up");
                             break;
                         case TEST:
-                            travian.attack(-4, 46);
+                            buildResource();
                             System.out.println("test function");
                             break;
 
@@ -102,6 +105,7 @@ public class TravianHelper implements Runnable
                 if (tick % (roughFiveMin) == 0)
                 {
                     checkUnderAttack();
+                    buildResource();
                     roughFiveMin = 12 * RandomUtil.randomRange(3, 7);
                 }
 
@@ -215,6 +219,23 @@ public class TravianHelper implements Runnable
             game.switchAlarmOn();
             travian.withdrawTroops();
         }
+    }
+
+    private void buildResource(){
+        travian.getInfo(game);
+        Village village = game.getVillage("Empire Strikes Back");
+        Resource resource = Arrays.stream(village.getResources())
+                .filter(r->r.getType().equals(Resource.ResourceType.CROP))
+                .filter(r -> r.isReady()&&(!r.isUnderConstruction()))
+                .sorted((r1, r2) -> r1.getLevel()- r2.getLevel())
+                .findFirst().orElse(null);
+        if (resource!=null){
+            travian.build(village, resource);
+            LOG.info("resource:"+resource.getId()+" has been upgraded from "+resource.getLevel() +" to "+(resource.getLevel()+1));
+            //System.out.print("Build successfully");
+            return;
+        }
+        LOG.info("No available resource can be upgraded");
     }
 
     public BlockingQueue<Command> getTravianCommandQueue()

@@ -31,6 +31,24 @@ public class Resource
         return id;
     }
 
+    public ResourceType getType()
+    {
+        return type;
+    }
+
+    public int getLevel()
+    {
+        return level;
+    }
+
+    public boolean isReady(){
+        return statusList.contains(BuildingStatus.READY);
+    }
+
+    public boolean isUnderConstruction(){
+        return statusList.contains(BuildingStatus.IN_PROGRESS);
+    }
+
     public void addStatus(BuildingStatus status)
     {
         statusList.add(status);

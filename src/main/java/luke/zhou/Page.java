@@ -347,6 +347,6 @@ public class Page
     {
         loadURL(village.getLink());
         loadURL("build.php?id="+resource.getId());
-
+        click(driver.findElement(By.xpath("//div[@class='showBuildCosts normal']/button")));
     }
 }

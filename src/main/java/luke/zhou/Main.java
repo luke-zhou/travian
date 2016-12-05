@@ -18,7 +18,11 @@ public class Main
 {
     private static final Logger LOG = LoggerFactory.getLogger(Main.class);
 
+    private static final String DEFAULT_LOGIN ="tdxh20";
+    private static final String DEFAULT_NOTIFICATION_EMAIL ="sharlock@gmail.com";
+
     private static BlockingQueue<Command> mainCommandQueue = new LinkedBlockingQueue<>();
+
 
     public static boolean isDebug = false;
 
@@ -35,9 +39,9 @@ public class Main
         if (isDebug)
         {
             System.out.println("Debug Mode....................");
-            login = "tdxh20";
+            login = DEFAULT_LOGIN;
             password = "*******";
-            notificationEmail = "Sharlock@gmail.com";
+            notificationEmail = DEFAULT_NOTIFICATION_EMAIL;
         }
         else
         {
@@ -48,12 +52,14 @@ public class Main
             }
 
             System.out.println("Welcome to Travian Helper");
-            login = c.readLine("Enter your login: ");
+            login = c.readLine("Enter your login(tdxh20): ");
             password = c.readLine("Enter your password: ");
-            notificationEmail = c.readLine("Enter your notification email: ");
+            notificationEmail = c.readLine("Enter your notification email(sharlock@gmail.com): ");
         }
 
         LOG.debug(login + "/" + password + "/" + notificationEmail);
+        if (login.isEmpty()) login = DEFAULT_LOGIN;
+        if (notificationEmail.isEmpty()) notificationEmail = DEFAULT_NOTIFICATION_EMAIL;
 
         Game game = new Game();
         game.setUsername(login);
