@@ -159,20 +159,7 @@ public class Page
         submit(passwordWE);
     }
 
-    public String transferResource(Village from, Village to)
-    {
-        loadURL(from.getLink());
-        loadURL("build.php?t=5&id=35");
-        driver.findElement(By.xpath("//input[@id='r1']")).sendKeys("300");
-        driver.findElement(By.xpath("//input[@id='r2']")).sendKeys("400");
-        driver.findElement(By.xpath("//input[@id='r3']")).sendKeys("300");
-        driver.findElement(By.xpath("//input[@id='enterVillageName']")).sendKeys(to.getName());
 
-        submit(driver.findElement(By.xpath("//button[@id='enabledButton']")));
-        click(driver.findElement(By.xpath("//button[@id='enabledButton']")));
-        return driver.findElement(By.xpath("//p[@id='note']")).getText();
-
-    }
 
     private void click(WebElement element)
     {
@@ -348,5 +335,51 @@ public class Page
         loadURL(village.getLink());
         loadURL("build.php?id="+resource.getId());
         click(driver.findElement(By.xpath("//div[@class='showBuildCosts normal']/button")));
+    }
+
+    public String transferCrop(Village village)
+    {
+        String result;
+        loadURL(village.getLink());
+        loadURL("build.php?t=5&id=35");
+        if(!driver.findElement(By.id("merchantCapacityValue")).getText().equals("0"))
+        {
+            driver.findElement(By.xpath("//input[@id='r4']")).sendKeys("1000");
+            driver.findElement(By.xpath("//input[@id='xCoordInput']")).sendKeys("-40");
+            driver.findElement(By.xpath("//input[@id='yCoordInput']")).sendKeys("-9");
+
+            submit(driver.findElement(By.xpath("//button[@id='enabledButton']")));
+            click(driver.findElement(By.xpath("//button[@id='enabledButton']")));
+            result =driver.findElement(By.xpath("//p[@id='note']")).getText();
+        }
+        else {
+            result ="Don't have merchant at home";
+        }
+
+        loadURL("dorf1.php");
+        return result;
+    }
+
+    public String transferResource(Village from, Village to)
+    {
+        String result;
+        loadURL(from.getLink());
+        loadURL("build.php?t=5&id=35");
+        if(!driver.findElement(By.id("merchantCapacityValue")).getText().equals("0"))
+        {
+            driver.findElement(By.xpath("//input[@id='r1']")).sendKeys("300");
+            driver.findElement(By.xpath("//input[@id='r2']")).sendKeys("400");
+            driver.findElement(By.xpath("//input[@id='r3']")).sendKeys("300");
+            driver.findElement(By.xpath("//input[@id='enterVillageName']")).sendKeys(to.getName());
+
+            submit(driver.findElement(By.xpath("//button[@id='enabledButton']")));
+            click(driver.findElement(By.xpath("//button[@id='enabledButton']")));
+            result= driver.findElement(By.xpath("//p[@id='note']")).getText();
+        }
+        else{
+            result ="Don't have merchant at home";
+        }
+        loadURL("dorf1.php");
+        return result;
     }
 }

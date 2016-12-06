@@ -52,9 +52,9 @@ public class Main
             }
 
             System.out.println("Welcome to Travian Helper");
+            notificationEmail = c.readLine("Enter your notification email(sharlock@gmail.com): ");
             login = c.readLine("Enter your login(tdxh20): ");
             password = c.readLine("Enter your password: ");
-            notificationEmail = c.readLine("Enter your notification email(sharlock@gmail.com): ");
         }
 
         LOG.debug(login + "/" + password + "/" + notificationEmail);

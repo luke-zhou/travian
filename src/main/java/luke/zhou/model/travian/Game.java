@@ -1,5 +1,7 @@
 package luke.zhou.model.travian;
 
+import luke.zhou.util.RandomUtil;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -14,6 +16,7 @@ public class Game
 {
     private Boolean alarmOn;
     private Boolean autoRaid;
+    private Boolean autoBuild;
     private int autoRepeatCount;
     private String username;
     private String password;
@@ -27,6 +30,7 @@ public class Game
     {
         this.alarmOn = true;
         autoRaid = false;
+        autoBuild = false;
         this.villages = new ArrayList<>();
     }
 
@@ -41,6 +45,7 @@ public class Game
         return "Game{" +
                 "alarmOn=" + alarmOn +
                 ", autoRaid=" + autoRaid +
+                ", autoBuild=" + autoBuild +
                 ", autoRepeatCount=" + autoRepeatCount +
                 ", villages=" + villages +
                 '}';
@@ -126,6 +131,16 @@ public class Game
         this.autoRaid = autoRaid;
     }
 
+    public Boolean getAutoBuild()
+    {
+        return autoBuild;
+    }
+
+    public void setAutoBuild(Boolean autoBuild)
+    {
+        this.autoBuild = autoBuild;
+    }
+
     public int getAutoRepeatCount()
     {
         return autoRepeatCount;
@@ -135,7 +150,8 @@ public class Game
         autoRepeatCount++;
     }
 
-    public void resetAutoRepeatCount(){
-        autoRepeatCount=0;
+    public void resetAutoRepeatCount(int listSize){
+        autoRepeatCount= RandomUtil.randomIntFrom0(listSize);
     }
+
 }

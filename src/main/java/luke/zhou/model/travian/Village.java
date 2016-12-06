@@ -38,7 +38,6 @@ public class Village
         sb.append("resources:\n");
         for (int i = 0; i < resources.length; i++)
         {
-            sb.append((i + 1) + ":");
             sb.append(resources[i].toString());
             sb.append("\t");
             if ((i + 1) % 5 == 0) sb.append("\n");
