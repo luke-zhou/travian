@@ -367,9 +367,10 @@ public class Page
         loadURL("build.php?t=5&id=35");
         if(!driver.findElement(By.id("merchantCapacityValue")).getText().equals("0"))
         {
-            driver.findElement(By.xpath("//input[@id='r1']")).sendKeys("300");
-            driver.findElement(By.xpath("//input[@id='r2']")).sendKeys("400");
-            driver.findElement(By.xpath("//input[@id='r3']")).sendKeys("300");
+            int capacity = Integer.valueOf(driver.findElement(By.xpath("//div[@id='build']/div[@class='carry']/b")).getText());
+            driver.findElement(By.xpath("//input[@id='r1']")).sendKeys(String.valueOf((int)capacity*0.3));
+            driver.findElement(By.xpath("//input[@id='r2']")).sendKeys(String.valueOf((int)capacity*0.4));
+            driver.findElement(By.xpath("//input[@id='r3']")).sendKeys(String.valueOf((int)capacity*0.3));
             driver.findElement(By.xpath("//input[@id='enterVillageName']")).sendKeys(to.getName());
 
             submit(driver.findElement(By.xpath("//button[@id='enabledButton']")));
