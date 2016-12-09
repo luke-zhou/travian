@@ -7,16 +7,16 @@ import luke.zhou.model.travian.Village;
 import luke.zhou.util.IntegerUtil;
 import luke.zhou.util.RandomUtil;
 import luke.zhou.util.TimeUtil;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Capabilities;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -306,28 +306,60 @@ public class Page
 
     }
 
-    public void attack(int x, int y)
+    public void attack(Village village, int x, int y)
     {
+        loadURL(village.getLink());
         loadURL("build.php?tt=2&id=39");
-        List<WebElement> tds = driver.findElements(By.xpath("//table[@id='troops']//td"));
-        tds.stream().forEach(td -> {
-            if (td.findElements(By.tagName("img")).size() > 0)
-            {
-                String troopType = td.findElement(By.tagName("img")).getAttribute("alt");
-                if (troopType.equals("Clubswinger") || troopType.equals("Hero"))
-                {
-                    click(td.findElement(By.tagName("a")));
-                }
-            }
-        });
 
-        driver.findElement(By.id("xCoordInput")).sendKeys(String.valueOf(x));
-        driver.findElement(By.id("yCoordInput")).sendKeys(String.valueOf(y));
 
-        driver.findElement(By.xpath("//input[@class='radio'][@name='c'][@value='3']")).click();
-        click(driver.findElement(By.id("btn_ok")));
-        click(driver.findElement(By.id("btn_ok")));
-        loadURL("dorf1.php");
+        WebElement tab = driver.findElement(By.xpath("//a[@href='build.php?tt=2&id=39']"));
+        Actions openNewTab = new Actions(driver)
+                .keyDown(Keys.COMMAND)
+                .keyDown(Keys.SHIFT)
+                .click(tab)
+                .keyUp(Keys.SHIFT)
+                .keyUp(Keys.COMMAND);
+        openNewTab.perform();
+
+
+        List<String> tabs = new ArrayList<>(driver.getWindowHandles());
+        System.out.println(tabs);
+        driver.switchTo().window(tabs.get(1));
+
+
+
+//        List<WebElement> tds = driver.findElements(By.xpath("//table[@id='troops']//td"));
+//        tds.stream().forEach(td -> {
+//            if (td.findElements(By.tagName("img")).size() > 0)
+//            {
+//                String troopType = td.findElement(By.tagName("img")).getAttribute("alt");
+//                if (troopType.equals("Clubswinger") )
+//                {
+//                    td.findElement(By.tagName("input")).sendKeys("10");
+//                }
+//            }
+//        });
+//        loadURL(village.getLink());
+//        loadURL("build.php?tt=2&id=39");
+//        List<WebElement> tds2 = driver.findElements(By.xpath("//table[@id='troops']//td"));
+//        tds2.stream().forEach(td -> {
+//            if (td.findElements(By.tagName("img")).size() > 0)
+//            {
+//                String troopType = td.findElement(By.tagName("img")).getAttribute("alt");
+//                if (troopType.equals("Clubswinger") )
+//                {
+//                    td.findElement(By.tagName("input")).sendKeys("20");
+//                }
+//            }
+//        });
+
+//        driver.findElement(By.id("xCoordInput")).sendKeys(String.valueOf(x));
+//        driver.findElement(By.id("yCoordInput")).sendKeys(String.valueOf(y));
+//
+//        driver.findElement(By.xpath("//input[@class='radio'][@name='c'][@value='3']")).click();
+//        click(driver.findElement(By.id("btn_ok")));
+//        click(driver.findElement(By.id("btn_ok")));
+//        loadURL("dorf1.php");
     }
 
     public void build(Village village, Resource resource)

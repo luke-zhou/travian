@@ -98,7 +98,7 @@ public class TravianHelper implements Runnable
                             System.out.println("All non-loss report cleaned up");
                             break;
                         case TEST:
-                            //sendCropOut();
+                            travian.attack(game.getVillage("A New Hope"),-35,-15);
                             System.out.println("test function");
                             break;
 
