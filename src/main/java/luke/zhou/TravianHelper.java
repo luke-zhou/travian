@@ -35,14 +35,14 @@ public class TravianHelper implements Runnable
     {
         travianCommandQueue = new LinkedBlockingQueue<>();
 
-        travian = new Page("http://ts4.travian.com.au");
+        travian = new Page(game.getServer());
 
         this.game = game;
     }
 
     public void run()
     {
-        travian.login(game.getUsername(), game.getPassword());
+        game.login(travian);
         Main.getMainCommandQueue().add(Command.READY);
 
         int tick = 0;
@@ -98,7 +98,7 @@ public class TravianHelper implements Runnable
                             System.out.println("All non-loss report cleaned up");
                             break;
                         case TEST:
-                            travian.attack(game.getVillage("A New Hope"),-35,-15);
+                            //travian.attack(game.getVillage("A New Hope"),-35,-15);
                             System.out.println("test function");
                             break;
 
@@ -122,7 +122,7 @@ public class TravianHelper implements Runnable
                     if (game.getAutoRaid())
                     {
                         repeatRaidingAllInList();
-                        repeatRaidingOneInList(game.getAutoRepeatCount() % 9);
+                        repeatRaidingOneInList(game.getAutoRepeatCount() % 8);
                         //50% random to clean report
                         if (RandomUtil.randomIntCentre0(10) < 0)
                         {
@@ -164,8 +164,8 @@ public class TravianHelper implements Runnable
                 LOG.error(e.getMessage());
                 e.printStackTrace();
                 travian.exit();
-                travian = new Page("http://ts4.travian.com.au");
-                travian.login(game.getUsername(), game.getPassword());
+                travian = new Page(game.getServer());
+                game.login(travian);
             }
         }
         //travian.exit();
@@ -211,7 +211,7 @@ public class TravianHelper implements Runnable
 
     private void reloadInfo()
     {
-        travian.getInfo(game);
+        game.load(travian);
         LOG.info("Game: " + game);
         game.getVillages().stream().forEach(System.out::println);
     }
@@ -240,7 +240,7 @@ public class TravianHelper implements Runnable
     }
 
     private void buildResource(){
-        travian.getInfo(game);
+        game.load(travian);
         Village village = game.getVillage("Empire Strikes Back");
         Resource resource = Arrays.stream(village.getResources())
                 .filter(r->r.getType().equals(Resource.ResourceType.CROP))

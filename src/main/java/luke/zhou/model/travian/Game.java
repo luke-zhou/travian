@@ -1,6 +1,13 @@
 package luke.zhou.model.travian;
 
+import luke.zhou.Page;
+import luke.zhou.util.IntegerUtil;
 import luke.zhou.util.RandomUtil;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -14,6 +21,10 @@ import java.util.List;
  */
 public class Game
 {
+    private static final Logger LOG = LoggerFactory.getLogger(Game.class);
+
+    private static final String SERVER ="http://ts4.travian.com.au";
+
     private Boolean alarmOn;
     private Boolean autoRaid;
     private Boolean autoBuild;
@@ -32,6 +43,35 @@ public class Game
         autoRaid = false;
         autoBuild = false;
         this.villages = new ArrayList<>();
+    }
+
+    public void login(Page page){
+        WebDriver pageResult = page.loadURL("");
+
+        WebElement nameWE = pageResult.findElement(By.name("name"));
+        nameWE.sendKeys(username);
+        WebElement passwordWE = pageResult.findElement(By.name("password"));
+        passwordWE.sendKeys(password);
+
+        page.submit(passwordWE);
+        load(page);
+    }
+
+    public void load(Page page)
+    {
+        WebDriver pageResult = page.loadURL("dorf1.php");
+        WebElement villageWE = pageResult.findElement(
+                By.xpath("//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul"));
+        villages.clear();
+        villageWE.findElements(By.tagName("li")).forEach(we -> {
+            Village village = new Village(we.findElement(By.className("name")).getText());
+            village.setUnderAttack(we.getAttribute("class").contains("attack"));
+            village.setLink(we.findElement(By.tagName("a")).getAttribute("href"));
+            villages.add(village);
+        });
+
+        LOG.debug("Village size:" + villages.size());
+        villages.stream().forEach(v -> v.load(page));
     }
 
     public Village getVillage(String name)
@@ -154,4 +194,8 @@ public class Game
         autoRepeatCount= RandomUtil.randomIntFrom0(listSize);
     }
 
+    public static String getServer()
+    {
+        return SERVER;
+    }
 }

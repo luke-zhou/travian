@@ -1,5 +1,13 @@
 package luke.zhou.model.travian;
 
+import luke.zhou.Page;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.List;
+import java.util.stream.IntStream;
+
 /**
  * Created by Luke on 16/11/16.
  */
@@ -26,6 +34,41 @@ public class Village
         resources = new Resource[18];
     }
 
+    public void load(Page page)
+    {
+        WebDriver pageResult = page.loadURL(link);
+        warehouseCapacity = page.getInt("//span[@id='stockBarWarehouse']");
+        granaryCapacity = page.getInt("//span[@id='stockBarGranary']");
+        lumber = page.getInt("//ul[@id='stockBar']/li[@id='stockBarResource1']//span[@id='l1']");
+        clay = page.getInt("//ul[@id='stockBar']/li[@id='stockBarResource2']//span[@id='l2']");
+        iron = page.getInt("//ul[@id='stockBar']/li[@id='stockBarResource3']//span[@id='l3']");
+        crop = page.getInt("//ul[@id='stockBar']/li[@id='stockBarResource4']//span[@id='l4']");
+        IntStream.range(0, 18).forEach(i -> {
+            resources[i] = getResource(i, pageResult);
+        });
+    }
+
+    private Resource getResource(int i, WebDriver pageResult)
+    {
+        WebElement resourceMapWE = pageResult.findElement(By.xpath("//div[@id='content']//area[@href='build.php?id=" + (i + 1) + "']"));
+        String href = resourceMapWE.getAttribute("href");
+        String alt = resourceMapWE.getAttribute("alt");
+        String[] results = alt.split("Level");
+        Resource resource = new Resource(Resource.ResourceType.get(results[0].trim()),
+                href, Integer.valueOf(results[1].trim()), i + 1);
+        List<WebElement> resourceWEs = pageResult.findElements(By.xpath("//div[@id='village_map']/div"));
+        for (BuildingStatus status : BuildingStatus.values())
+        {
+            if (resourceWEs.get(i).getAttribute("class").contains(status.getValue()))
+            {
+                resource.addStatus(status);
+            }
+        }
+
+        return resource;
+
+    }
+
     @Override
     public String toString()
     {
@@ -34,7 +77,7 @@ public class Village
         sb.append("lumber:" + lumber + "/" + warehouseCapacity +
                 "\tclay:" + clay + "/" + warehouseCapacity +
                 "\tiron:" + iron + "/" + warehouseCapacity +
-                "\tcrop:" + crop + "/" + granaryCapacity+ "\n");
+                "\tcrop:" + crop + "/" + granaryCapacity + "\n");
         sb.append("resources:\n");
         for (int i = 0; i < resources.length; i++)
         {
