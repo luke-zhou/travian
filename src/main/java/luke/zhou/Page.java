@@ -117,7 +117,7 @@ public class Page
 
     public String sendRaidAllInList(Game game)
     {
-        loadURL(game.getVillages().get(0).getLink());
+        loadURL(game.getVillages().get(0).getHomeLink());
         String raidAllResult = raidAllInList("123") + "\n" + raidAllInList("173");
 
         return raidAllResult;
@@ -168,7 +168,7 @@ public class Page
         villageWE.findElements(By.tagName("li")).forEach(we -> {
             Village village = new Village(we.findElement(By.className("name")).getText());
             village.setUnderAttack(we.getAttribute("class").contains("attack"));
-            village.setLink(we.findElement(By.tagName("a")).getAttribute("href"));
+            //village.setLink(we.findElement(By.tagName("a")).getAttribute("href"));
             game.addVillage(village);
         });
 
@@ -264,7 +264,7 @@ public class Page
 
     public void attack(Village village, int x, int y)
     {
-        loadURL(village.getLink());
+        loadURL(village.getHomeLink());
         loadURL("build.php?tt=2&id=39");
 
 
@@ -319,15 +319,15 @@ public class Page
 
     public void build(Village village, Resource resource)
     {
-        loadURL(village.getLink());
-        loadURL("build.php?id=" + resource.getId());
+        loadURL(village.getHomeLink());
+        loadURL("build.php?id=" + resource.getLocation());
         click(driver.findElement(By.xpath("//div[@class='showBuildCosts normal']/button")));
     }
 
     public String transferCrop(Village village)
     {
         String result;
-        loadURL(village.getLink());
+        loadURL(village.getHomeLink());
         loadURL("build.php?t=5&id=35");
         if (!driver.findElement(By.id("merchantCapacityValue")).getText().equals("0"))
         {
@@ -351,7 +351,7 @@ public class Page
     public String transferResource(Village from, Village to)
     {
         String result;
-        loadURL(from.getLink());
+        loadURL(from.getHomeLink());
         loadURL("build.php?t=5&id=35");
         if (!driver.findElement(By.id("merchantCapacityValue")).getText().equals("0"))
         {

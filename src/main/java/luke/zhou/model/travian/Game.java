@@ -66,7 +66,8 @@ public class Game
         villageWE.findElements(By.tagName("li")).forEach(we -> {
             Village village = new Village(we.findElement(By.className("name")).getText());
             village.setUnderAttack(we.getAttribute("class").contains("attack"));
-            village.setLink(we.findElement(By.tagName("a")).getAttribute("href"));
+            String link = we.findElement(By.tagName("a")).getAttribute("href");
+            village.setNewdid(Integer.valueOf(link.substring(link.indexOf("=")+1, link.length()-1)));
             villages.add(village);
         });
 

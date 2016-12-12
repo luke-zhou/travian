@@ -249,7 +249,7 @@ public class TravianHelper implements Runnable
                 .findFirst().orElse(null);
         if (resource!=null){
             travian.build(village, resource);
-            LOG.info("resource:"+resource.getId()+" has been upgraded from "+resource.getLevel() +" to "+(resource.getLevel()+1));
+            LOG.info("resource:"+resource.getLocation()+" has been upgraded from "+resource.getLevel() +" to "+(resource.getLevel()+1));
             //System.out.print("Build successfully");
         }
         else
