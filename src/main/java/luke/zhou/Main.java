@@ -40,7 +40,7 @@ public class Main
         {
             System.out.println("Debug Mode....................");
             login = DEFAULT_LOGIN;
-            password = "**********";
+            password = "*******";
             notificationEmail = DEFAULT_NOTIFICATION_EMAIL;
         }
         else

@@ -3,12 +3,9 @@ package luke.zhou.model.travian;
 import luke.zhou.Page;
 import luke.zhou.util.RandomUtil;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 /**
  * Created by Luke on 11/12/16.
@@ -26,7 +23,7 @@ public class FarmList
     public FarmList(String id)
     {
         this.id = id;
-        lastItemIndex =-1;
+        lastItemIndex = -1;
     }
 
 
@@ -50,6 +47,11 @@ public class FarmList
         this.type = type;
     }
 
+    public String getId()
+    {
+        return id;
+    }
+
     @Override
     public String toString()
     {
@@ -62,19 +64,20 @@ public class FarmList
 
     public String raid(Page page)
     {
-        switch (type){
+        switch (type)
+        {
             case ALL:
-                return name+": "+raidAll(page);
+                return name + ": " + raidAll(page);
             case ONE:
-                return name+": "+raidOne(page);
+                return name + ": " + raidOne(page);
             default:
-                return name+": "+"";
+                return name + ": " + "";
         }
     }
 
     private String raidAll(Page page)
     {
-        WebElement selectAll= page.getPageResult().findElement(By.id("raidListMarkAll" + id.replace("list","")));
+        WebElement selectAll = page.getPageResult().findElement(By.id("raidListMarkAll" + id.replace("list", "")));
         selectAll.click();
         page.submit(selectAll);
         return page.getPageResult().findElement(By.id(id))
@@ -83,7 +86,8 @@ public class FarmList
 
     private String raidOne(Page page)
     {
-        if (lastItemIndex==-1) {
+        if (lastItemIndex == -1)
+        {
             lastItemIndex = RandomUtil.randomIntFrom0(size);
         }
         List<WebElement> items = page.getPageResult().findElements(By.xpath("//div[@id='" + id + "']//tr[@class='slotRow']"));
@@ -100,7 +104,7 @@ public class FarmList
         }
         else
         {
-            lastItemIndex = (lastItemIndex+1)%size;
+            lastItemIndex = (lastItemIndex + 1) % size;
             return "Send raid to " + villageName;
         }
     }

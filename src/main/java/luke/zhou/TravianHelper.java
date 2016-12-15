@@ -45,7 +45,6 @@ public class TravianHelper implements Runnable
         int roughFiveMin = 12 * 5;
         int roughThirtyMin = 12 * 30;
         int wholeDay = 12 * 60 * 24;
-        boolean attacked = false;
         while (true)
         {
             if (tick == wholeDay) tick = 0;
@@ -111,7 +110,7 @@ public class TravianHelper implements Runnable
                 }
 
                 //every 30 mins
-                if (tick % (roughThirtyMin) == 0 || (tick == 5))
+                if (tick % (roughThirtyMin) == 0)
                 {
                     String result = game.autoRaid(travian);
                     if (!result.isEmpty())

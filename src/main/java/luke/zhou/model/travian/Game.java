@@ -96,17 +96,22 @@ public class Game
         Village village = villages.stream().filter(v->v.hasRallyPoint()).findFirst().get();
         page.loadURL(village.getHomeLink());
         WebDriver pageResult = page.loadURL("build.php?tt=99&id=39");
-        farmLists.clear();
         List<WebElement> raidListWEs = pageResult.findElements(By.xpath("//div[@id='raidList']/div[@class='listEntry']"));
         raidListWEs.stream().forEach(we->{
-            FarmList farmList = new FarmList(we.getAttribute("id"));
-            farmList.setName(we.findElement(By.className("listTitleText")).getText().trim());
+            String listId = we.getAttribute("id");
+            FarmList farmList = farmLists.stream().filter(l -> l.getId().equals(listId)).findFirst().orElse(null);
+            if (farmList==null)
+            {
+                farmList = new FarmList(listId);
+                farmLists.add(farmList);
+            }
+            String displayName = we.findElement(By.className("listTitleText")).getText().trim();
+            farmList.setName(displayName);
             farmList.setSize(we.findElements(By.xpath(".//tr[@class='slotRow']")).size());
             FarmList.AttackType type = Arrays.stream(FarmList.AttackType.values())
-            .filter(v -> farmList.getName().toLowerCase().contains(v.getDisplayName().toLowerCase()))
+            .filter(v -> displayName.toLowerCase().contains(v.getDisplayName().toLowerCase()))
                     .findFirst().orElse(FarmList.AttackType.OTHER);
             farmList.setType(type);
-            farmLists.add(farmList);
             LOG.debug(farmList.toString());
         });
     }
