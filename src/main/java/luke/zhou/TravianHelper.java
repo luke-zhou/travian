@@ -5,16 +5,12 @@ import luke.zhou.model.Command;
 import luke.zhou.model.travian.Game;
 import luke.zhou.model.travian.Resource;
 import luke.zhou.model.travian.Village;
-import luke.zhou.util.DateUtil;
 import luke.zhou.util.RandomUtil;
 import luke.zhou.util.TimeUtil;
-import org.openqa.selenium.NoSuchElementException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -49,7 +45,7 @@ public class TravianHelper implements Runnable
         int roughFiveMin = 12 * 5;
         int roughThirtyMin = 12 * 30;
         int wholeDay = 12 * 60 * 24;
-        boolean attacked =false;
+        boolean attacked = false;
         while (true)
         {
             if (tick == wholeDay) tick = 0;
@@ -92,8 +88,7 @@ public class TravianHelper implements Runnable
                             transferResource();
                             break;
                         case CLEAN_MESSAGE:
-                            travian.cleanupMessage();
-                            travian.openMap();
+                            game.cleanUpMessage(travian);
                             System.out.println("All non-loss report cleaned up");
                             break;
                         case TEST:
@@ -116,21 +111,23 @@ public class TravianHelper implements Runnable
                 }
 
                 //every 30 mins
-                if (tick % (roughThirtyMin) == 0||(tick==5))
+                if (tick % (roughThirtyMin) == 0 || (tick == 5))
                 {
                     String result = game.autoRaid(travian);
-                    LOG.info(result);
-                    System.out.println(result);
+                    if (!result.isEmpty())
+                    {
+                        LOG.info(result);
+                    }
 
-                    //travian.home(game);
-
+                    //50% chance to clean up green message
                     if (RandomUtil.possibility(0.5))
                     {
                         LOG.debug("clean up message");
-                        travian.cleanupMessage();
+                        game.cleanUpMessage(travian);
                     }
 
-                    if(game.getAutoBuild()){
+                    if (game.getAutoBuild())
+                    {
                         buildResource();
                     }
 
@@ -138,7 +135,7 @@ public class TravianHelper implements Runnable
                     if (RandomUtil.possibility(0.33))
                     {
                         LOG.debug("open map");
-                        travian.openMap();
+                        game.openMap(travian);
                     }
 
                     roughThirtyMin = 12 * RandomUtil.randomRange(20, 40);
@@ -163,10 +160,10 @@ public class TravianHelper implements Runnable
     private void transferResource()
     {
         Village village = game.getVillage("Empire Strikes Back");
-        double maxResource = Math.max(village.getIron()*1.0/village.getWarehouseCapacity(),
-        Math.max(
-                village.getClay()*1.0/village.getWarehouseCapacity(),
-                village.getLumber()*1.0/village.getWarehouseCapacity()) );
+        double maxResource = Math.max(village.getIron() * 1.0 / village.getWarehouseCapacity(),
+                Math.max(
+                        village.getClay() * 1.0 / village.getWarehouseCapacity(),
+                        village.getLumber() * 1.0 / village.getWarehouseCapacity()));
         LOG.debug(String.valueOf(maxResource));
         String result = travian.transferResource(game.getVillage("A New Hope"), game.getVillage("Empire Strikes Back"));
         LOG.info("Send Resource: " + result);
@@ -191,37 +188,33 @@ public class TravianHelper implements Runnable
 
     private void checkUnderAttack() throws InterruptedException
     {
-        //travian.home(game);
-        if (game.getVillages().stream().anyMatch(v -> v.isUnderAttack()))
+        if (game.checkUnderAttack(travian))
         {
-            if (game.getVillage("Big Bang").isUnderAttack())
-            {
-                travian.evadeTroops();
-            }
             if (game.getAlarmOn())
             {
                 game.switchAlarmOff();
                 new Thread(new MailIO(game.getNotificationEmail())).start();
             }
         }
-        else if(!game.getAlarmOn())
+        else if (!game.getAlarmOn())
         {
             game.switchAlarmOn();
-            travian.withdrawTroops();
         }
     }
 
-    private void buildResource(){
+    private void buildResource()
+    {
         game.load(travian);
         Village village = game.getVillage("Empire Strikes Back");
         Resource resource = Arrays.stream(village.getResources())
-                .filter(r->r.getType().equals(Resource.ResourceType.CROP))
-                .filter(r -> r.isReady()&&(!r.isUnderConstruction()))
-                .sorted((r1, r2) -> r1.getLevel()- r2.getLevel())
+                .filter(r -> r.getType().equals(Resource.ResourceType.CROP))
+                .filter(r -> r.isReady() && (!r.isUnderConstruction()))
+                .sorted((r1, r2) -> r1.getLevel() - r2.getLevel())
                 .findFirst().orElse(null);
-        if (resource!=null){
+        if (resource != null)
+        {
             travian.build(village, resource);
-            LOG.info("resource:"+resource.getLocation()+" has been upgraded from "+resource.getLevel() +" to "+(resource.getLevel()+1));
+            LOG.info("resource:" + resource.getLocation() + " has been upgraded from " + resource.getLevel() + " to " + (resource.getLevel() + 1));
             //System.out.print("Build successfully");
         }
         else
@@ -229,16 +222,17 @@ public class TravianHelper implements Runnable
             LOG.info("No available resource can be upgraded");
         }
 
-        if(village.getCrop()*1.0/village.getGranaryCapacity()>0.5){
+        if (village.getCrop() * 1.0 / village.getGranaryCapacity() > 0.5)
+        {
             String result = travian.transferCrop(village);
             LOG.info("Send Resource: " + result);
         }
 
-        double maxResource = Math.max(village.getIron()*1.0/village.getWarehouseCapacity(),
+        double maxResource = Math.max(village.getIron() * 1.0 / village.getWarehouseCapacity(),
                 Math.max(
-                        village.getClay()*1.0/village.getWarehouseCapacity(),
-                        village.getLumber()*1.0/village.getWarehouseCapacity()) );
-        LOG.debug("max resource: "+String.valueOf(maxResource));
+                        village.getClay() * 1.0 / village.getWarehouseCapacity(),
+                        village.getLumber() * 1.0 / village.getWarehouseCapacity()));
+        LOG.debug("max resource: " + String.valueOf(maxResource));
         if (maxResource < 0.5)
         {
             String result = travian.transferResource(game.getVillage("A New Hope"), game.getVillage("Empire Strikes Back"));

@@ -71,60 +71,10 @@ public class Page
         this.server = server;
     }
 
-    public void cleanupMessage()
-    {
-        loadURL("berichte.php?t=1");
-        List<WebElement> filters = driver.findElements(By.className("iconFilter"));
-        if (!filters.get(0).getAttribute("class").contains("iconFilterActive"))
-        {
-            click(filters.get(0));
-        }
-
-        filters = driver.findElements(By.className("iconFilter"));
-        if (filters.get(1).getAttribute("class").contains("iconFilterActive"))
-        {
-            click(filters.get(1));
-        }
-
-        filters = driver.findElements(By.className("iconFilter"));
-        if (filters.get(2).getAttribute("class").contains("iconFilterActive"))
-        {
-            click(filters.get(2));
-        }
-
-        while (driver.findElements(By.xpath("//table[@id='overview']/tbody/tr/td[@class='noData']")).size() == 0)
-        {
-            click(driver.findElement(By.id("sAll2")));
-            click(driver.findElement(By.id("del")));
-        }
-    }
-
-    public void openMap()
-    {
-        loadURL("karte.php");
-        loadURL("dorf1.php");
-    }
-
-    private void click(WebElement element)
+    public void click(WebElement element)
     {
         element.click();
         afterActionWait();
-    }
-
-    public void home(Game game)
-    {
-        loadURL("dorf1.php");
-        WebElement villageWE = driver.findElement(
-                By.xpath("//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul"));
-        game.getVillages().clear();
-        villageWE.findElements(By.tagName("li")).forEach(we -> {
-            Village village = new Village(we.findElement(By.className("name")).getText());
-            village.setUnderAttack(we.getAttribute("class").contains("attack"));
-            //village.setLink(we.findElement(By.tagName("a")).getAttribute("href"));
-            game.addVillage(village);
-        });
-
-        LOG.debug("Village size:" + game.getVillages().size());
     }
 
     public void exit()

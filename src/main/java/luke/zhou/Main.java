@@ -24,7 +24,7 @@ public class Main
     private static BlockingQueue<Command> mainCommandQueue = new LinkedBlockingQueue<>();
 
 
-    public static boolean isDebug = true;
+    public static boolean isDebug = false;
 
 
     public static void main(String[] args) throws InterruptedException
@@ -40,7 +40,7 @@ public class Main
         {
             System.out.println("Debug Mode....................");
             login = DEFAULT_LOGIN;
-            password = "XXXXXXX";
+            password = "**********";
             notificationEmail = DEFAULT_NOTIFICATION_EMAIL;
         }
         else

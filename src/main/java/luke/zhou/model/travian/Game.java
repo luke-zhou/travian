@@ -84,11 +84,19 @@ public class Game
         LOG.debug("Farmlist size:" +farmLists.size());
     }
 
+    public boolean checkUnderAttack(Page page){
+        WebDriver pageResult = page.loadURL("dorf1.php");
+        WebElement villageWE = pageResult.findElement(
+                By.xpath("//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul"));
+        return villageWE.findElements(By.tagName("li")).stream().anyMatch(we ->we.getAttribute("class").contains("attack"));
+    }
+
     public void loadFarmList(Page page)
     {
         Village village = villages.stream().filter(v->v.hasRallyPoint()).findFirst().get();
         page.loadURL(village.getHomeLink());
         WebDriver pageResult = page.loadURL("build.php?tt=99&id=39");
+        farmLists.clear();
         List<WebElement> raidListWEs = pageResult.findElements(By.xpath("//div[@id='raidList']/div[@class='listEntry']"));
         raidListWEs.stream().forEach(we->{
             FarmList farmList = new FarmList(we.getAttribute("id"));
@@ -110,7 +118,7 @@ public class Game
 
     public String autoRaid(Page page){
         if (!autoRaid){
-            return "Auto Raid not switch on.";
+            return "";
         }
 
         loadFarmList(page);
@@ -120,8 +128,51 @@ public class Game
             result.append("\n");
         });
 
+        if (RandomUtil.possibility(0.85)){
+            page.loadURL("dorf1.php");
+        }
         return result.toString();
     }
+
+    public void cleanUpMessage(Page page){
+        WebDriver pageResult = page.loadURL("berichte.php?t=1");
+        List<WebElement> filters = pageResult.findElements(By.className("iconFilter"));
+        if (!filters.get(0).getAttribute("class").contains("iconFilterActive"))
+        {
+            page.click(filters.get(0));
+        }
+
+        filters = pageResult.findElements(By.className("iconFilter"));
+        if (filters.get(1).getAttribute("class").contains("iconFilterActive"))
+        {
+            page.click(filters.get(1));
+        }
+
+        filters = pageResult.findElements(By.className("iconFilter"));
+        if (filters.get(2).getAttribute("class").contains("iconFilterActive"))
+        {
+            page.click(filters.get(2));
+        }
+
+        while (pageResult.findElements(By.xpath("//table[@id='overview']/tbody/tr/td[@class='noData']")).size() == 0)
+        {
+            page.click(pageResult.findElement(By.id("sAll2")));
+            page.click(pageResult.findElement(By.id("del")));
+        }
+
+        if (RandomUtil.possibility(0.85)){
+            page.loadURL("dorf1.php");
+        }
+    }
+
+    public void openMap(Page page){
+        page.loadURL("karte.php");
+        if (RandomUtil.possibility(0.85)){
+            page.loadURL("dorf1.php");
+        }
+    }
+
+
 
     @Override
     public String toString()
