@@ -24,7 +24,7 @@ public class Main
     private static BlockingQueue<Command> mainCommandQueue = new LinkedBlockingQueue<>();
 
 
-    public static boolean isDebug = false;
+    public static boolean isDebug = true;
 
 
     public static void main(String[] args) throws InterruptedException
@@ -40,7 +40,7 @@ public class Main
         {
             System.out.println("Debug Mode....................");
             login = DEFAULT_LOGIN;
-            password = "*******";
+            password = "XXXXXXX";
             notificationEmail = DEFAULT_NOTIFICATION_EMAIL;
         }
         else
@@ -82,7 +82,7 @@ public class Main
         if (isDebug)
         {
             //simulate the action which needs to test
-            travianHelper.getTravianCommandQueue().put(Command.CLEAN_MESSAGE);
+            travianHelper.getTravianCommandQueue().put(Command.REPEAT_RAID);
         }
         else
         {

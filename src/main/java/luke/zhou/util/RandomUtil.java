@@ -26,4 +26,9 @@ public class RandomUtil
     {
         return random.nextInt(upBound - lowBound) + lowBound;
     }
+
+    public static boolean possibility(double num)
+    {
+        return randomIntFrom0(100) < 100* num;
+    }
 }

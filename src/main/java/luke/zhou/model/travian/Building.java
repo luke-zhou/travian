@@ -61,6 +61,11 @@ public class Building
         return location;
     }
 
+    public BuildingType getType()
+    {
+        return type;
+    }
+
     public enum BuildingType
     {
         SAWMILL("Sawmill"),
@@ -85,16 +90,16 @@ public class Building
         RESIDENCE("Residence"),
         PALACE("Palace"),
         TREASURY("Treasury"),
-        TRADE_OFFICE("Trade Officee"),
+        TRADE_OFFICE("Trade Office"),
         GREAT_BARRACKS("Great Barracks"),
         GREAT_STABLE("Great Stable"),
         CITY_WALL("City Wall"),
         EARTH_WALL("Earth Wall"),
         PALISADE("Palisade"),
-        STONEMASONS_LODGE("Stonemason's Lodge"),
+        STONEMASONS_LODGE("Stonemason&#39;s Lodge"),
         BREWERY("Brewery"),
         TRAPPER("Trapper"),
-        HEROS_MANSION("Hero's Mansion"),
+        HEROS_MANSION("Hero&#39;s Mansion"),
         GREAT_WAREHOUSE("Great Warehouse"),
         GREAT_GRANARY("Great Granary"),
         WONDER("Wonder of the World"),

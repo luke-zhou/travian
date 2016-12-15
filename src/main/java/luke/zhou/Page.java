@@ -105,58 +105,10 @@ public class Page
         loadURL("dorf1.php");
     }
 
-
-
-
-
     private void click(WebElement element)
     {
         element.click();
         afterActionWait();
-    }
-
-    public String sendRaidAllInList(Game game)
-    {
-        loadURL(game.getVillages().get(0).getHomeLink());
-        String raidAllResult = raidAllInList("123") + "\n" + raidAllInList("173");
-
-        return raidAllResult;
-    }
-
-    public String sendRaidOneInList(int index)
-    {
-        return raidOneInList("181", index);
-    }
-
-
-    private String raidOneInList(String listId, int index)
-    {
-        loadURL("build.php?tt=99&id=39");
-        List<WebElement> items = driver.findElements(By.xpath("//div[@id='list" + listId + "']//tr[@class='slotRow']"));
-        String villageName = items.get(index).findElement(By.className("village")).findElement(By.tagName("a")).getText();
-        WebElement checkboxWE = items.get(index).findElement(By.tagName("input"));
-        checkboxWE.click();
-        submit(checkboxWE);
-
-        String result = driver.findElement(By.id("list" + listId)).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
-        if (result.equals("0 raids have been made."))
-        {
-            return "Not enough troops for " + villageName;
-        }
-        else
-        {
-            return "Send raid to " + villageName;
-        }
-    }
-
-    private String raidAllInList(String listId)
-    {
-        loadURL("build.php?tt=99&id=39");
-        WebElement selectAll1 = driver.findElement(By.id("raidListMarkAll" + listId));
-        selectAll1.click();
-        submit(selectAll1);
-        return driver.findElement(By.id("list" + listId)).findElement(By.className("listContent ")).findElement(By.tagName("p")).getText();
-
     }
 
     public void home(Game game)
@@ -371,5 +323,10 @@ public class Page
         }
         loadURL("dorf1.php");
         return result;
+    }
+
+    public WebDriver getPageResult()
+    {
+        return driver;
     }
 }

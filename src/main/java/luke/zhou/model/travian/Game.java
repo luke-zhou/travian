@@ -10,6 +10,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
@@ -37,12 +38,15 @@ public class Game
 
     private List<Village> villages;
 
+    private List<FarmList> farmLists;
+
     public Game()
     {
         this.alarmOn = true;
         autoRaid = false;
         autoBuild = false;
         this.villages = new ArrayList<>();
+        farmLists = new ArrayList<>();
     }
 
     public void login(Page page){
@@ -72,12 +76,51 @@ public class Game
         });
 
         LOG.debug("Village size:" + villages.size());
+
         villages.stream().forEach(v -> v.load(page));
+
+        loadFarmList(page);
+
+        LOG.debug("Farmlist size:" +farmLists.size());
+    }
+
+    public void loadFarmList(Page page)
+    {
+        Village village = villages.stream().filter(v->v.hasRallyPoint()).findFirst().get();
+        page.loadURL(village.getHomeLink());
+        WebDriver pageResult = page.loadURL("build.php?tt=99&id=39");
+        List<WebElement> raidListWEs = pageResult.findElements(By.xpath("//div[@id='raidList']/div[@class='listEntry']"));
+        raidListWEs.stream().forEach(we->{
+            FarmList farmList = new FarmList(we.getAttribute("id"));
+            farmList.setName(we.findElement(By.className("listTitleText")).getText().trim());
+            farmList.setSize(we.findElements(By.xpath(".//tr[@class='slotRow']")).size());
+            FarmList.AttackType type = Arrays.stream(FarmList.AttackType.values())
+            .filter(v -> farmList.getName().toLowerCase().contains(v.getDisplayName().toLowerCase()))
+                    .findFirst().orElse(FarmList.AttackType.OTHER);
+            farmList.setType(type);
+            farmLists.add(farmList);
+            LOG.debug(farmList.toString());
+        });
     }
 
     public Village getVillage(String name)
     {
        return villages.stream().filter(v-> v.getName().toLowerCase().equals(name.toLowerCase())).findFirst().get();
+    }
+
+    public String autoRaid(Page page){
+        if (!autoRaid){
+            return "Auto Raid not switch on.";
+        }
+
+        loadFarmList(page);
+        StringBuilder result = new StringBuilder();
+        farmLists.stream().forEach(l->{
+            result.append(l.raid(page));
+            result.append("\n");
+        });
+
+        return result.toString();
     }
 
     @Override

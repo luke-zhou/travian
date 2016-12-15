@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.IntStream;
 
@@ -127,6 +128,10 @@ public class Village
 
         return resource;
 
+    }
+
+    public boolean hasRallyPoint(){
+        return Arrays.stream(buildings).anyMatch(b -> b.getType().equals(Building.BuildingType.RALLY_POINT));
     }
 
     @Override

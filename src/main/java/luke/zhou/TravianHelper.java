@@ -71,7 +71,6 @@ public class TravianHelper implements Runnable
                             break;
                         case REPEAT_RAID:
                             game.setAutoRaid(true);
-                            game.resetAutoRepeatCount(9);
                             System.out.println("Repeat raid started");
                             break;
                         case AUTO_BUILD:
@@ -119,26 +118,16 @@ public class TravianHelper implements Runnable
                 //every 30 mins
                 if (tick % (roughThirtyMin) == 0||(tick==5))
                 {
-                    if (game.getAutoRaid())
-                    {
-                        repeatRaidingAllInList();
-                        repeatRaidingOneInList(game.getAutoRepeatCount() % 8);
-                        //50% random to clean report
-                        if (RandomUtil.randomIntCentre0(10) < 0)
-                        {
-                            LOG.debug("clean up message");
-                            travian.cleanupMessage();
-                        }
+                    String result = game.autoRaid(travian);
+                    LOG.info(result);
+                    System.out.println(result);
 
-                        Calendar now = Calendar.getInstance();
-                        LOG.debug(now.getTime().toString());
-//                    if(now.after(DateUtil.getSpecificHour(2))
-//                            && now.before(DateUtil.getSpecificHour(6))
-//                            && !attacked){
-//                        LOG.info("Launch attack");
-//                        travian.attack(-9, 45);
-//                        attacked=true;
-//                    }
+                    //travian.home(game);
+
+                    if (RandomUtil.possibility(0.5))
+                    {
+                        LOG.debug("clean up message");
+                        travian.cleanupMessage();
                     }
 
                     if(game.getAutoBuild()){
@@ -146,7 +135,7 @@ public class TravianHelper implements Runnable
                     }
 
                     //33% random to open map
-                    if (RandomUtil.randomIntFrom0(10) % 3 == 0)
+                    if (RandomUtil.possibility(0.33))
                     {
                         LOG.debug("open map");
                         travian.openMap();
@@ -184,29 +173,12 @@ public class TravianHelper implements Runnable
         System.out.println(result);
     }
 
-    private void repeatRaidingAllInList()
-    {
-        String result = travian.sendRaidAllInList(game);
-        LOG.info("Repeat Raid: " + result);
-        travian.home(game);
-    }
-
-    private void repeatRaidingOneInList(int index)
-    {
-        String result = travian.sendRaidOneInList(index);
-        LOG.info(result);
-        if (!result.contains("Not enough troops")){
-            game.increasingAutoRepeatCount();
-        }
-        travian.home(game);
-    }
-
     private void startRaid()
     {
-        String result = travian.sendRaidAllInList(game);
+        String result = game.autoRaid(travian);
         LOG.info("Start Raid: " + result);
         System.out.println(result);
-        travian.home(game);
+        //travian.home(game);
     }
 
     private void reloadInfo()
@@ -219,7 +191,7 @@ public class TravianHelper implements Runnable
 
     private void checkUnderAttack() throws InterruptedException
     {
-        travian.home(game);
+        //travian.home(game);
         if (game.getVillages().stream().anyMatch(v -> v.isUnderAttack()))
         {
             if (game.getVillage("Big Bang").isUnderAttack())
