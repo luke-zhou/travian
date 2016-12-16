@@ -1,7 +1,6 @@
 package luke.zhou.model.travian;
 
 import luke.zhou.Page;
-import luke.zhou.util.IntegerUtil;
 import luke.zhou.util.RandomUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,7 +23,7 @@ public class Game
 {
     private static final Logger LOG = LoggerFactory.getLogger(Game.class);
 
-    private static final String SERVER ="http://ts4.travian.com.au";
+    private static final String SERVER = "http://ts4.travian.com.au";
 
     private Boolean alarmOn;
     private Boolean autoRaid;
@@ -49,7 +48,8 @@ public class Game
         farmLists = new ArrayList<>();
     }
 
-    public void login(Page page){
+    public void login(Page page)
+    {
         WebDriver pageResult = page.loadURL("");
 
         WebElement nameWE = pageResult.findElement(By.name("name"));
@@ -69,12 +69,13 @@ public class Game
         villages.clear();
         villageWE.findElements(By.tagName("li")).forEach(we -> {
             Village village = new Village(we.findElement(By.className("name")).getText());
-            if(village.getName().toLowerCase().contains("zdjz")){
+            if (village.getName().toLowerCase().contains("zdjz"))
+            {
                 village.setAutoBuild(true);
             }
             village.setUnderAttack(we.getAttribute("class").contains("attack"));
             String link = we.findElement(By.tagName("a")).getAttribute("href");
-            village.setNewdid(Integer.valueOf(link.substring(link.indexOf("=")+1, link.length()-1)));
+            village.setNewdid(Integer.valueOf(link.substring(link.indexOf("=") + 1, link.length() - 1)));
             villages.add(village);
         });
 
@@ -84,26 +85,27 @@ public class Game
 
         loadFarmList(page);
 
-        LOG.debug("Farmlist size:" +farmLists.size());
+        LOG.debug("Farmlist size:" + farmLists.size());
     }
 
-    public boolean checkUnderAttack(Page page){
+    public boolean checkUnderAttack(Page page)
+    {
         WebDriver pageResult = page.loadURL("dorf1.php");
         WebElement villageWE = pageResult.findElement(
                 By.xpath("//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul"));
-        return villageWE.findElements(By.tagName("li")).stream().anyMatch(we ->we.getAttribute("class").contains("attack"));
+        return villageWE.findElements(By.tagName("li")).stream().anyMatch(we -> we.getAttribute("class").contains("attack"));
     }
 
     public void loadFarmList(Page page)
     {
-        Village village = villages.stream().filter(v->v.hasRallyPoint()).findFirst().get();
+        Village village = villages.stream().filter(v -> v.hasRallyPoint()).findFirst().get();
         page.loadURL(village.getHomeLink());
         WebDriver pageResult = page.loadURL("build.php?tt=99&id=39");
         List<WebElement> raidListWEs = pageResult.findElements(By.xpath("//div[@id='raidList']/div[@class='listEntry']"));
-        raidListWEs.stream().forEach(we->{
+        raidListWEs.stream().forEach(we -> {
             String listId = we.getAttribute("id");
             FarmList farmList = farmLists.stream().filter(l -> l.getId().equals(listId)).findFirst().orElse(null);
-            if (farmList==null)
+            if (farmList == null)
             {
                 farmList = new FarmList(listId);
                 farmLists.add(farmList);
@@ -112,7 +114,7 @@ public class Game
             farmList.setName(displayName);
             farmList.setSize(we.findElements(By.xpath(".//tr[@class='slotRow']")).size());
             FarmList.AttackType type = Arrays.stream(FarmList.AttackType.values())
-            .filter(v -> displayName.toLowerCase().contains(v.getDisplayName().toLowerCase()))
+                    .filter(v -> displayName.toLowerCase().contains(v.getDisplayName().toLowerCase()))
                     .findFirst().orElse(FarmList.AttackType.OTHER);
             farmList.setType(type);
             LOG.debug(farmList.toString());
@@ -121,28 +123,32 @@ public class Game
 
     public Village getVillage(String name)
     {
-       return villages.stream().filter(v-> v.getName().toLowerCase().equals(name.toLowerCase())).findFirst().get();
+        return villages.stream().filter(v -> v.getName().toLowerCase().equals(name.toLowerCase())).findFirst().get();
     }
 
-    public String autoRaid(Page page){
-        if (!autoRaid){
+    public String autoRaid(Page page)
+    {
+        if (!autoRaid)
+        {
             return "";
         }
 
         loadFarmList(page);
         StringBuilder result = new StringBuilder();
-        farmLists.stream().forEach(l->{
+        farmLists.stream().forEach(l -> {
             result.append(l.raid(page));
             result.append("\n");
         });
 
-        if (RandomUtil.possibility(0.85)){
+        if (RandomUtil.possibility(0.85))
+        {
             page.loadURL("dorf1.php");
         }
         return result.toString();
     }
 
-    public void cleanUpMessage(Page page){
+    public void cleanUpMessage(Page page)
+    {
         WebDriver pageResult = page.loadURL("berichte.php?t=1");
         List<WebElement> filters = pageResult.findElements(By.className("iconFilter"));
         if (!filters.get(0).getAttribute("class").contains("iconFilterActive"))
@@ -168,25 +174,33 @@ public class Game
             page.click(pageResult.findElement(By.id("del")));
         }
 
-        if (RandomUtil.possibility(0.85)){
+        if (RandomUtil.possibility(0.85))
+        {
             page.loadURL("dorf1.php");
         }
     }
 
-    public void openMap(Page page){
+    public void openMap(Page page)
+    {
         page.loadURL("karte.php");
-        if (RandomUtil.possibility(0.85)){
+        if (RandomUtil.possibility(0.85))
+        {
             page.loadURL("dorf1.php");
         }
     }
 
-    public void autoBuild(Page page) {
+    public void autoBuild(Page page)
+    {
         load(page);
-        villages.stream().filter(v->v.isAutoBuild()).forEach(v ->{
+        villages.stream().filter(v -> v.isAutoBuild()).forEach(v -> {
             v.autoBuild(page);
+            if (v.getMaxResourcePercentage() < 0.5)
+            {
+                String result = v.transferResource(page, getVillage("Empire Strikes Back"));
+                LOG.info("Send Resource: " + result);
+            }
         });
     }
-
 
 
     @Override
@@ -296,12 +310,14 @@ public class Game
         return autoRepeatCount;
     }
 
-    public void increasingAutoRepeatCount(){
+    public void increasingAutoRepeatCount()
+    {
         autoRepeatCount++;
     }
 
-    public void resetAutoRepeatCount(int listSize){
-        autoRepeatCount= RandomUtil.randomIntFrom0(listSize);
+    public void resetAutoRepeatCount(int listSize)
+    {
+        autoRepeatCount = RandomUtil.randomIntFrom0(listSize);
     }
 
     public static String getServer()

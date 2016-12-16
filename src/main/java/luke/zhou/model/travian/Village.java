@@ -1,6 +1,7 @@
 package luke.zhou.model.travian;
 
 import luke.zhou.Page;
+import luke.zhou.util.RandomUtil;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -159,6 +160,62 @@ public class Village
         }
     }
 
+    public double getCropStorage(){
+        return crop * 1.0 / granaryCapacity;
+    }
+
+    public double getClayStorage(){
+        return clay * 1.0 / warehouseCapacity;
+    }
+
+    public double getLumberStorage(){
+        return lumber * 1.0 / warehouseCapacity;
+    }
+
+    public double getIronStorage(){
+        return iron * 1.0 / warehouseCapacity;
+    }
+
+    public double getMaxResourcePercentage()
+    {
+        double maxResource = Math.max(getCropStorage(),
+                                Math.max(getIronStorage(),
+                                    Math.max(getClayStorage(), getLumberStorage())
+                                )
+                            );
+        LOG.debug("max resource: " + String.valueOf(maxResource));
+
+        return maxResource;
+    }
+
+    public String transferResource(Page page, Village to)
+    {
+        String result;
+        WebDriver pageResult = page.loadURL("build.php?t=5&id=35");
+        if (!pageResult.findElement(By.id("merchantCapacityValue")).getText().equals("0"))
+        {
+            int capacity = page.getInt("//div[@id='build']/div[@class='carry']/b");
+            pageResult.findElement(By.xpath("//input[@id='r1']")).sendKeys(String.valueOf((int) capacity * 0.3));
+            pageResult.findElement(By.xpath("//input[@id='r2']")).sendKeys(String.valueOf((int) capacity * 0.3));
+            pageResult.findElement(By.xpath("//input[@id='r3']")).sendKeys(String.valueOf((int) capacity * 0.3));
+            pageResult.findElement(By.xpath("//input[@id='r4']")).sendKeys(String.valueOf((int) capacity * 0.1));
+            pageResult.findElement(By.xpath("//input[@id='enterVillageName']")).sendKeys(to.getName());
+
+            page.submit(pageResult.findElement(By.xpath("//button[@id='enabledButton']")));
+            page.click(pageResult.findElement(By.xpath("//button[@id='enabledButton']")));
+            result = pageResult.findElement(By.xpath("//p[@id='note']")).getText();
+        }
+        else
+        {
+            result = "Don't have merchant at home";
+        }
+        if (RandomUtil.possibility(0.85))
+        {
+            page.loadURL("dorf1.php");
+        }
+        return result;
+    }
+
     @Override
     public String toString()
     {
@@ -290,5 +347,6 @@ public class Village
     public void setAutoBuild(boolean autoBuild) {
         this.autoBuild = autoBuild;
     }
+
 
 }

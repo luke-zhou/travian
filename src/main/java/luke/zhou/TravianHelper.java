@@ -206,22 +206,7 @@ public class TravianHelper implements Runnable
         game.load(travian);
         game.autoBuild(travian);
 
-        if (village.getCrop() * 1.0 / village.getGranaryCapacity() > 0.5)
-        {
-            String result = travian.transferCrop(village);
-            LOG.info("Send Resource: " + result);
-        }
 
-        double maxResource = Math.max(village.getIron() * 1.0 / village.getWarehouseCapacity(),
-                Math.max(
-                        village.getClay() * 1.0 / village.getWarehouseCapacity(),
-                        village.getLumber() * 1.0 / village.getWarehouseCapacity()));
-        LOG.debug("max resource: " + String.valueOf(maxResource));
-        if (maxResource < 0.5)
-        {
-            String result = travian.transferResource(game.getVillage("A New Hope"), game.getVillage("Empire Strikes Back"));
-            LOG.info("Send Resource: " + result);
-        }
 
     }
 
