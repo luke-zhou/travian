@@ -69,6 +69,9 @@ public class Game
         villages.clear();
         villageWE.findElements(By.tagName("li")).forEach(we -> {
             Village village = new Village(we.findElement(By.className("name")).getText());
+            if(village.getName().toLowerCase().contains("zdjz")){
+                village.setAutoBuild(true);
+            }
             village.setUnderAttack(we.getAttribute("class").contains("attack"));
             String link = we.findElement(By.tagName("a")).getAttribute("href");
             village.setNewdid(Integer.valueOf(link.substring(link.indexOf("=")+1, link.length()-1)));
@@ -175,6 +178,13 @@ public class Game
         if (RandomUtil.possibility(0.85)){
             page.loadURL("dorf1.php");
         }
+    }
+
+    public void autoBuild(Page page) {
+        load(page);
+        villages.stream().filter(v->v.isAutoBuild()).forEach(v ->{
+            v.autoBuild(page);
+        });
     }
 
 
@@ -298,4 +308,6 @@ public class Game
     {
         return SERVER;
     }
+
+
 }

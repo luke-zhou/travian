@@ -204,22 +204,7 @@ public class TravianHelper implements Runnable
     private void buildResource()
     {
         game.load(travian);
-        Village village = game.getVillage("Empire Strikes Back");
-        Resource resource = Arrays.stream(village.getResources())
-                .filter(r -> r.getType().equals(Resource.ResourceType.CROP))
-                .filter(r -> r.isReady() && (!r.isUnderConstruction()))
-                .sorted((r1, r2) -> r1.getLevel() - r2.getLevel())
-                .findFirst().orElse(null);
-        if (resource != null)
-        {
-            travian.build(village, resource);
-            LOG.info("resource:" + resource.getLocation() + " has been upgraded from " + resource.getLevel() + " to " + (resource.getLevel() + 1));
-            //System.out.print("Build successfully");
-        }
-        else
-        {
-            LOG.info("No available resource can be upgraded");
-        }
+        game.autoBuild(travian);
 
         if (village.getCrop() * 1.0 / village.getGranaryCapacity() > 0.5)
         {

@@ -4,6 +4,8 @@ import luke.zhou.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,6 +16,8 @@ import java.util.stream.IntStream;
  */
 public class Village
 {
+    private static final Logger LOG = LoggerFactory.getLogger(Village.class);
+
     boolean isUnderAttack;
     String name;
     int newdid;
@@ -28,10 +32,13 @@ public class Village
     Resource[] resources;
     Building[] buildings;
 
+    boolean autoBuild;
+
 
     public Village(String name)
     {
         this.isUnderAttack = false;
+        this.autoBuild = false;
         this.name = name;
         resources = new Resource[18];
         buildings = new Building[22];
@@ -132,6 +139,24 @@ public class Village
 
     public boolean hasRallyPoint(){
         return Arrays.stream(buildings).anyMatch(b -> b.getType().equals(Building.BuildingType.RALLY_POINT));
+    }
+
+
+    public void autoBuild(Page page) {
+        Resource resource = Arrays.stream(resources)
+                .filter(r -> r.isReady() && (!r.isUnderConstruction()))
+                .sorted((r1, r2) -> r1.getLevel() - r2.getLevel())
+                .findFirst().orElse(null);
+        if (resource != null)
+        {
+            page.loadURL(getHomeLink());
+            resource.build(page);
+            LOG.info("resource:" + resource.getLocation() + " has been upgraded from " + resource.getLevel() + " to " + (resource.getLevel() + 1));
+        }
+        else
+        {
+            LOG.info("No available resource can be upgraded");
+        }
     }
 
     @Override
@@ -257,4 +282,13 @@ public class Village
     {
         return "dorf1.php" + "?newdid=" + newdid + "&";
     }
+
+    public boolean isAutoBuild() {
+        return autoBuild;
+    }
+
+    public void setAutoBuild(boolean autoBuild) {
+        this.autoBuild = autoBuild;
+    }
+
 }

@@ -1,5 +1,9 @@
 package luke.zhou.model.travian;
 
+import luke.zhou.Page;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -72,6 +76,11 @@ public class Resource
 
 
         return sb.toString();
+    }
+
+    public void build(Page page) {
+        WebDriver pageResult = page.loadURL("build.php?id=" + location);
+        page.click(pageResult.findElement(By.xpath("//div[@class='showBuildCosts normal']/button")));
     }
 
     public enum ResourceType
