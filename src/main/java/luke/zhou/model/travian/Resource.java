@@ -85,15 +85,15 @@ public class Resource
 
     public void build(Page page) {
         WebDriver pageResult = page.loadURL("build.php?id=" + location);
-        WebElement buttonWE = pageResult.findElement(By.xpath("//div[@class='showBuildCosts normal']/button"));
-
-        if(buttonWE.getAttribute("class").contains("disabled")){
-            LOG.info("No available resource for upgrading "+type);
+        if(pageResult.findElements(By.xpath("//div[@class='showBuildCosts normal']/button")).size()>0){
+            WebElement buttonWE = pageResult.findElement(By.xpath("//div[@class='showBuildCosts normal']/button"));
+            if(!buttonWE.getAttribute("class").contains("disabled")){
+                page.click(buttonWE);
+                LOG.info(type +":" + location + " has been upgraded from " + level+ " to " + (level + 1));
+                return;
+            }
         }
-        else{
-            page.click(buttonWE);
-            LOG.info(type +":" + location + " has been upgraded from " + level+ " to " + (level + 1));
-        }
+        LOG.info("No available resource for upgrading "+type);
     }
 
     public enum ResourceType

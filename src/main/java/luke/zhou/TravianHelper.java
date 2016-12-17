@@ -90,7 +90,7 @@ public class TravianHelper implements Runnable
                             System.out.println("All non-loss report cleaned up");
                             break;
                         case TEST:
-                            //travian.attack(game.getVillage("A New Hope"),-35,-15);
+                            buildResource();
                             System.out.println("test function");
                             break;
 

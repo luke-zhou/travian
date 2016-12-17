@@ -249,7 +249,7 @@ public class Village
         return maxResource;
     }
 
-    public String transferResource(Page page, Village to)
+    public String transferResource(Page page, Village from)
     {
         String result;
 
@@ -260,16 +260,16 @@ public class Village
 
         double totalNeed = clayNeed + lumberNeed + ironNeed + cropNeed;
 
-        page.loadURL(to.getHomeLink());
+        page.loadURL(from.getHomeLink());
         WebDriver pageResult = page.loadURL("build.php?t=5&id=35");
         if (!pageResult.findElement(By.id("merchantCapacityValue")).getText().equals("0"))
         {
             int capacity = page.getInt("//div[@id='build']/div[@class='carry']/b");
-            pageResult.findElement(By.xpath("//input[@id='r1']")).sendKeys(String.valueOf((int) capacity * lumberNeed/totalNeed));
-            pageResult.findElement(By.xpath("//input[@id='r2']")).sendKeys(String.valueOf((int) capacity * clayNeed/totalNeed));
-            pageResult.findElement(By.xpath("//input[@id='r3']")).sendKeys(String.valueOf((int) capacity * ironNeed/totalNeed));
-            pageResult.findElement(By.xpath("//input[@id='r4']")).sendKeys(String.valueOf((int) capacity * cropNeed/totalNeed));
-            pageResult.findElement(By.xpath("//input[@id='enterVillageName']")).sendKeys(to.getName());
+            pageResult.findElement(By.xpath("//input[@id='r1']")).sendKeys(String.valueOf((int) (capacity * lumberNeed/totalNeed)));
+            pageResult.findElement(By.xpath("//input[@id='r2']")).sendKeys(String.valueOf((int) (capacity * clayNeed/totalNeed)));
+            pageResult.findElement(By.xpath("//input[@id='r3']")).sendKeys(String.valueOf((int) (capacity * ironNeed/totalNeed)));
+            pageResult.findElement(By.xpath("//input[@id='r4']")).sendKeys(String.valueOf((int) (capacity * cropNeed/totalNeed)));
+            pageResult.findElement(By.xpath("//input[@id='enterVillageName']")).sendKeys(name);
 
             page.submit(pageResult.findElement(By.xpath("//button[@id='enabledButton']")));
             page.click(pageResult.findElement(By.xpath("//button[@id='enabledButton']")));
