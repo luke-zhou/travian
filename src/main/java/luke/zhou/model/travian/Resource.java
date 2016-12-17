@@ -3,6 +3,9 @@ package luke.zhou.model.travian;
 import luke.zhou.Page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -14,6 +17,8 @@ import java.util.Map;
  */
 public class Resource
 {
+    private static final Logger LOG = LoggerFactory.getLogger(Resource.class);
+
     private ResourceType type;
     private String link;
     private int level;
@@ -80,7 +85,15 @@ public class Resource
 
     public void build(Page page) {
         WebDriver pageResult = page.loadURL("build.php?id=" + location);
-        page.click(pageResult.findElement(By.xpath("//div[@class='showBuildCosts normal']/button")));
+        WebElement buttonWE = pageResult.findElement(By.xpath("//div[@class='showBuildCosts normal']/button"));
+
+        if(buttonWE.getAttribute("class").contains("disabled")){
+            LOG.info("No available resource for upgrading "+type);
+        }
+        else{
+            page.click(buttonWE);
+            LOG.info(type +":" + location + " has been upgraded from " + level+ " to " + (level + 1));
+        }
     }
 
     public enum ResourceType

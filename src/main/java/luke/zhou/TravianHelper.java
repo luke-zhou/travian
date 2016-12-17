@@ -84,7 +84,6 @@ public class TravianHelper implements Runnable
                             reloadInfo();
                             break;
                         case TRANSFER:
-                            transferResource();
                             break;
                         case CLEAN_MESSAGE:
                             game.cleanUpMessage(travian);
@@ -156,18 +155,6 @@ public class TravianHelper implements Runnable
         //travian.exit();
     }
 
-    private void transferResource()
-    {
-        Village village = game.getVillage("Empire Strikes Back");
-        double maxResource = Math.max(village.getIron() * 1.0 / village.getWarehouseCapacity(),
-                Math.max(
-                        village.getClay() * 1.0 / village.getWarehouseCapacity(),
-                        village.getLumber() * 1.0 / village.getWarehouseCapacity()));
-        LOG.debug(String.valueOf(maxResource));
-        String result = travian.transferResource(game.getVillage("A New Hope"), game.getVillage("Empire Strikes Back"));
-        LOG.info("Send Resource: " + result);
-        System.out.println(result);
-    }
 
     private void startRaid()
     {
@@ -203,11 +190,7 @@ public class TravianHelper implements Runnable
 
     private void buildResource()
     {
-        game.load(travian);
         game.autoBuild(travian);
-
-
-
     }
 
     public BlockingQueue<Command> getTravianCommandQueue()

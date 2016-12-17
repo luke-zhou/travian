@@ -1,5 +1,12 @@
 package luke.zhou.model.travian;
 
+import luke.zhou.Page;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -10,6 +17,8 @@ import java.util.Map;
  */
 public class Building
 {
+    private static final Logger LOG = LoggerFactory.getLogger(Building.class);
+
     private BuildingType type;
     private String link;
     private int level;
@@ -42,7 +51,8 @@ public class Building
         sb.append(level);
         sb.append(")");
         sb.append("[");
-        for(BuildingStatus status :statusList){
+        for (BuildingStatus status : statusList)
+        {
             sb.append(status.getAbbreviation());
         }
         sb.append("]");
@@ -64,6 +74,26 @@ public class Building
     public BuildingType getType()
     {
         return type;
+    }
+
+    public int getLevel()
+    {
+        return level;
+    }
+
+    public void upgrade(Page page)
+    {
+        WebDriver pageResult = page.loadURL("build.php?id=" + location);
+        WebElement buttonWE = pageResult.findElement(By.xpath("//div[@class='showBuildCosts normal']/button"));
+        if (buttonWE.getAttribute("class").contains("disabled"))
+        {
+            LOG.info("No available resource for upgrading " + type);
+        }
+        else
+        {
+            page.click(buttonWE);
+            LOG.info(type + ":" + location + " has been upgraded from " + level + " to " + (level + 1));
+        }
     }
 
     public enum BuildingType

@@ -138,51 +138,112 @@ public class Village
 
     }
 
-    public boolean hasRallyPoint(){
+    public boolean hasRallyPoint()
+    {
         return Arrays.stream(buildings).anyMatch(b -> b.getType().equals(Building.BuildingType.RALLY_POINT));
     }
 
 
-    public void autoBuild(Page page) {
-        Resource resource = Arrays.stream(resources)
-                .filter(r -> r.isReady() && (!r.isUnderConstruction()))
-                .sorted((r1, r2) -> r1.getLevel() - r2.getLevel())
-                .findFirst().orElse(null);
+    public void autoBuild(Page page)
+    {
+        page.loadURL(getHomeLink());
+        if (needToBuildWarehouse())
+        {
+            Building warehouse = getBuilding(Building.BuildingType.WAREHOUSE);
+            warehouse.upgrade(page);
+        }
+
+        if (needToBuildGranary())
+        {
+            Building granary = getBuilding(Building.BuildingType.GRANARY);
+            granary.upgrade(page);
+        }
+
+        Resource resource = getNextUpgradeResource();
         if (resource != null)
         {
-            page.loadURL(getHomeLink());
             resource.build(page);
-            LOG.info("resource:" + resource.getLocation() + " has been upgraded from " + resource.getLevel() + " to " + (resource.getLevel() + 1));
         }
         else
         {
-            LOG.info("No available resource can be upgraded");
+            LOG.info("No available resource can be upgraded:" + clay + "," + lumber + "," + iron + "," + crop);
         }
     }
 
-    public double getCropStorage(){
+    private boolean needToBuildGranary()
+    {
+        Building warehouse = getBuilding(Building.BuildingType.WAREHOUSE);
+        Building granary = getBuilding(Building.BuildingType.GRANARY);
+        int granaryLevel = granary == null ? 0 : granary.getLevel();
+        int warehouseLevel = warehouse == null ? 0 : warehouse.getLevel();
+        return warehouseLevel - 2 > granaryLevel;
+    }
+
+    private boolean needToBuildWarehouse()
+    {
+        Resource resource = getNextUpgradeResource();
+        Building warehouse = getBuilding(Building.BuildingType.WAREHOUSE);
+        int resourceLevel = resource == null ? 0 : resource.getLevel();
+        int warehouseLevel = warehouse == null ? 0 : warehouse.getLevel();
+        return resourceLevel > warehouseLevel;
+    }
+
+    private Building getBuilding(Building.BuildingType type)
+    {
+        return Arrays.stream(buildings)
+                .filter(b -> b.getType().equals(type)).findFirst().orElse(null);
+    }
+
+    private Resource getNextUpgradeResource()
+    {
+        Resource notCropResource = Arrays.stream(resources)
+                .filter(r -> r.isReady() && (!r.isUnderConstruction()) && (!r.getType().equals(Resource.ResourceType.CROP)))
+                .sorted((r1, r2) -> r1.getLevel() - r2.getLevel())
+                .findFirst().orElse(null);
+        if (notCropResource != null)
+        {
+            return notCropResource;
+        }
+
+        Resource cropResource = Arrays.stream(resources)
+                .filter(r -> r.isReady() && (!r.isUnderConstruction()) && (r.getType().equals(Resource.ResourceType.CROP)))
+                .sorted((r1, r2) -> r1.getLevel() - r2.getLevel())
+                .findFirst().orElse(null);
+        if (cropResource != null)
+        {
+            return cropResource;
+        }
+
+        return null;
+    }
+
+    public double getCropStorage()
+    {
         return crop * 1.0 / granaryCapacity;
     }
 
-    public double getClayStorage(){
+    public double getClayStorage()
+    {
         return clay * 1.0 / warehouseCapacity;
     }
 
-    public double getLumberStorage(){
+    public double getLumberStorage()
+    {
         return lumber * 1.0 / warehouseCapacity;
     }
 
-    public double getIronStorage(){
+    public double getIronStorage()
+    {
         return iron * 1.0 / warehouseCapacity;
     }
 
     public double getMaxResourcePercentage()
     {
         double maxResource = Math.max(getCropStorage(),
-                                Math.max(getIronStorage(),
-                                    Math.max(getClayStorage(), getLumberStorage())
-                                )
-                            );
+                Math.max(getIronStorage(),
+                        Math.max(getClayStorage(), getLumberStorage())
+                )
+        );
         LOG.debug("max resource: " + String.valueOf(maxResource));
 
         return maxResource;
@@ -191,14 +252,23 @@ public class Village
     public String transferResource(Page page, Village to)
     {
         String result;
+
+        double clayNeed = Math.max(warehouseCapacity * 0.9 - clay, 0);
+        double lumberNeed = Math.max(warehouseCapacity * 0.9 - lumber, 0);
+        double ironNeed = Math.max(warehouseCapacity * 0.9 - iron, 0);
+        double cropNeed = Math.max(granaryCapacity * 0.9 - crop, 0);
+
+        double totalNeed = clayNeed + lumberNeed + ironNeed + cropNeed;
+
+        page.loadURL(to.getHomeLink());
         WebDriver pageResult = page.loadURL("build.php?t=5&id=35");
         if (!pageResult.findElement(By.id("merchantCapacityValue")).getText().equals("0"))
         {
             int capacity = page.getInt("//div[@id='build']/div[@class='carry']/b");
-            pageResult.findElement(By.xpath("//input[@id='r1']")).sendKeys(String.valueOf((int) capacity * 0.3));
-            pageResult.findElement(By.xpath("//input[@id='r2']")).sendKeys(String.valueOf((int) capacity * 0.3));
-            pageResult.findElement(By.xpath("//input[@id='r3']")).sendKeys(String.valueOf((int) capacity * 0.3));
-            pageResult.findElement(By.xpath("//input[@id='r4']")).sendKeys(String.valueOf((int) capacity * 0.1));
+            pageResult.findElement(By.xpath("//input[@id='r1']")).sendKeys(String.valueOf((int) capacity * lumberNeed/totalNeed));
+            pageResult.findElement(By.xpath("//input[@id='r2']")).sendKeys(String.valueOf((int) capacity * clayNeed/totalNeed));
+            pageResult.findElement(By.xpath("//input[@id='r3']")).sendKeys(String.valueOf((int) capacity * ironNeed/totalNeed));
+            pageResult.findElement(By.xpath("//input[@id='r4']")).sendKeys(String.valueOf((int) capacity * cropNeed/totalNeed));
             pageResult.findElement(By.xpath("//input[@id='enterVillageName']")).sendKeys(to.getName());
 
             page.submit(pageResult.findElement(By.xpath("//button[@id='enabledButton']")));
@@ -216,11 +286,23 @@ public class Village
         return result;
     }
 
+    public boolean needResource()
+    {
+        double resourceNeed =
+                Math.max(warehouseCapacity * 0.9 - clay, 0)+
+                Math.max(warehouseCapacity * 0.9 - lumber, 0)+
+                Math.max(warehouseCapacity * 0.9 - iron, 0)+
+                Math.max(granaryCapacity * 0.9 - crop, 0);
+
+        return resourceNeed >=1000;
+    }
+
+
     @Override
     public String toString()
     {
         StringBuilder sb = new StringBuilder();
-        sb.append("Village(" + name + "):\t" + "isUnderAttack=" + isUnderAttack + "\n");
+        sb.append("Village(" + name + "):\t" + "isUnderAttack=" + isUnderAttack + "\t" + "isAutoBuild=" + autoBuild + "\n");
         sb.append("lumber:" + lumber + "/" + warehouseCapacity +
                 "\tclay:" + clay + "/" + warehouseCapacity +
                 "\tiron:" + iron + "/" + warehouseCapacity +
@@ -340,11 +422,13 @@ public class Village
         return "dorf1.php" + "?newdid=" + newdid + "&";
     }
 
-    public boolean isAutoBuild() {
+    public boolean isAutoBuild()
+    {
         return autoBuild;
     }
 
-    public void setAutoBuild(boolean autoBuild) {
+    public void setAutoBuild(boolean autoBuild)
+    {
         this.autoBuild = autoBuild;
     }
 

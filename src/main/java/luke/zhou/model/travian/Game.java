@@ -66,9 +66,14 @@ public class Game
         WebDriver pageResult = page.loadURL("dorf1.php");
         WebElement villageWE = pageResult.findElement(
                 By.xpath("//div[@id='sidebarBoxVillagelist']//div[@class='innerBox content']/ul"));
-        villages.clear();
         villageWE.findElements(By.tagName("li")).forEach(we -> {
-            Village village = new Village(we.findElement(By.className("name")).getText());
+            String villageName = we.findElement(By.className("name")).getText();
+            Village village = getVillage(villageName);
+            if (village == null)
+            {
+                village = new Village(villageName);
+                villages.add(village);
+            }
             if (village.getName().toLowerCase().contains("zdjz"))
             {
                 village.setAutoBuild(true);
@@ -76,7 +81,6 @@ public class Game
             village.setUnderAttack(we.getAttribute("class").contains("attack"));
             String link = we.findElement(By.tagName("a")).getAttribute("href");
             village.setNewdid(Integer.valueOf(link.substring(link.indexOf("=") + 1, link.length() - 1)));
-            villages.add(village);
         });
 
         LOG.debug("Village size:" + villages.size());
@@ -123,7 +127,7 @@ public class Game
 
     public Village getVillage(String name)
     {
-        return villages.stream().filter(v -> v.getName().toLowerCase().equals(name.toLowerCase())).findFirst().get();
+        return villages.stream().filter(v -> v.getName().toLowerCase().equals(name.toLowerCase())).findFirst().orElse(null);
     }
 
     public String autoRaid(Page page)
@@ -192,9 +196,10 @@ public class Game
     public void autoBuild(Page page)
     {
         load(page);
+
         villages.stream().filter(v -> v.isAutoBuild()).forEach(v -> {
             v.autoBuild(page);
-            if (v.getMaxResourcePercentage() < 0.5)
+            if (v.needResource())
             {
                 String result = v.transferResource(page, getVillage("Empire Strikes Back"));
                 LOG.info("Send Resource: " + result);
