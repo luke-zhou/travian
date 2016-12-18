@@ -237,17 +237,6 @@ public class Village
         return iron * 1.0 / warehouseCapacity;
     }
 
-    public double getMaxResourcePercentage()
-    {
-        double maxResource = Math.max(getCropStorage(),
-                Math.max(getIronStorage(),
-                        Math.max(getClayStorage(), getLumberStorage())
-                )
-        );
-        LOG.debug("max resource: " + String.valueOf(maxResource));
-
-        return maxResource;
-    }
 
     public String transferResource(Page page, Village from)
     {
@@ -289,10 +278,10 @@ public class Village
     public boolean needResource()
     {
         double resourceNeed =
-                Math.max(warehouseCapacity * 0.9 - clay, 0)+
-                Math.max(warehouseCapacity * 0.9 - lumber, 0)+
-                Math.max(warehouseCapacity * 0.9 - iron, 0)+
-                Math.max(granaryCapacity * 0.9 - crop, 0);
+                Math.max(warehouseCapacity * 0.75 - clay, 0)+
+                Math.max(warehouseCapacity * 0.75 - lumber, 0)+
+                Math.max(warehouseCapacity * 0.75 - iron, 0)+
+                Math.max(granaryCapacity * 0.75 - crop, 0);
 
         return resourceNeed >=1000;
     }
