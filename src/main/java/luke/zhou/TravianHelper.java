@@ -17,8 +17,7 @@ import java.util.concurrent.LinkedBlockingQueue;
 /**
  * Created by Luke on 13/11/16.
  */
-public class TravianHelper implements Runnable
-{
+public class TravianHelper implements Runnable {
     private static final Logger LOG = LoggerFactory.getLogger(TravianHelper.class);
 
     private BlockingQueue<Command> travianCommandQueue;
@@ -27,8 +26,7 @@ public class TravianHelper implements Runnable
 
     private Game game;
 
-    public TravianHelper(Game game)
-    {
+    public TravianHelper(Game game) {
         travianCommandQueue = new LinkedBlockingQueue<>();
 
         travian = new Page(game.getServer());
@@ -36,8 +34,7 @@ public class TravianHelper implements Runnable
         this.game = game;
     }
 
-    public void run()
-    {
+    public void run() {
         game.login(travian);
         Main.getMainCommandQueue().add(Command.READY);
 
@@ -45,18 +42,14 @@ public class TravianHelper implements Runnable
         int roughFiveMin = 12 * 5;
         int roughThirtyMin = 12 * 30;
         int wholeDay = 12 * 60 * 24;
-        while (true)
-        {
+        while (true) {
             if (tick == wholeDay) tick = 0;
 
-            try
-            {
+            try {
                 Command cmd = travianCommandQueue.poll();
-                if (cmd != null)
-                {
+                if (cmd != null) {
                     LOG.debug("got cmd for helper:" + cmd);
-                    switch (cmd)
-                    {
+                    switch (cmd) {
                         case RAID:
                             startRaid();
                             break;
@@ -102,36 +95,30 @@ public class TravianHelper implements Runnable
                 }
 
                 //every 5 mins
-                if (tick % (roughFiveMin) == 0)
-                {
+                if (tick % (roughFiveMin) == 0) {
                     checkUnderAttack();
                     roughFiveMin = 12 * RandomUtil.randomRange(3, 7);
                 }
 
                 //every 30 mins
-                if (tick % (roughThirtyMin) == 0)
-                {
+                if (tick % (roughThirtyMin) == 0) {
                     String result = game.autoRaid(travian);
-                    if (!result.isEmpty())
-                    {
+                    if (!result.isEmpty()) {
                         LOG.info(result);
                     }
 
                     //50% chance to clean up green message
-                    if (RandomUtil.possibility(0.5))
-                    {
+                    if (RandomUtil.possibility(0.5)) {
                         LOG.debug("clean up message");
                         game.cleanUpMessage(travian);
                     }
 
-                    if (game.getAutoBuild())
-                    {
+                    if (game.getAutoBuild()) {
                         buildResource();
                     }
 
                     //33% random to open map
-                    if (RandomUtil.possibility(0.33))
-                    {
+                    if (RandomUtil.possibility(0.33)) {
                         LOG.debug("open map");
                         game.openMap(travian);
                     }
@@ -143,8 +130,7 @@ public class TravianHelper implements Runnable
                 tick++;
                 Thread.sleep(TimeUtil.seconds(5));
 
-            } catch (Exception e)
-            {
+            } catch (Exception e) {
                 LOG.error(e.getMessage());
                 e.printStackTrace();
                 travian.exit();
@@ -156,45 +142,36 @@ public class TravianHelper implements Runnable
     }
 
 
-    private void startRaid()
-    {
+    private void startRaid() {
         String result = game.autoRaid(travian);
         LOG.info("Start Raid: " + result);
         System.out.println(result);
         //travian.home(game);
     }
 
-    private void reloadInfo()
-    {
+    private void reloadInfo() {
         game.load(travian);
         LOG.info("Game: " + game);
         game.getVillages().stream().forEach(System.out::println);
     }
 
 
-    private void checkUnderAttack() throws InterruptedException
-    {
-        if (game.checkUnderAttack(travian))
-        {
-            if (game.getAlarmOn())
-            {
+    private void checkUnderAttack() throws InterruptedException {
+        if (game.checkUnderAttack(travian)) {
+            if (game.getAlarmOn()) {
                 game.switchAlarmOff();
                 new Thread(new MailIO(game.getNotificationEmail())).start();
             }
-        }
-        else if (!game.getAlarmOn())
-        {
+        } else if (!game.getAlarmOn()) {
             game.switchAlarmOn();
         }
     }
 
-    private void buildResource()
-    {
+    private void buildResource() {
         game.autoBuild(travian);
     }
 
-    public BlockingQueue<Command> getTravianCommandQueue()
-    {
+    public BlockingQueue<Command> getTravianCommandQueue() {
         return travianCommandQueue;
     }
 }
