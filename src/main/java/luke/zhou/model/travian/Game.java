@@ -74,10 +74,7 @@ public class Game
                 village = new Village(villageName);
                 villages.add(village);
             }
-            if (village.getName().toLowerCase().contains("zdjz"))
-            {
-                village.setAutoBuild(true);
-            }
+                village.setAutoBuild(village.getName().toLowerCase().contains("zdjz"));
             village.setUnderAttack(we.getAttribute("class").contains("attack"));
             String link = we.findElement(By.tagName("a")).getAttribute("href");
             village.setNewdid(Integer.valueOf(link.substring(link.indexOf("=") + 1, link.length() - 1)));
