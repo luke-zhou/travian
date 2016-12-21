@@ -242,10 +242,10 @@ public class Village
     {
         String result;
 
-        double clayNeed = Math.max(warehouseCapacity * 0.9 - clay, 0);
-        double lumberNeed = Math.max(warehouseCapacity * 0.9 - lumber, 0);
-        double ironNeed = Math.max(warehouseCapacity * 0.9 - iron, 0);
-        double cropNeed = Math.max(granaryCapacity * 0.9 - crop, 0);
+        double clayNeed = Math.max(warehouseCapacity * 0.75 - clay, 0);
+        double lumberNeed = Math.max(warehouseCapacity * 0.75 - lumber, 0);
+        double ironNeed = Math.max(warehouseCapacity * 0.75 - iron, 0);
+        double cropNeed = Math.max(granaryCapacity * 0.75 - crop, 0);
 
         double totalNeed = clayNeed + lumberNeed + ironNeed + cropNeed;
 
